@@ -13,7 +13,7 @@ groups:
       { fw: rockbox, label: "Rockbox", hours: 19.55 } ] }
   - { id: ts17-wired, port: ts17, mode: wired, title: "Headphone jack", runs: [
       { fw: stock, label: "Stock firmware", hours: 17.99 },
-      { fw: rockbox, label: "Rockbox", pending: true } ] }
+      { fw: rockbox, label: "Rockbox", hours: 27.28 } ] }
   - { id: ts17-bt, port: ts17, mode: bt, title: "Bluetooth (A2DP to a PC, 1 m)", runs: [
       { fw: stock, label: "Stock firmware", pending: true },
       { fw: rockbox, label: "Rockbox", pending: true } ] }
