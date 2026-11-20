@@ -8,4 +8,23 @@
 <tr><th scope="row">{{ r.name }}</th>{% for c in cols %}{% assign v = r[c.id] %}<td class="{{ c.kind }}{% if v == '?' %} unknown{% endif %}">{{ v }}</td>{% endfor %}</tr>
 {%- endfor -%}
 {%- endfor -%}
+<tr class="group-row"><th colspan="{{ cols.size | plus: 1 }}">Battery life (hours of playback)</th></tr>
+{%- assign combos = "wired|stock|Wired, stock,wired|rockbox|Wired, Rockbox,bt|stock|Bluetooth, stock,bt|rockbox|Bluetooth, Rockbox" | split: "," -%}
+{%- for combo in combos -%}
+{%- assign parts = combo | split: "|" -%}
+<tr><th scope="row">{{ parts[2] }}</th>
+{%- for c in cols -%}
+{%- assign g = site.data.battery.groups | where: "port", c.id | where: "mode", parts[0] | first -%}
+{%- assign r = nil -%}
+{%- if g -%}{%- assign r = g.runs | where: "fw", parts[1] | first -%}{%- assign st = g.runs | where: "fw", "stock" | first -%}{%- endif -%}
+{%- if r and r.pending != true -%}
+<td class="{{ c.kind }}"><b>{{ r.hours }} h</b>{% if parts[1] == "rockbox" and st.pending != true %} <span class="bat-pct">{{ r.hours | times: 100.0 | divided_by: st.hours | round }}% of stock</span>{% endif %}</td>
+{%- elsif c.kind == "failed" -%}
+<td class="failed">n/a</td>
+{%- else -%}
+<td class="{{ c.kind }} unknown">?</td>
+{%- endif -%}
+{%- endfor -%}
+</tr>
+{%- endfor -%}
 </tbody></table></div>

@@ -1,32 +1,19 @@
 # Battery runs: stock vs Rockbox, same files, level-matched, played to empty.
 # Source: the repo's docs/battery-benchmark.md (YP3) and docs/ts17-battery.md
-# (TS17), as of 2026-11-19. Stock is always the first run in a group: every
-# percentage is "of stock".
-#   hours:  the figure plotted
-#   caveat: true draws the bar hatched and leaves out the percentage
-#   exp:    an experimental build that is not in the release
+# (TS17), as of 2026-11-19. Feeds the port pages' charts and the hardware
+# comparison table. Stock must be a group's first run (percentages are "of
+# stock"). mode: wired | bt. pending: true = not measured yet.
 scale_hours: 30
 groups:
-  - id: yp3-wired
-    port: yp3
-    title: "YP3, headphone jack"
-    runs:
-      - { fw: stock, label: "Stock (yp3_2.0.43)", hours: 21.29, note: "Started a little above a normal full charge, so probably a touch long." }
-      - { fw: rockbox, label: "Rockbox release", hours: 20.07, note: "Also started above full (about 19.3 h from a normal full charge). Played 4.3 dB quieter than stock. The gap to stock is within run-to-run error." }
-  - id: yp3-bt
-    port: yp3
-    title: "YP3, Bluetooth (A2DP to a PC, 1 m)"
-    runs:
-      - { fw: stock, label: "Stock (yp3_2.0.43)", hours: 20.82, note: "From a normal full charge." }
-      - { fw: rockbox, label: "Rockbox release", hours: 14.1, note: "15.5 h as run from above full; 14.1 h from a normal full charge. Bluetooth draws about 11 mA against stock's 7.7 mA, and the core holds 192 MHz while streaming." }
-      - { fw: rockbox, label: "Rockbox, low-power build", hours: 17.6, exp: true, note: "Experimental: the audio codec is switched off while Bluetooth plays. 19.55 h as run; 17.6 h from a normal full charge. Not in the release." }
-  - id: ts17-wired
-    port: ts17
-    title: "TS17, headphone jack"
-    runs:
-      - { fw: stock, label: "Stock", hours: 17.99, note: "Closed-back over-ear headphones on the splitter (the YP3 runs used open-back ones, so don't compare across players)." }
-      - { fw: rockbox, label: "Rockbox release", hours: 27.28, caveat: true, note: "Not comparable. It played about 10 dB quieter than stock, from a fuller cell (the TS17's charger can't be stopped from software), and the user's key presses raised the volume near the end. Needs a rerun at matched level." }
-  - id: ts17-bt
-    port: ts17
-    title: "TS17, Bluetooth"
-    runs: []
+  - { id: yp3-wired, port: yp3, mode: wired, title: "Headphone jack", runs: [
+      { fw: stock, label: "Stock firmware", hours: 21.29 },
+      { fw: rockbox, label: "Rockbox", hours: 20.07 } ] }
+  - { id: yp3-bt, port: yp3, mode: bt, title: "Bluetooth (A2DP to a PC, 1 m)", runs: [
+      { fw: stock, label: "Stock firmware", hours: 20.82 },
+      { fw: rockbox, label: "Rockbox", hours: 19.55 } ] }
+  - { id: ts17-wired, port: ts17, mode: wired, title: "Headphone jack", runs: [
+      { fw: stock, label: "Stock firmware", hours: 17.99 },
+      { fw: rockbox, label: "Rockbox", pending: true } ] }
+  - { id: ts17-bt, port: ts17, mode: bt, title: "Bluetooth (A2DP to a PC, 1 m)", runs: [
+      { fw: stock, label: "Stock firmware", pending: true },
+      { fw: rockbox, label: "Rockbox", pending: true } ] }

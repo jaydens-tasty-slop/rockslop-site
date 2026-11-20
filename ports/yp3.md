@@ -31,7 +31,7 @@ permalink: /ports/yp3/
 
 ## Battery life
 
-Stock vs Rockbox, same files and level. [All the runs and how we measured]({{ '/compare/battery/' | relative_url }}).
+Playback hours, stock firmware vs Rockbox: the same files, level-matched, played from a full charge until the player turned itself off. {% include todo.html text="Add anything about how it was measured (one run each, the headphones used)." %}
 
 {% include battery-chart.html port="yp3" %}
 

@@ -1,27 +1,25 @@
 {%- comment -%}
-  Bar charts of battery hours from _data/battery.yml.
-  Usage: {% include battery-chart.html %} (all) or port="yp3".
+  Bar charts of battery hours from _data/battery.yml for one port.
+  Usage: {% include battery-chart.html port="yp3" %}
 {%- endcomment -%}
 {%- assign scale = site.data.battery.scale_hours -%}
+{%- assign groups = site.data.battery.groups | where: "port", include.port -%}
 <div class="battery" markdown="0">
-{%- for g in site.data.battery.groups -%}
-{%- if include.port == nil or include.port == g.port %}
+{%- for g in groups %}
+{%- assign stock = g.runs | where: "fw", "stock" | first %}
 <section class="bat-group">
 <h4 class="bat-title">{{ g.title }}</h4>
-{%- if g.runs.size == 0 %}
-<p class="bat-empty">Not measured yet.</p>
-{%- else -%}
-{%- assign stock = g.runs[0].hours -%}
 {%- for r in g.runs %}
 <div class="bat-row">
-<div class="bat-label">{{ r.label }}{% if r.exp %} <span class="bat-tag">experimental</span>{% endif %}{% if r.caveat %} <span class="bat-tag warn">not comparable</span>{% endif %}</div>
-<div class="bat-bar"><i class="bat-{{ r.fw }}{% if r.caveat %} bat-void{% endif %}" style="width: {{ r.hours | times: 100.0 | divided_by: scale | round: 1 }}%"></i></div>
-<div class="bat-val"><b>{{ r.hours }}</b> h{% if r.fw != "stock" and r.caveat != true %} <span class="bat-pct">{{ r.hours | times: 100.0 | divided_by: stock | round }}% of stock</span>{% endif %}</div>
-<p class="bat-note">{{ r.note }}</p>
-</div>
-{%- endfor -%}
+<div class="bat-label">{{ r.label }}</div>
+{%- if r.pending %}
+<div class="bat-empty">Not measured yet</div>
+{%- else %}
+<div class="bat-bar"><i class="bat-{{ r.fw }}" style="width: {{ r.hours | times: 100.0 | divided_by: scale | round: 1 }}%"></i></div>
+<div class="bat-val"><b>{{ r.hours }}</b> h{% if r.fw != "stock" and stock.pending != true %} <span class="bat-pct">{{ r.hours | times: 100.0 | divided_by: stock.hours | round }}% of stock</span>{% endif %}</div>
 {%- endif %}
+</div>
+{%- endfor %}
 </section>
-{%- endif -%}
 {%- endfor %}
 </div>
