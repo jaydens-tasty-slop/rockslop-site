@@ -1,0 +1,24 @@
+# YP3 status table. States: see _data/states.yml. Draft from the repo's
+# docs/driver-status.md (2026-11-19); check before publishing.
+- { group: Core, name: Boot and power-on, state: working, note: "Runs in place from SPI NOR; the stock bootloader hands over." }
+- { group: Core, name: Real power-off and wake, state: working, note: "Centre key, about 3 s to power on. On USB the chip restarts instead of powering off, as stock." }
+- { group: Core, name: Recovery to download mode, state: working, note: "A watchdog returns a hung player to the ROM's USB mode." }
+- { group: Core, name: Second CPU core, state: planned, note: "Both cores are Cortex-M4. Rockbox runs on one." }
+- { group: Display & input, name: LCD 128x160, state: working, note: "GC9106, RGB565, DMA frame push." }
+- { group: Display & input, name: Backlight, state: working, note: "PWM, 10 brightness levels, timeout and wake." }
+- { group: Display & input, name: Buttons, state: working, note: "Five keys and a reset pinhole; Rockbox's usual keymap with a few extras." }
+- { group: Audio, name: MP3 / FLAC / Vorbis / Opus / AAC / WMA, state: working, note: "Codecs load from the SD card on demand." }
+- { group: Audio, name: Headphone output, state: working, note: "44.1 kHz and others, correct pitch and channels." }
+- { group: Audio, name: Speaker, state: working, note: "The jack cuts it in hardware; there is no detect line." }
+- { group: Audio, name: Recording from the mic, state: working, note: "WAV, AIFF, WavPack and MP3 encoders." }
+- { group: Radio & wireless, name: FM radio, state: working, note: "RDA5807; autoscan, presets, RDS and FM recording." }
+- { group: Radio & wireless, name: Bluetooth audio (A2DP + AVRCP), state: working, note: "Source role; reconnects when the same headset returns." }
+- { group: Radio & wireless, name: Bluetooth gamepads and keyboards, state: working, note: "DualShock 4 and keyboards act as the player's buttons." }
+- { group: Storage & USB, name: microSD (FAT, read/write), state: working, note: "4-bit bus, DMA." }
+- { group: Storage & USB, name: USB mass storage, state: working, note: "About 1 MB/s read and write." }
+- { group: Power, name: Battery monitoring, state: working, note: "Voltage only; the reading is not calibrated." }
+- { group: Power, name: Charging control, state: working, note: "Charge Limit setting, 50 to 100 %." }
+- { group: Power, name: CPU voltage scaling, state: planned, note: "CPU switches 64 / 192 MHz; core voltage is not scaled." }
+- { group: Software, name: Real-time clock and alarm, state: working, note: "" }
+- { group: Software, name: Plugins and games, state: working, note: "Over 350 extra plugins, loaded from the SD card." }
+- { group: Software, name: Video playback, state: working, note: "AVI, MKV and MP4." }

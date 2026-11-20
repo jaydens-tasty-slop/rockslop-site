@@ -1,0 +1,11 @@
+{%- comment -%}
+  Photo placeholders for a device page. Replace each slot with an <img> once
+  there are photos (put files in assets/images/<port>/). Usage:
+  {% include photos.html port="yp3" %}
+{%- endcomment -%}
+{%- assign slots = "Front, powered off|Front, running Rockbox|Back|In hand, for scale" | split: "|" -%}
+<div class="photo-grid" markdown="0">
+{%- for slot in slots %}
+<figure class="photo-slot"><div class="photo-frame"><span>PHOTO</span></div><figcaption>{{ slot }}</figcaption></figure>
+{%- endfor %}
+</div>

@@ -1,0 +1,17 @@
+# One entry per port. Drives the home page cards and the ports index.
+# `state` is a key of _data/states.yml.
+- id: yp3
+  name: YP3
+  url: /ports/yp3/
+  state: released
+  blurb: "SmartLink SL6801. 128x160, D-pad, Bluetooth, FM."
+- id: ts17
+  name: TS17
+  url: /ports/ts17/
+  state: released
+  blurb: "Actions Lark. 128x160, Bluetooth, FM, no speaker."
+- id: ts28
+  name: TS28
+  url: /ports/ts28/
+  state: dev
+  blurb: "Same family as the TS17, with a 240x320 touchscreen."

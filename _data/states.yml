@@ -1,0 +1,11 @@
+# Status vocabulary, used by every status table and badge.
+working:  { label: Working,  hint: "Works; checked on the player" }
+partial:  { label: Partial,  hint: "Works, with known gaps" }
+broken:   { label: Broken,   hint: "Does not work yet" }
+planned:  { label: Planned,  hint: "Not started" }
+unknown:  { label: Untested, hint: "Not checked yet" }
+na:       { label: N/A,      hint: "The hardware doesn't have it" }
+released: { label: Released, hint: "Installable with rockslop" }
+dev:      { label: In development, hint: "Boots and runs; not released" }
+rejected: { label: Rejected, hint: "Triaged and dropped" }
+parked:   { label: Parked,   hint: "Triage unfinished" }

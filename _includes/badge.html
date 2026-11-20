@@ -1,0 +1,2 @@
+{%- assign st = site.data.states[include.state] -%}
+<span class="badge s-{{ include.state }}" title="{{ st.hint }}"><i aria-hidden="true"></i>{{ st.label | default: include.state }}</span>

@@ -1,0 +1,11 @@
+{%- assign cols = site.data.hardware.columns -%}
+<div class="table-wrapper"><table class="compare-table hardware-table">
+<thead><tr><th></th>{% for c in cols %}<th class="{{ c.kind }}"><a href="{{ c.url | relative_url }}">{{ c.name }}</a></th>{% endfor %}</tr></thead>
+<tbody>
+{%- for g in site.data.hardware.rows -%}
+<tr class="group-row"><th colspan="{{ cols.size | plus: 1 }}">{{ g.group }}</th></tr>
+{%- for r in g.items -%}
+<tr><th scope="row">{{ r.name }}</th>{% for c in cols %}{% assign v = r[c.id] %}<td class="{{ c.kind }}{% if v == '?' %} unknown{% endif %}">{{ v }}</td>{% endfor %}</tr>
+{%- endfor -%}
+{%- endfor -%}
+</tbody></table></div>

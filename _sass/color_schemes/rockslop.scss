@@ -1,0 +1,25 @@
+// A dark, taxi-meter scheme: near-black panels, amber accents.
+// (Rockbox's Cabbie theme: black with yellow, chequered trim.)
+$color-scheme: dark;
+
+$rs-amber: #ffc21a;
+$rs-amber-light: #ffd45c;
+$rs-ink: #0b0c0f;
+
+$body-background-color: #101115;
+$body-heading-color: #ffffff;
+$body-text-color: #d6d3c8;
+$link-color: $rs-amber-light;
+$nav-child-link-color: #a9a79d;
+$sidebar-color: $rs-ink;
+$base-button-color: #1b1d23;
+$btn-primary-color: $rs-amber;
+$code-background-color: #0b0c0f;
+$code-linenumber-color: #e6edf3;
+$feedback-color: $rs-ink;
+$table-background-color: #16171c;
+$search-background-color: #16171c;
+$search-result-preview-color: #d6d3c8;
+$border-color: #2a2c33;
+
+@import "./vendor/accessible-pygments/github-dark";

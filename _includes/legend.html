@@ -1,0 +1,1 @@
+{%- assign keys = "working,partial,broken,planned,unknown,na" | split: "," -%}<p class="legend">{% for k in keys %}{% include badge.html state=k %} {% endfor %}</p>

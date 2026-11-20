@@ -1,0 +1,17 @@
+{%- comment -%}
+  The port's status table, from _data/status/<port>.yml (like a Rockbox wiki
+  port page). Usage: {% include status-table.html port="yp3" %}
+{%- endcomment -%}
+{%- assign rows = site.data.status[include.port] -%}
+<div class="table-wrapper"><table class="status-table">
+<thead><tr><th>Feature</th><th>Status</th><th>Notes</th></tr></thead>
+<tbody>
+{%- assign group = "" -%}
+{%- for r in rows -%}
+{%- if r.group != group -%}{%- assign group = r.group -%}
+<tr class="group-row"><th colspan="3">{{ group }}</th></tr>
+{%- endif -%}
+<tr><td>{{ r.name }}</td><td>{% include badge.html state=r.state %}</td><td>{{ r.note | markdownify | remove: "<p>" | remove: "</p>" }}</td></tr>
+{%- endfor -%}
+</tbody></table></div>
+{% include legend.html %}

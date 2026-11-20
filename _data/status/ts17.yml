@@ -1,0 +1,22 @@
+# TS17 status table. Draft from docs/ts17-investigation.md (2026-11-19).
+- { group: Core, name: Boot and power-on, state: working, note: "Runs in place from NOR, with PSRAM as main memory." }
+- { group: Core, name: Real power-off and wake, state: working, note: "Wake by the on/off key, by plugging in USB, or by alarm." }
+- { group: Core, name: Recovery to download mode, state: working, note: "A rescue stub at 0x14000: hold Down, plug in USB." }
+- { group: Display & input, name: LCD 128x160, state: working, note: "ST7735-type panel, frames by DMA, synced to the tearing-effect line." }
+- { group: Display & input, name: Backlight, state: working, note: "PWM, 10 levels." }
+- { group: Display & input, name: Buttons, state: working, note: "All eight keys checked." }
+- { group: Audio, name: Codecs, state: working, note: "All 41 test files play." }
+- { group: Audio, name: Headphone output, state: working, note: "44.1 and 48 kHz, 0.375 dB volume steps." }
+- { group: Audio, name: Headphone detect, state: na, note: "The only pin stock reads reads the same with a plug in." }
+- { group: Audio, name: Speaker, state: na, note: "The player has none." }
+- { group: Audio, name: Recording from the mic, state: partial, note: "Works; mic sensitivity not checked with a voice yet." }
+- { group: Radio & wireless, name: FM radio, state: working, note: "RDA5807 with a 24 MHz reference; the headphone cable is the antenna." }
+- { group: Radio & wireless, name: Bluetooth audio (A2DP), state: working, note: "Range measured better than stock." }
+- { group: Radio & wireless, name: Bluetooth gamepads and keyboards, state: planned, note: "" }
+- { group: Storage & USB, name: microSD, state: working, note: "4-bit, DMA, high speed." }
+- { group: Storage & USB, name: USB mass storage, state: working, note: "2.7 MB/s write, 4.0 MB/s read." }
+- { group: Power, name: Battery monitoring, state: working, note: "Reads about 100 mV low under load." }
+- { group: Power, name: Charging control, state: partial, note: "Charger is capped and timed. A charge-current reading of 0 is still unexplained." }
+- { group: Software, name: Real-time clock and alarm, state: working, note: "Survives power-off; the alarm wakes the player." }
+- { group: Software, name: Plugins and games, state: working, note: "About 2.4 MB for plugins." }
+- { group: Software, name: Video playback, state: working, note: "AVI and MKV; MPEG-1/2 up to 320x240." }
