@@ -29,6 +29,12 @@ permalink: /ports/yp3/
 
 {% include status-table.html port="yp3" %}
 
+## Battery life
+
+Stock vs Rockbox, same files and level. [All the runs and how we measured]({{ '/compare/battery/' | relative_url }}).
+
+{% include battery-chart.html port="yp3" %}
+
 ## Hardware
 
 {% include todo.html text="What's inside in plain words (the fact box above is the short version). Link to the Hardware comparison page." %}

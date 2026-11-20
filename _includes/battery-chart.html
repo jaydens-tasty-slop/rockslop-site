@@ -1,0 +1,27 @@
+{%- comment -%}
+  Bar charts of battery hours from _data/battery.yml.
+  Usage: {% include battery-chart.html %} (all) or port="yp3".
+{%- endcomment -%}
+{%- assign scale = site.data.battery.scale_hours -%}
+<div class="battery" markdown="0">
+{%- for g in site.data.battery.groups -%}
+{%- if include.port == nil or include.port == g.port %}
+<section class="bat-group">
+<h4 class="bat-title">{{ g.title }}</h4>
+{%- if g.runs.size == 0 %}
+<p class="bat-empty">Not measured yet.</p>
+{%- else -%}
+{%- assign stock = g.runs[0].hours -%}
+{%- for r in g.runs %}
+<div class="bat-row">
+<div class="bat-label">{{ r.label }}{% if r.exp %} <span class="bat-tag">experimental</span>{% endif %}{% if r.caveat %} <span class="bat-tag warn">not comparable</span>{% endif %}</div>
+<div class="bat-bar"><i class="bat-{{ r.fw }}{% if r.caveat %} bat-void{% endif %}" style="width: {{ r.hours | times: 100.0 | divided_by: scale | round: 1 }}%"></i></div>
+<div class="bat-val"><b>{{ r.hours }}</b> h{% if r.fw != "stock" and r.caveat != true %} <span class="bat-pct">{{ r.hours | times: 100.0 | divided_by: stock | round }}% of stock</span>{% endif %}</div>
+<p class="bat-note">{{ r.note }}</p>
+</div>
+{%- endfor -%}
+{%- endif %}
+</section>
+{%- endif -%}
+{%- endfor %}
+</div>
