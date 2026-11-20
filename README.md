@@ -4,8 +4,8 @@ Public site for [rockslop.jayd.ml](https://rockslop.jayd.ml), the homepage of
 the rockslop project (a Rockbox flasher for cheap MP3 players).
 
 Jekyll + [Just the Docs](https://just-the-docs.com), deployed with GitHub
-Pages. The look (quiet light theme with a chequered strip and a yellow button) is
-only CSS: `_sass/color_schemes/rockslop.scss` and `_sass/custom/custom.scss`.
+Pages. The look (quiet dark theme with a chequered strip and a yellow button) is
+mostly colours: `_sass/color_schemes/rockslop.scss` and `_sass/custom/custom.scss`.
 
 ## Working on it
 
@@ -28,8 +28,8 @@ make help
 - **Comparison tables**: `_data/features.yml` and `_data/hardware.yml`.
   Hardware columns marked `kind: failed` are the rejected players.
 - **Failed ports**: `failed-ports.md`.
-- **Photos**: `{% include photos.html %}` draws placeholders; replace them
-  with images in `assets/images/<port>/`.
+- **Photos**: each port page has a Photos placeholder; replace it with
+  Markdown images from `assets/images/<port>/`.
 - **The call to action**: `releases_url` in `_config.yml`, used by every
   button.
 

@@ -1,11 +1,11 @@
-# Status vocabulary, used by every status table and badge.
-working:  { label: Working,  hint: "Works; checked on the player" }
-partial:  { label: Partial,  hint: "Works, with known gaps" }
-broken:   { label: Broken,   hint: "Does not work yet" }
-planned:  { label: Planned,  hint: "Not started" }
-unknown:  { label: Untested, hint: "Not checked yet" }
-na:       { label: N/A,      hint: "The hardware doesn't have it" }
-released: { label: Released, hint: "Installable with rockslop" }
-dev:      { label: In development, hint: "Boots and runs; not released" }
-rejected: { label: Rejected, hint: "Triaged and dropped" }
-parked:   { label: Parked,   hint: "Triage unfinished" }
+# Status vocabulary. `cls` is a Just the Docs label colour (empty = plain text).
+working:  { label: Working,  cls: label-green }
+partial:  { label: Partial,  cls: label-yellow }
+broken:   { label: Broken,   cls: label-red }
+planned:  { label: Planned,  cls: label-blue }
+unknown:  { label: Untested, cls: label-blue }
+na:       { label: N/A,      cls: "" }
+released: { label: Released, cls: label-green }
+dev:      { label: In development, cls: label-yellow }
+rejected: { label: Rejected, cls: label-red }
+parked:   { label: Parked,   cls: label-blue }

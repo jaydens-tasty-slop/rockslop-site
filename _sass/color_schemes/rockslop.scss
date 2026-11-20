@@ -1,20 +1,21 @@
-// Plain and light. The only taxi touches are the chequered strip and the
-// yellow call-to-action button (see _sass/custom/custom.scss).
-$color-scheme: light;
+// Dark: near-black panels, amber accent. The taxi touches are the chequered
+// strip and the yellow call-to-action button (_sass/custom/custom.scss).
+$color-scheme: dark;
 
-$body-background-color: #ffffff;
-$body-heading-color: #111111;
-$body-text-color: #2b2b2b;
-$link-color: #1c4f8a;
-$nav-child-link-color: #444444;
-$sidebar-color: #f6f6f4;
-$base-button-color: #f3f3f1;
-$btn-primary-color: #f2b705;
-$code-background-color: #f6f6f4;
-$feedback-color: #f6f6f4;
-$table-background-color: #ffffff;
-$search-background-color: #ffffff;
-$search-result-preview-color: #2b2b2b;
-$border-color: #dcdcd6;
+$body-background-color: #101115;
+$body-heading-color: #ffffff;
+$body-text-color: #d6d3c8;
+$link-color: #ffd45c;
+$nav-child-link-color: #a9a79d;
+$sidebar-color: #0b0c0f;
+$base-button-color: #1b1d23;
+$btn-primary-color: #ffc21a;
+$code-background-color: #0b0c0f;
+$code-linenumber-color: #e6edf3;
+$feedback-color: #0b0c0f;
+$table-background-color: #16171c;
+$search-background-color: #16171c;
+$search-result-preview-color: #d6d3c8;
+$border-color: #2a2c33;
 
-@import "./vendor/accessible-pygments/github-light";
+@import "./vendor/accessible-pygments/github-dark";

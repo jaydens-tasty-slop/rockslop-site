@@ -7,37 +7,41 @@ permalink: /ports/yp3/
 
 # YP3
 
-<div class="fact-box" markdown="0"><dl>
-<dt>Status</dt><dd>{% include badge.html state="released" %}</dd>
-<dt>SoC</dt><dd>SmartLink SL6801</dd>
-<dt>CPU</dt><dd>2x Cortex-M4</dd>
-<dt>RAM</dt><dd>512 KiB SRAM</dd>
-<dt>Flash</dt><dd>2 MiB SPI NOR</dd>
-<dt>Display</dt><dd>128x160 GC9106</dd>
-<dt>Stock firmware</dt><dd>{% include todo.html text="version" %}</dd>
-</dl></div>
-
-{% include todo.html text="Two or three sentences: what this player is, where it's sold, roughly what it costs, who it suits. Add the sold-as names / brands people will search for." %}
+{% include todo.html text="Two or three sentences: what this player is, where it's sold, roughly what it costs, who it suits. Add the sold-as names and brands people will search for." %}
 
 [Download rockslop]({{ site.releases_url }}){: .btn .btn-primary }
 
+## At a glance
+
+| Spec | |
+| --- | --- |
+| Status | {% include badge.html state="released" %} |
+| SoC | SmartLink SL6801 |
+| CPU | 2x Cortex-M4 |
+| RAM | 512 KiB SRAM |
+| Flash | 2 MiB SPI NOR |
+| Display | 128x160 GC9106 |
+| Stock firmware | ? |
+
 ## Photos
 
-{% include photos.html port="yp3" %}
+{% include todo.html text="Photos go here: front powered off, front running Rockbox, back, and in hand for scale." %}
 
 ## Status
 
 {% include status-table.html port="yp3" %}
 
+{% include legend.html %}
+
 ## Battery life
 
-Playback hours, stock firmware vs Rockbox: the same files, level-matched, played from a full charge until the player turned itself off. {% include todo.html text="Add anything about how it was measured (one run each, the headphones used)." %}
+{% include battery-table.html port="yp3" %}
 
-{% include battery-chart.html port="yp3" %}
+{% include todo.html text="How it was measured, in a sentence (same files, level-matched, played from full to empty)." %}
 
 ## Hardware
 
-{% include todo.html text="What's inside in plain words (the fact box above is the short version). Link to the Hardware comparison page." %}
+{% include todo.html text="What's inside in plain words (the table above is the short version). Link to the Hardware comparison page." %}
 
 ## Install notes
 

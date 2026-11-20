@@ -17,17 +17,14 @@ permalink: /failed-ports/
 ## US212D
 {: #us212d }
 
-<span class="verdict">Rejected</span> <span class="verdict">Fake storage</span>
+{% include badge.html state="rejected" %}
 
 {% include todo.html text="One or two lines of colour on the player (sold as 32 GB, aluminium, Bluetooth transmitter firmware, manual says 'ATJ2127' but names the model Cb2732). Add the brand / listing if you want to name it, plus a photo." %}
 
 ### Hall of shame: 32 GB that isn't
 
-<div class="capacity" markdown="0">
-  <div class="adv">ADVERTISED: 32 GB</div>
-  <div class="bar"><i style="width: 12.5%"></i></div>
-  <div class="row"><span>REAL: 4 GiB of NAND</span><span>12.5 % of what's on the box</span></div>
-</div>
+> **Advertised: 32 GB. Real: 4 GiB of NAND.** That is about 12.5 % of what's on the box.
+{: .warning }
 
 The player's USB disk reports two LUNs of 33.2 GB and exactly 30,000 MiB. Behind them is a single 4 GiB NAND chip. We proved it on 2026-11-17 by writing signed blocks through raw SCSI at 3.82, 7.63, 11.4 ... 30.52 GiB: **every one of them read back the block written at 0 GiB**. Writes past 4 GiB are lost and reads wrap around. The test blocks were restored afterwards.
 
@@ -52,7 +49,7 @@ For scale, the YP3's static RAM alone nearly fills 168 KiB before any code is lo
 ## S5
 {: #s5 }
 
-<span class="verdict">Rejected</span>
+{% include badge.html state="rejected" %}
 
 {% include todo.html text="One or two lines on the player: QNGEE S5, 128x160 touchscreen, Bluetooth, FM, clip, SD slot, micro-USB. Photo." %}
 
@@ -70,7 +67,7 @@ For scale, the YP3's static RAM alone nearly fills 168 KiB before any code is lo
 ## M7
 {: #m7 }
 
-<span class="verdict" style="border-color: #6b6b66; color: #6b6b66;">Parked</span>
+{% include badge.html state="parked" %}
 
 {% include todo.html text="Decide whether this belongs on the page at all. It is not a rejection yet: say what is still open." %}
 

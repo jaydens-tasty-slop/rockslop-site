@@ -7,8 +7,8 @@ permalink: /compare/hardware/
 
 # Hardware comparison
 
-{% include todo.html text="One sentence on what the table is for. The dashed-off columns on the right are the players we rejected (see Failed ports)." %}
+{% include todo.html text="One sentence on what the table is for. The last three columns are the players we rejected (see Failed ports)." %}
 
 {% include hardware-table.html %}
 
-*Italic question marks are values we haven't confirmed.*
+A question mark is a value we haven't confirmed.

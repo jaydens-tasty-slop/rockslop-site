@@ -59,7 +59,7 @@ callouts:
     title: Warning
     color: red
   todo:
-    title: Write me
+    title: ''
     color: yellow
 
 plugins:

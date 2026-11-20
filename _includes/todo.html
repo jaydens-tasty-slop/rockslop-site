@@ -1,6 +1,4 @@
-{%- comment -%}
-  A placeholder for prose the author will write. Everything marked with this
-  include is filler: `make drafts` lists them all.
-  Usage: {% include todo.html text="what should go here" %}
-{%- endcomment -%}
-<div class="todo"><span class="todo-tag">Write me</span>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+
+> **Write me:** {{ include.text }}
+{: .todo }
+

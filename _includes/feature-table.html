@@ -1,11 +1,6 @@
 {%- assign ports = site.data.ports -%}
-<div class="table-wrapper"><table class="compare-table">
-<thead><tr><th>Feature</th>{% for p in ports %}<th><a href="{{ p.url | relative_url }}">{{ p.name }}</a></th>{% endfor %}</tr></thead>
-<tbody>
-{%- for g in site.data.features -%}
-<tr class="group-row"><th colspan="{{ ports.size | plus: 1 }}">{{ g.group }}</th></tr>
-{%- for f in g.items -%}
-<tr><td>{{ f.name }}</td>{% for p in ports %}{% assign st = f[p.id] %}<td>{% include badge.html state=st %}</td>{% endfor %}</tr>
-{%- endfor -%}
-{%- endfor -%}
-</tbody></table></div>
+| Feature |{% for p in ports %} [{{ p.name }}]({{ p.url | relative_url }}) |{% endfor %}
+| --- |{% for p in ports %} --- |{% endfor %}
+{% for g in site.data.features %}| **{{ g.group }}** |{% for p in ports %} |{% endfor %}
+{% for f in g.items %}| {{ f.name }} |{% for p in ports %}{% assign st = f[p.id] %} {% include badge.html state=st %} |{% endfor %}
+{% endfor %}{% endfor %}

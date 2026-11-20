@@ -1,30 +1,8 @@
 {%- assign cols = site.data.hardware.columns -%}
-<div class="table-wrapper"><table class="compare-table hardware-table">
-<thead><tr><th></th>{% for c in cols %}<th class="{{ c.kind }}"><a href="{{ c.url | relative_url }}">{{ c.name }}</a></th>{% endfor %}</tr></thead>
-<tbody>
-{%- for g in site.data.hardware.rows -%}
-<tr class="group-row"><th colspan="{{ cols.size | plus: 1 }}">{{ g.group }}</th></tr>
-{%- for r in g.items -%}
-<tr><th scope="row">{{ r.name }}</th>{% for c in cols %}{% assign v = r[c.id] %}<td class="{{ c.kind }}{% if v == '?' %} unknown{% endif %}">{{ v }}</td>{% endfor %}</tr>
-{%- endfor -%}
-{%- endfor -%}
-<tr class="group-row"><th colspan="{{ cols.size | plus: 1 }}">Battery life (hours of playback)</th></tr>
-{%- assign combos = "wired|stock|Wired, stock,wired|rockbox|Wired, Rockbox,bt|stock|Bluetooth, stock,bt|rockbox|Bluetooth, Rockbox" | split: "," -%}
-{%- for combo in combos -%}
-{%- assign parts = combo | split: "|" -%}
-<tr><th scope="row">{{ parts[2] }}</th>
-{%- for c in cols -%}
-{%- assign g = site.data.battery.groups | where: "port", c.id | where: "mode", parts[0] | first -%}
-{%- assign r = nil -%}
-{%- if g -%}{%- assign r = g.runs | where: "fw", parts[1] | first -%}{%- assign st = g.runs | where: "fw", "stock" | first -%}{%- endif -%}
-{%- if r and r.pending != true -%}
-<td class="{{ c.kind }}"><b>{{ r.hours }} h</b>{% if parts[1] == "rockbox" and st.pending != true %} <span class="bat-pct">{{ r.hours | times: 100.0 | divided_by: st.hours | round }}% of stock</span>{% endif %}</td>
-{%- elsif c.kind == "failed" -%}
-<td class="failed">n/a</td>
-{%- else -%}
-<td class="{{ c.kind }} unknown">?</td>
-{%- endif -%}
-{%- endfor -%}
-</tr>
-{%- endfor -%}
-</tbody></table></div>
+|  |{% for c in cols %} [{{ c.name }}]({{ c.url | relative_url }}) |{% endfor %}
+| --- |{% for c in cols %} --- |{% endfor %}
+{% for g in site.data.hardware.rows %}| **{{ g.group }}** |{% for c in cols %} |{% endfor %}
+{% for r in g.items %}| {{ r.name }} |{% for c in cols %} {{ r[c.id] }} |{% endfor %}
+{% endfor %}{% endfor %}| **Playback hours** |{% for c in cols %} |{% endfor %}
+{% assign combos = "wired|stock|Wired, stock,wired|rockbox|Wired, Rockbox,bt|stock|Bluetooth, stock,bt|rockbox|Bluetooth, Rockbox" | split: "," %}{% for combo in combos %}{% assign parts = combo | split: "|" %}| {{ parts[2] }} |{% for c in cols %}{% assign g = site.data.battery.groups | where: "port", c.id | where: "mode", parts[0] | first %}{% assign r = nil %}{% if g %}{% assign r = g.runs | where: "fw", parts[1] | first %}{% assign st = g.runs | where: "fw", "stock" | first %}{% endif %}{% if r and r.pending != true %} {{ r.hours }} h{% if parts[1] == "rockbox" and st.pending != true %} ({{ r.hours | times: 100.0 | divided_by: st.hours | round }}%){% endif %} |{% elsif c.kind == "failed" %} n/a |{% else %} ? |{% endif %}{% endfor %}
+{% endfor %}

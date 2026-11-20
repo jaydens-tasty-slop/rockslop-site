@@ -1,0 +1,4 @@
+| Player | Status | About |
+| --- | --- | --- |
+{% for p in site.data.ports %}| [{{ p.name }}]({{ p.url | relative_url }}) | {% include badge.html state=p.state %} | {{ p.blurb }} |
+{% endfor %}
