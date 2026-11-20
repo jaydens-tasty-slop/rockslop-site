@@ -6,17 +6,12 @@ description: rockslop installs Rockbox on cheap MP3 players, and puts them back 
 ---
 
 <div class="site-hero" markdown="0">
-  <p class="eyebrow">Rockbox for cheap MP3 players</p>
   <h1>Rockbox on the cheapest MP3 players you can buy.</h1>
   <p class="deck">{% include todo.html text="One or two sentences: what rockslop is and why anyone would want it. Headline above is also filler." %}</p>
   <div class="cta-row">
-    <a class="cta" href="{{ site.releases_url }}">Download rockslop <small>latest release on GitHub →</small></a>
+    <a class="cta" href="{{ site.releases_url }}">Download rockslop <small>Latest release on GitHub</small></a>
   </div>
-  <div class="meter" aria-label="Project counts">
-    <div><b>{{ site.data.ports | where: "state", "released" | size }}</b><span>Ports released</span></div>
-    <div><b>{{ site.data.ports | where: "state", "dev" | size }}</b><span>In development</span></div>
-    <div><b>3</b><span>Triaged &amp; rejected</span></div>
-  </div>
+  <p class="tally">{{ site.data.ports | where: "state", "released" | size }} players released, {{ site.data.ports | where: "state", "dev" | size }} in development, 3 triaged and rejected.</p>
 </div>
 
 ## Supported players

@@ -17,7 +17,7 @@ permalink: /failed-ports/
 ## US212D
 {: #us212d }
 
-<span class="verdict">Rejected</span> <span class="verdict shame">Fake storage</span>
+<span class="verdict">Rejected</span> <span class="verdict">Fake storage</span>
 
 {% include todo.html text="One or two lines of colour on the player (sold as 32 GB, aluminium, Bluetooth transmitter firmware, manual says 'ATJ2127' but names the model Cb2732). Add the brand / listing if you want to name it, plus a photo." %}
 
@@ -70,7 +70,7 @@ For scale, the YP3's static RAM alone nearly fills 168 KiB before any code is lo
 ## M7
 {: #m7 }
 
-<span class="verdict" style="border-color: #9aa3b2; color: #9aa3b2;">Parked</span>
+<span class="verdict" style="border-color: #6b6b66; color: #6b6b66;">Parked</span>
 
 {% include todo.html text="Decide whether this belongs on the page at all. It is not a rejection yet: say what is still open." %}
 

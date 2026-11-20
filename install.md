@@ -6,7 +6,7 @@ permalink: /install/
 
 # Get rockslop
 
-<a class="cta" href="{{ site.releases_url }}">Download rockslop <small>latest release on GitHub →</small></a>
+<a class="cta" href="{{ site.releases_url }}">Download rockslop <small>Latest release on GitHub</small></a>
 
 {% include todo.html text="Which file to pick on the releases page: the GUI (`rockslop`) or the command line one (`rockslop-cli`), for Linux, Windows (x86-64 and arm64) and macOS. Note that Linux binaries need `chmod +x`." %}
 

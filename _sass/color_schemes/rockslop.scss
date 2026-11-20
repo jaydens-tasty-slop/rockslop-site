@@ -1,25 +1,20 @@
-// A dark, taxi-meter scheme: near-black panels, amber accents.
-// (Rockbox's Cabbie theme: black with yellow, chequered trim.)
-$color-scheme: dark;
+// Plain and light. The only taxi touches are the chequered strip and the
+// yellow call-to-action button (see _sass/custom/custom.scss).
+$color-scheme: light;
 
-$rs-amber: #ffc21a;
-$rs-amber-light: #ffd45c;
-$rs-ink: #0b0c0f;
+$body-background-color: #ffffff;
+$body-heading-color: #111111;
+$body-text-color: #2b2b2b;
+$link-color: #1c4f8a;
+$nav-child-link-color: #444444;
+$sidebar-color: #f6f6f4;
+$base-button-color: #f3f3f1;
+$btn-primary-color: #f2b705;
+$code-background-color: #f6f6f4;
+$feedback-color: #f6f6f4;
+$table-background-color: #ffffff;
+$search-background-color: #ffffff;
+$search-result-preview-color: #2b2b2b;
+$border-color: #dcdcd6;
 
-$body-background-color: #101115;
-$body-heading-color: #ffffff;
-$body-text-color: #d6d3c8;
-$link-color: $rs-amber-light;
-$nav-child-link-color: #a9a79d;
-$sidebar-color: $rs-ink;
-$base-button-color: #1b1d23;
-$btn-primary-color: $rs-amber;
-$code-background-color: #0b0c0f;
-$code-linenumber-color: #e6edf3;
-$feedback-color: $rs-ink;
-$table-background-color: #16171c;
-$search-background-color: #16171c;
-$search-result-preview-color: #d6d3c8;
-$border-color: #2a2c33;
-
-@import "./vendor/accessible-pygments/github-dark";
+@import "./vendor/accessible-pygments/github-light";
