@@ -1,0 +1,4 @@
+{%- assign posts = site.posts -%}{%- if include.limit -%}{%- assign posts = site.posts | slice: 0, include.limit -%}{%- endif -%}
+{% for post in posts %}- **[{{ post.title }}]({{ post.url | relative_url }})**, {{ post.date | date: "%-d %B %Y" }}. {{ post.description }}
+{% else %}No announcements yet.
+{% endfor %}

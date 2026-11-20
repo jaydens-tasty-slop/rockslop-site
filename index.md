@@ -17,6 +17,12 @@ description: rockslop installs Rockbox on cheap MP3 players, and puts them back 
 
 {% include todo.html text="One line pointing at the Failed ports page, and one at the feature and hardware comparisons." %}
 
+## Latest announcements
+
+{% include post-list.html limit=3 %}
+
+[All announcements]({{ '/announcements/' | relative_url }})
+
 ## How it works
 
 1. **Backup.** The whole flash is read and saved before anything is written. Never skipped.

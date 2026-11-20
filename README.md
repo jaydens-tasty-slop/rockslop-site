@@ -27,6 +27,9 @@ make help
   for the home page cards and the feature table.
 - **Comparison tables**: `_data/features.yml` and `_data/hardware.yml`.
   Hardware columns marked `kind: failed` are the rejected players.
+- **Announcements**: blog posts in `_posts/` (`YYYY-MM-DD-title.md`, with a
+  `title` and a one-line `description`). They list on `/announcements/`, the
+  home page and the Atom feed at `/feed.xml`. The welcome post is filler.
 - **Failed ports**: `failed-ports.md`.
 - **Photos**: each port page has a Photos placeholder; replace it with
   Markdown images from `assets/images/<port>/`.
