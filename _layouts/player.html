@@ -31,7 +31,8 @@ Player page template. Everything comes from the page's front matter
 {% if page.stock_firmware %}| Stock firmware | {{ page.stock_firmware }} |
 {% endif %}{% assign sa = page.sold_as %}| Manufacturer | {% if sa.maker %}[{{ sa.maker.name }}]({{ sa.maker.url }}){% else %}Unknown{% endif %} |
 | Also known as | {% for n in sa.names %}{% if n.url %}[{{ n.name }}]({{ n.url }}){% else %}{{ n.name }}{% endif %}{% if n.note %} ({{ n.note }}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if sa.note %}{% if sa.names %}. {% endif %}{{ sa.note }}{% endif %}{% unless sa.names or sa.note %}?{% endunless %} |
-| Where to buy | {% for b in page.buy %}[{{ b.store }}]({{ b.url }}){% if b.price %}: {{ b.price }}{% endif %}{% if b.note %}. {{ b.note }}{% endif %}{% unless forloop.last %}<br>{% endunless %}{% else %}?{% endfor %} |
+{% if sa.ids %}| Identifiers | {{ sa.ids | join: ", " }} |
+{% endif %}| Where to buy | {% for b in page.buy %}[{{ b.store }}]({{ b.url }}){% if b.price %}: {{ b.price }}{% endif %}{% if b.note %}. {{ b.note }}{% endif %}{% unless forloop.last %}<br>{% endunless %}{% else %}?{% endfor %} |
 
 ## Photos
 
