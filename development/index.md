@@ -29,3 +29,18 @@ The [auto-rockbox](https://github.com/jaydens-tasty-slop/auto-rockbox) project c
 | [rockbox](https://github.com/jaydens-tasty-slop/rockbox) | Our fork of the Rockbox source, with the player ports. |
 | [auto-rockbox](https://github.com/jaydens-tasty-slop/auto-rockbox) | The tooling for bringing up and testing new players (`arb`). |
 | [rockslop-site](https://github.com/jaydens-tasty-slop/rockslop-site) | This website. |
+
+## Roadmap
+
+Things I'd like to do
+
+* Bluetooth
+  * Sink plugin, so your player pairs to your phone and sends audio out headphone 
+    jack
+  * Better codecs (other than SBC), aptX, aptX HD, AAC, whatever fits
+  * Bluetooth file transfer
+  * Bluetooth LE. Claude claims there is unused LE support in the stock firmware
+  * Multiplayer games. Why not - seems fun!
+  * Rockie Talkie: pair two rockslop devices together like walkie talkies
+* Native podcast support + companion PC app to sync them
+* Many touch improvements
