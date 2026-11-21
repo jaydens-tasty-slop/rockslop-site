@@ -8,25 +8,44 @@ permalink: /install/
 
 [Download rockslop]({{ site.releases_url }}){: .btn .btn-primary .fs-5 }
 
-{% include todo.html text="Which file to pick on the releases page: the GUI (`rockslop`) or the command line one (`rockslop-cli`), for Linux, Windows (x86-64 and arm64) and macOS. Note that Linux binaries need `chmod +x`." %}
+## 0. Before you flash
 
-## Before you flash
+```
+/*
+* Your warranty will be VOID after installing a custom ROM.
+*
+* Get notified yourself that I am not responsible for bricked devices, dead SD cards,
+* thermonuclear war, or you getting fired because the alarm app failed.
+* Please do some research if you have any concerns about features included in this ROM
+* before flashing it!
+* YOU are choosing to make these modifications,
+* and if you point the finger at me for messing up your device,
+* I will laugh at you.
+*/
+```
 
-{% include todo.html text="The waiver, in your words: the flasher's first run asks you to sign it (can brick, voids warranty, don't return a flashed player)." %}
+## 1. Identify your player
 
-## Put the player in download mode
+See [supported players]({{ '/players/' | relative_url }}) to see if your player is supported.
 
-| Player | How |
-| --- | --- |
-| [YP3]({{ '/players/yp3/' | relative_url }}) | Unplug it and power it off (hold the centre key). Hold **Down** while connecting USB, and let go once rockslop finds it. Or hold Down and tap **RESET**. |
-| [TS17]({{ '/players/ts17/' | relative_url }}) | Connect it switched on; stock is kicked into download mode automatically. If Rockbox is already running or it won't start: unplug, switch off, hold **Down** (or **Power**) while connecting and keep holding about 3 s. The screen stays dark. |
+If it isn't, check [Rockbox's](https://www.rockbox.org/) list.
 
-{% include todo.html text="Screenshots of the flasher, step by step." %}
+## 2. [Download rockslop-flasher]({{ site.releases_url }}){: .btn .btn-primary .fs-5 }
 
-## Going back to stock
+MacOS, Linux, and Windows are supported.
 
-{% include todo.html text="Return to stock: rockslop keeps a backup of your player's original flash and can write it back at any time. Say where the backups live." %}
+## 3. Insert a high quality SD card
 
-## Something went wrong
+The YP3 particularly needs a fast SD card since there isn't RAM for large buffers. Use one with good random 4K read speeds!
 
-{% include todo.html text="Recovery steps, where to ask for help (issue tracker link), what to include in a report." %}
+## 4. Follow on screen instructions
+
+rockslop-flasher will walk you through it
+rockslop-flasher can return you to stock whenever you want
+
+
+## 5. Rock out ;)
+
+## Something went wrong!
+
+If something isn't working, please open an issue on [GitHub](https://github.com/jaydens-tasty-slop/rockbox/issues)! Don't bother the rockbox folks, since these are unofficial builds.

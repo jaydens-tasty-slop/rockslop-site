@@ -6,8 +6,6 @@ permalink: /announcements/
 
 # Announcements
 
-New releases, newly supported players and the occasional rejection. [Subscribe with the feed]({{ '/feed.xml' | relative_url }}).
-
-{% include todo.html text="One line on how often to expect posts, if you want one." %}
+Project announcements go here. [Subscribe with the feed]({{ '/feed.xml' | relative_url }}).
 
 {% include post-list.html %}

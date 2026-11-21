@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Rockslop Features
 nav_order: 4
 has_children: true
 has_toc: false
@@ -8,38 +8,37 @@ permalink: /features/
 
 # Features
 
-{% include todo.html text="One paragraph: what rockslop adds on top of stock Rockbox and on top of each player's own firmware. This page lists only the new things; Rockbox's own plugins are not repeated." %}
+Rockslop adds player support, as well as a collection of themes for each player. I also lost my mind and had an LLM port over 300 games to rockbox. Enjoy!
 
-## Core features
+## New Core features
 
-- **Bluetooth audio.** A2DP source with the bitrate adapted to the link, AVRCP (volume and play/pause), auto-reconnect, headset battery level, and a Settings > Bluetooth menu.
-- **Bluetooth gamepads and keyboards.** A DualShock 4 or a keyboard can act as the player's buttons.
+- **Bluetooth audio.** volume and play/pause,  headset battery level. Under Settings > Bluetooth menu.
+  - **Bluetooth gamepads and keyboards.** Pure AI psychosis, I wanted to see if the agent owned the bluetooth stack enough to add PS4 controller support. It did! A DualShock 4/generic BT controller (not LE) or a keyboard can be used
 - **Better FM radio.** Enhanced RDS (programme type, call letters, clock time, RadioText Plus) and FM recording to WAV.
-- **Charge limit.** A setting from 100 % down to 50 %, with battery monitoring and a charge guard.
-- **Low-memory database.** Browse your library by tags during playback, with a progress count while it builds.
-- **Playback in 512 KiB of RAM.** Decoders and plugins load on demand from the SD card; the common codecs (MP3, AAC, WMA, Vorbis, Opus) run straight from flash.
+- **Charge limit.** A setting from 100 % down to 50 %, with battery monitoring and a charge guard 
+- **Touchscreen.** Lots of rewrites around touchscreen players to make touch a first class experience under Rockbox.
 
 ## Original plugins
 
-Written for this port.
+My own wacky ideas.
 
 {% for p in site.data.plugins.native %}{% if p.origin == "original" %}### {{ p.name }}
 
 {{ p.kind }}. {{ p.what }}{% if p.credit != "" %} {{ p.credit }}{% endif %}{% if p.links.size > 0 %} Credits: {% for l in p.links %}[{{ l.text }}]({{ l.url }}){% unless forloop.last %}, {% endunless %}{% endfor %}.{% endif %}
 
 {% endif %}{% endfor %}
-## Ports of single games and apps
+## One-off ports
 
-Someone else's project, brought to the player one at a time. Each links to where we got it.
+Cool projects I found to add to Rockbox. Minecraft demake included!
 
 {% for p in site.data.plugins.native %}{% if p.origin == "port" %}### {{ p.name }}
 
 {{ p.kind }}. {{ p.what }}{% if p.credit != "" %} {{ p.credit }}{% endif %}{% if p.links.size > 0 %} Upstream: {% for l in p.links %}[{{ l.text }}]({{ l.url }}){% unless forloop.last %}, {% endunless %}{% endfor %}.{% endif %}
 
 {% endif %}{% endfor %}
-## Port families
+## Other Handhelds
 
-Whole libraries of games from other handhelds, each run by a compatibility layer. Every game is its own plugin and keeps its upstream licence. The pages below list every one, with where we got it.
+Most of the new plugins are ports from other open source handheld projects. Warning: very poorly tested! Please report bugs on GitHub.
 
 {% for f in site.data.plugin_families %}{% assign games = site.data.plugins[f.id] %}### {{ f.title }}
 

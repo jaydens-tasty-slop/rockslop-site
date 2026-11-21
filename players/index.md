@@ -13,17 +13,22 @@ permalink: /players/
 
 Some players that I tried that couldn't run rockbox are under [Failed Ports]({{ '/players/failed/' | relative_url }}).
 
-## Feature comparison
+## OPEN CHALLENGE: Give me a player and I'll sic an LLM on it
 
-{% include todo.html text="One sentence on how to read this table. The first sections are Rockbox's own features: a red Missing or yellow Partial there is something a normal Rockbox has that this build gives up (mostly to fit in RAM). Per-feature notes are on each player's page." %}
+If you give me a player that
+
+1. We can get into download mode or has firmware dumps and a way to flash them, and
+2. Has a documented boot ROM
+
+Reach out at rockslop@jayd.ml and maybe I'll try and add support. No promises!
+
+## Feature comparison
 
 {% include feature-table.html %}
 
 {% include legend.html %}
 
 ## Hardware comparison
-
-{% include todo.html text="One sentence on what the table is for." %}
 
 {% include hardware-table.html %}
 

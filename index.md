@@ -2,36 +2,43 @@
 title: Home
 nav_order: 1
 permalink: /
-description: e Rockbox ports to cheap MP3 players
+description: "Rockslop: Unofficial Rockbox Builds for Cheap MP3 Players"
 ---
 
-# Rockbox on the cheapest MP3 players you can buy
+# rockslop
+## Unofficial Rockbox Builds for Cheap MP3 Players
 
-{% include todo.html text="One or two sentences: what rockslop is and why anyone would want it. The headline above is filler too." %}
+Unofficial [Rockbox](https://www.rockbox.org/) builds for cheap MP3 players you can buy new right now!
+
+Rockbox is open source custom firmware that turns your cheap MP3 player from something painful to something delightful to use. And these builds have like 300 games too. See [Why Rockbox](https://www.rockbox.org/wiki/WhyRockbox)
 
 [Download rockslop]({{ site.releases_url }}){: .btn .btn-primary .fs-5 }
 
-## Supported players
+> **Note:** Rockbox is an old, mature project, but these ports are 100% vibecoded. I haven't looked at the code, but most targets have hundreds of hours of bench testing and work well.
+
+### rockslop features over Rockbox
+
+* Bluetooth support! 
+* Over 300 new plugins! (mostly ports)
+* Run a language model on your MP3 player!
+
+### Supported players
 
 {% include players-table.html %}
 
-{% include todo.html text="One line pointing at the Failed Ports page, and one at the feature and hardware comparisons." %}
-
-## Latest announcements
+### Latest announcements
 
 {% include post-list.html limit=3 %}
 
 [All announcements]({{ '/announcements/' | relative_url }})
 
-## How it works
+### How to install
 
-1. **Backup.** The whole flash is read and saved before anything is written. Never skipped.
-2. **Flash.** Only the sectors that differ are written, and each one is checksummed on the device.
-3. **Rockbox.** The player reboots into Rockbox and rockslop syncs the files to the microSD card.
+1. Confirm your player is supported, see [supported players]({{ '/players/' | relative_url }})
+2. [Download rockslop]({{ site.releases_url }}){: .btn .btn-primary .fs-5 }
+3. Insert a high quality SD card
+4. Follow on screen instructions
+5. Rock out ;)
 
-{% include todo.html text="Two or three sentences about returning to stock at any time, and what you get on top of vanilla Rockbox (Bluetooth, FM with RDS, hundreds of plugins). Pull the highlights from the YP3 changelog." %}
+rockslop-flasher can return you to stock whenever you want
 
-> **This can brick your player, and it voids your warranty.** Rockbox on these players is unofficial and experimental.
-{: .warning }
-
-{% include todo.html text="Rewrite the waiver summary in your own words; the real waiver is in the flasher." %}

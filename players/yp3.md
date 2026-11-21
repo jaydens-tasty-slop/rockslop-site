@@ -8,7 +8,7 @@ permalink: /players/yp3/
 # --- Identity ---
 player: yp3
 state: released          # a key of _data/states.yml
-blurb: "SmartLink SL6801. 128x160, D-pad, Bluetooth, FM."
+blurb: "$9 mp3 player with bluetooth, running rockbox! Best budget option"
 stock_firmware: "?"
 
 intro: |-
