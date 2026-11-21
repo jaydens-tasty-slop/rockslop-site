@@ -18,8 +18,8 @@ permalink: /install/
 
 | Player | How |
 | --- | --- |
-| [YP3]({{ '/ports/yp3/' | relative_url }}) | Unplug it and power it off (hold the centre key). Hold **Down** while connecting USB, and let go once rockslop finds it. Or hold Down and tap **RESET**. |
-| [TS17]({{ '/ports/ts17/' | relative_url }}) | Connect it switched on; stock is kicked into download mode automatically. If Rockbox is already running or it won't start: unplug, switch off, hold **Down** (or **Power**) while connecting and keep holding about 3 s. The screen stays dark. |
+| [YP3]({{ '/players/yp3/' | relative_url }}) | Unplug it and power it off (hold the centre key). Hold **Down** while connecting USB, and let go once rockslop finds it. Or hold Down and tap **RESET**. |
+| [TS17]({{ '/players/ts17/' | relative_url }}) | Connect it switched on; stock is kicked into download mode automatically. If Rockbox is already running or it won't start: unplug, switch off, hold **Down** (or **Power**) while connecting and keep holding about 3 s. The screen stays dark. |
 
 {% include todo.html text="Screenshots of the flasher, step by step." %}
 

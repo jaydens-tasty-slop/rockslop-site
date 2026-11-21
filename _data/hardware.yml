@@ -2,12 +2,12 @@
 # Unknown values are "?". Draft from the repo's docs/hardware.md and
 # new-targets/*.md (2026-11-19).
 columns:
-  - { id: yp3, name: YP3, url: /ports/yp3/, kind: ported }
-  - { id: ts17, name: TS17, url: /ports/ts17/, kind: ported }
-  - { id: ts28, name: TS28, url: /ports/ts28/, kind: ported }
-  - { id: us212d, name: US212D, url: /failed-ports/#us212d, kind: failed }
-  - { id: s5, name: S5, url: /failed-ports/#s5, kind: failed }
-  - { id: m7, name: M7, url: /failed-ports/#m7, kind: failed }
+  - { id: yp3, name: YP3, url: /players/yp3/, kind: ported }
+  - { id: ts17, name: TS17, url: /players/ts17/, kind: ported }
+  - { id: ts28, name: TS28, url: /players/ts28/, kind: ported }
+  - { id: us212d, name: US212D, url: /players/failed/us212d/, kind: failed }
+  - { id: s5, name: S5, url: /players/failed/s5/, kind: failed }
+  - { id: m7, name: M7, url: /players/failed/m7/, kind: failed }
 rows:
   - group: Processor
     items:

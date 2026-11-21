@@ -1,6 +1,6 @@
-{%- assign ports = site.data.ports -%}
-| Feature |{% for p in ports %} [{{ p.name }}]({{ p.url | relative_url }}) |{% endfor %}
+{%- assign ports = site.pages | where: "layout", "player" | where_exp: "p", "p.failed != true" | sort: "nav_order" -%}
+| Feature |{% for p in ports %} [{{ p.title }}]({{ p.url | relative_url }}) |{% endfor %}
 | --- |{% for p in ports %} --- |{% endfor %}
 {% for g in site.data.features %}| **{{ g.group }}** |{% for p in ports %} |{% endfor %}
-{% for f in g.items %}| {{ f.name }} |{% for p in ports %}{% assign st = f[p.id] %} {% include badge.html state=st %} |{% endfor %}
+{% for f in g.items %}| {{ f.name }} |{% for p in ports %}{% assign st = f[p.player] %} {% include badge.html state=st %} |{% endfor %}
 {% endfor %}{% endfor %}

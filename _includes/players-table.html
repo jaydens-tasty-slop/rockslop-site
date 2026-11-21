@@ -1,4 +1,6 @@
-| Player | Status | About |
-| --- | --- | --- |
-{% for p in site.data.ports %}| [{{ p.name }}]({{ p.url | relative_url }}) | {% include badge.html state=p.state %} | {{ p.blurb }} |
+{%- assign all = site.pages | where: "layout", "player" | sort: "nav_order" -%}
+{%- if include.failed -%}{%- assign list = all | where: "failed", true -%}{%- else -%}{%- assign list = all | where_exp: "p", "p.failed != true" -%}{%- endif -%}
+| Player | {% if include.failed %}Chip | Verdict | Why{% else %}Status | About{% endif %} |
+| --- | --- | --- |{% if include.failed %} --- |{% endif %}
+{% for p in list %}| [{{ p.title }}]({{ p.url | relative_url }}) | {% if include.failed %}{{ p.chip }} | {% endif %}{% include badge.html state=p.state %} | {{ p.blurb }} |
 {% endfor %}

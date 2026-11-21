@@ -1,0 +1,71 @@
+---
+layout: default
+---
+{%- comment -%}
+Player page template. Everything comes from the page's front matter
+(see players/yp3.md for the full list of keys); anything missing becomes a
+"Write me" box. Markdown in `content` is rendered between the two halves.
+{%- endcomment -%}
+{%- assign id = page.player -%}
+{%- assign photos_todo = "Photos go here: front powered off, front running Rockbox, back, and in hand for scale." -%}
+{%- capture top -%}
+# {{ page.title }}
+
+{% if page.intro %}{{ page.intro }}{% else %}{% include todo.html text="Two or three sentences: what this player is, where it's sold, roughly what it costs, who it suits. Add the sold-as names and brands people will search for." %}{% endif %}
+
+{% unless page.failed %}[Download rockslop]({{ site.releases_url }}){: .btn .btn-primary }
+
+{% endunless %}## At a glance
+
+| Spec | Detail |
+| --- | --- |
+| {% if page.failed %}Verdict{% else %}Status{% endif %} | {% include badge.html state=page.state %} |
+{% for s in page.specs %}| {{ s[0] }} | {{ s[1] }} |
+{% endfor %}
+## Photos
+
+{% if page.photos %}{% for p in page.photos %}![{{ p.alt }}]({{ p.src | relative_url }})
+{% endfor %}{% else %}{% include todo.html text=photos_todo %}{% endif %}
+{%- endcapture -%}
+{{ top | markdownify }}
+{%- if page.failed -%}
+{{ content }}
+{%- capture bottom -%}
+## Why it failed
+
+| Item | Detail |
+| --- | --- |
+{% for w in page.why %}| **{{ w[0] }}** | {{ w[1] }} |
+{% endfor %}
+{%- endcapture -%}
+{{ bottom | markdownify }}
+{%- else -%}
+{%- assign runs = site.data.battery.groups | where: "port", id | size -%}
+{%- capture bottom -%}
+## Status
+
+{% include status-table.html port=id %}
+
+{% include legend.html %}
+
+## Battery life
+
+{% if runs > 0 %}{% include battery-table.html port=id %}
+
+{% include todo.html text="How it was measured, in a sentence (same files, level-matched, played from full to empty)." %}{% elsif page.battery_note %}{{ page.battery_note }}{% else %}{% include todo.html text="Not measured yet. Fill in once there are stock and Rockbox runs." %}{% endif %}
+
+## Hardware
+
+{% if page.hardware %}{{ page.hardware }}{% else %}{% include todo.html text="What's inside in plain words (the table above is the short version). Link to the Hardware comparison page." %}{% endif %}
+
+## Install notes
+
+{% if page.install %}{{ page.install }}{% else %}{% include todo.html text="Anything specific to this player: how to reach download mode, what to expect on first boot, known quirks." %}{% endif %}
+
+## Known problems
+
+{% if page.problems %}{{ page.problems }}{% else %}{% include todo.html text="Open issues for this player, honestly." %}{% endif %}
+{%- endcapture -%}
+{{ bottom | markdownify }}
+{{ content }}
+{%- endif -%}

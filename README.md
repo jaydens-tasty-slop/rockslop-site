@@ -22,17 +22,23 @@ make help
 - **Prose**: all of it is filler. Every `{% include todo.html text="..." %}`
   renders a dashed "WRITE ME" box saying what belongs there; delete the
   include when you've written the real text.
-- **Ports**: `ports/<id>.md`. Status tables come from `_data/status/<id>.yml`
-  (states are defined in `_data/states.yml`). Add a port to `_data/ports.yml`
-  for the home page cards and the feature table.
+- **Players**: one file each in `players/<id>.md`, rendered by
+  `_layouts/player.html`. The file is only front matter (state, blurb, specs,
+  and optional `intro`, `hardware`, `install`, `problems`, `photos`); missing
+  prose becomes a "Write me" box. Status tables come from
+  `_data/status/<id>.yml`, battery runs from `_data/battery.yml` (both keyed
+  by the `player:` field). A new player is one new file, and it shows up in
+  the nav, the players table and the feature table (add its column in
+  `_data/features.yml`). States are defined in `_data/states.yml`.
 - **Comparison tables**: `_data/features.yml` and `_data/hardware.yml`.
   Hardware columns marked `kind: failed` are the rejected players.
 - **Announcements**: blog posts in `_posts/` (`YYYY-MM-DD-title.md`, with a
   `title` and a one-line `description`). They list on `/announcements/`, the
   home page and the Atom feed at `/feed.xml`. The welcome post is filler.
-- **Failed ports**: `failed-ports.md`.
-- **Photos**: each port page has a Photos placeholder; replace it with
-  Markdown images from `assets/images/<port>/`.
+- **Failed Ports**: same template, in `players/failed/<id>.md` with
+  `failed: true`, a `chip`, and a `why:` table. Extra prose goes in the body.
+- **Photos**: each player page has a Photos placeholder; set `photos:` in its
+  front matter with images from `assets/images/<id>/`.
 - **The call to action**: `releases_url` in `_config.yml`, used by every
   button.
 

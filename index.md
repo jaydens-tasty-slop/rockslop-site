@@ -15,7 +15,7 @@ description: rockslop installs Rockbox on cheap MP3 players, and puts them back 
 
 {% include players-table.html %}
 
-{% include todo.html text="One line pointing at the Failed ports page, and one at the feature and hardware comparisons." %}
+{% include todo.html text="One line pointing at the Failed Ports page, and one at the feature and hardware comparisons." %}
 
 ## Latest announcements
 
