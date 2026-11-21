@@ -5,7 +5,7 @@ $checker: repeating-conic-gradient(#ffc21a 0 25%, #0b0c0f 0 50%) 0 0 / 8px 8px;
 
 body::before {
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0 0 auto 0;
   height: 4px;
   background: $checker;
