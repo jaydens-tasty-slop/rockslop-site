@@ -3,5 +3,5 @@
 | Feature |{% for p in ported_players %} [{{ p.title }}]({{ p.url | relative_url }}) |{% endfor %}
 | --- |{% for p in ported_players %} --- |{% endfor %}
 {% for g in site.data.features %}| **{{ g.group }}** |{% for p in ported_players %} |{% endfor %}
-{% for name in g.items %}| {{ name }} |{% for p in ported_players %}{% assign v = p.features[name] %}{% if v.state %}{% assign st = v.state %}{% assign fnote = v.note %}{% else %}{% assign st = v | default: "unknown" %}{% assign fnote = nil %}{% endif %} {% include badge.html state=st %}{% if fnote %}<br><small>{{ fnote }}</small>{% endif %} |{% endfor %}
+{% for name in g.items %}| {{ name }} |{% for p in ported_players %}{% assign v = p.features[name] %}{% if v.state %}{% assign st = v.state %}{% assign fnote = v.note %}{% else %}{% assign st = v | default: "unknown" %}{% assign fnote = nil %}{% endif %} {% if fnote %}<span class="has-note" title="{{ fnote | escape }}">{% include badge.html state=st %}</span>{% else %}{% include badge.html state=st %}{% endif %} |{% endfor %}
 {% endfor %}{% endfor %}
