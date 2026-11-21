@@ -5,6 +5,8 @@
 
 | Mode | USB ID | Shows up as |
 | --- | --- | --- |
-{% for u in page.download.usb %}| {{ u.mode }} | `{{ u.id }}` | {{ u.name }} |
-{% endfor %}
+{% if page.download.usb.stock %}| Stock firmware | `{{ page.download.usb.stock.id }}` | {{ page.download.usb.stock.name }} |
+{% endif %}{% if page.download.usb.download %}| Download mode (boot ROM) | `{{ page.download.usb.download.id }}` | {{ page.download.usb.download.name }} |
+{% endif %}{% if page.download.usb.rockbox %}| Rockbox | `{{ page.download.usb.rockbox.id }}` | {{ page.download.usb.rockbox.name }} |
+{% endif %}
 {% endif %}

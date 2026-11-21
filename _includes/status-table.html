@@ -1,6 +1,5 @@
-{%- assign rows = site.data.status[include.port] -%}{%- assign group = "" -%}
 | Feature | Status | Notes |
 | --- | --- | --- |
-{% for r in rows %}{% if r.group != group %}{% assign group = r.group %}| **{{ group }}** | | |
-{% endif %}| {{ r.name }} | {% include badge.html state=r.state %} | {{ r.note }} |
-{% endfor %}
+{% for g in page.status %}| **{{ g[0] }}** | | |
+{% for r in g[1] %}| {{ r.name }} | {% include badge.html state=r.state %} | {{ r.note }} |
+{% endfor %}{% endfor %}

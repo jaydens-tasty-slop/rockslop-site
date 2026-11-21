@@ -1,43 +1,13 @@
-# Hardware comparison. `kind: ported` columns first, then the rejected ones.
-# Unknown values are "?". Draft from the repo's docs/hardware.md and
-# new-targets/*.md (2026-11-19).
-columns:
-  - { id: yp3, name: YP3, url: /players/yp3/, kind: ported }
-  - { id: ts17, name: TS17, url: /players/ts17/, kind: ported }
-  - { id: ts28, name: TS28, url: /players/ts28/, kind: ported }
-  - { id: us212d, name: US212D, url: /players/failed/us212d/, kind: failed }
-  - { id: s5, name: S5, url: /players/failed/s5/, kind: failed }
-  - { id: m7, name: M7, url: /players/failed/m7/, kind: failed }
-rows:
-  - group: Processor
-    items:
-      - { name: SoC, yp3: "SmartLink SL6801", ts17: "Actions Lark (0x2351)", ts28: "Actions Lark (0x2351)", us212d: "Actions ATJ2127 (0x10d6)", s5: "Actions ATJ2157 (0x3051)", m7: "SmartLink SL6806" }
-      - { name: CPU, yp3: "2x Cortex-M4, 64 MHz normal / 192 MHz max", ts17: "Cortex-M4F, 96 MHz normal / 128 MHz max", ts28: "Cortex-M4F, 96 MHz (boost: ?)", us212d: "MIPS32 M4K, up to 186 MHz", s5: "Cortex-M4F (clock: ?)", m7: "Cortex-M4 (clock: ?)" }
-  - group: Memory
-    items:
-      - { name: RAM, yp3: "512 KiB SRAM", ts17: "~505 KiB SRAM + 4 MiB PSRAM", ts28: "112 KiB SRAM + PSRAM (size unconfirmed)", us212d: "168 KiB SRAM", s5: "288 KiB SRAM", m7: "1 MiB SRAM" }
-      - { name: Code storage, yp3: "2 MiB SPI NOR, execute in place", ts17: "4 MiB SPI NOR, execute in place", ts28: "4 MiB SPI NOR, execute in place", us212d: "NAND only", s5: "NAND only", m7: "2-4 MiB SPI NOR" }
-      - { name: Execute in place (XIP), yp3: "Yes, uncached: hot code copied to SRAM", ts17: "Yes, through a 32 KiB cache", ts28: "Yes, through a 32 KiB cache", us212d: "No (NAND)", s5: "No (NAND)", m7: "? (SPI NOR, unconfirmed)" }
-      - { name: Music storage, yp3: "microSD", ts17: "microSD", ts28: "microSD", us212d: "None. Sold as 32 GB: 4 GiB NAND", s5: "32 GB NAND (genuine) + SD slot", m7: "?" }
-  - group: Display & input
-    items:
-      - { name: Display, yp3: "128x160, GC9106", ts17: "128x160, ST7735-type", ts28: "240x320, NV3030B", us212d: "?", s5: "128x160", m7: "?" }
-      - { name: Touch, yp3: "No", ts17: "No", ts28: "Yes (FT5x06-type)", us212d: "Capacitive keys", s5: "Yes", m7: "Capacitive keys" }
-      - { name: Buttons, yp3: "D-pad + centre, reset pinhole", ts17: "8 keys", ts28: "5 side keys + power", us212d: "2 side keys + power switch", s5: "3 side keys", m7: "Power, vol +/-" }
-  - group: Wireless & audio
-    items:
-      - { name: Bluetooth, yp3: "Yes", ts17: "Yes", ts28: "Yes", us212d: "Yes", s5: "Yes", m7: "Yes" }
-      - { name: FM radio, yp3: "RDA5807", ts17: "RDA5807", ts28: "RDA5807", us212d: "Yes", s5: "Yes", m7: "Yes" }
-      - { name: Microphone, yp3: "On the board, no port in the case", ts17: "Yes", ts28: "Yes", us212d: "Yes", s5: "Yes", m7: "Yes" }
-      - { name: Speaker, yp3: "Yes (mono)", ts17: "No", ts28: "Yes", us212d: "Yes", s5: "?", m7: "Yes" }
-  - group: Physical
-    items:
-      - { name: USB, yp3: "USB-C", ts17: "USB-C", ts28: "USB-C", us212d: "USB-C", s5: "micro-USB", m7: "USB-C" }
-      - { name: Battery, yp3: "?", ts17: "?", ts28: "?", us212d: "?", s5: "330 mAh", m7: "260 mAh" }
-      - { name: Case, yp3: "?", ts17: "?", ts28: "Plastic", us212d: "Aluminium", s5: "Plastic, clip", m7: "Aluminium" }
-  - group: Download mode & USB IDs
-    items:
-      - { name: Enter download mode, yp3: "Hold Down + plug in USB (or Down + RESET)", ts17: "Hold Power + plug in USB; rescue stub: Down", ts28: "Hold Power + plug in USB; rescue stub: Vol+", us212d: "Power + ScreenSave (unconfirmed)", s5: "Power + USB", m7: "Power + Vol Down + USB" }
-      - { name: "USB ID, stock", yp3: "`301a:2801`", ts17: "`10d6:b00b`", ts28: "`10d6:b00b`", us212d: "`10d6:1101`", s5: "`10d6:1101`", m7: "`301a:2800`" }
-      - { name: "USB ID, download mode", yp3: "`301a:2800`", ts17: "`10d6:10d6`", ts28: "`10d6:10d6`", us212d: "`10d6:10d6`", s5: "`10d6:10d6`", m7: "`301a:2800`" }
-      - { name: "USB ID, Rockbox", yp3: "`1209:0001`", ts17: "`1209:0002`", ts28: "`1209:0003`", us212d: "n/a", s5: "n/a", m7: "n/a" }
+# Hardware comparison rows, in order. Values live in each player's file
+# (players/<id>.md, `hardware:`). The download-mode and playback-hours
+# rows are generated from `download:` and `battery:`.
+- group: "Processor"
+  rows: ["SoC", "CPU"]
+- group: "Memory"
+  rows: ["RAM", "Code storage", "Execute in place (XIP)", "Music storage"]
+- group: "Display & input"
+  rows: ["Display", "Touch", "Buttons"]
+- group: "Wireless & audio"
+  rows: ["Bluetooth", "FM radio", "Microphone", "Speaker"]
+- group: "Physical"
+  rows: ["USB", "Battery", "Case"]

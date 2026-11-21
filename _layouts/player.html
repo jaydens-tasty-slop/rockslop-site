@@ -3,7 +3,7 @@ layout: default
 ---
 {%- comment -%}
 Player page template. Everything comes from the page's front matter
-(see players/yp3.md for the full list of keys); anything missing becomes a
+(see players/yp3.md, which documents every key); anything missing becomes a
 "Write me" box. Markdown in `content` is rendered between the two halves.
 {%- endcomment -%}
 {%- assign id = page.player -%}
@@ -20,8 +20,14 @@ Player page template. Everything comes from the page's front matter
 | Spec | Detail |
 | --- | --- |
 | {% if page.failed %}Verdict{% else %}Status{% endif %} | {% include badge.html state=page.state %} |
-{% for s in page.specs %}| {{ s[0] }} | {{ s[1] }} |
-{% endfor %}
+| SoC | {{ page.hardware["Processor"]["SoC"] }} |
+| CPU | {{ page.hardware["Processor"]["CPU"] }} |
+| RAM | {{ page.hardware["Memory"]["RAM"] }} |
+| Code storage | {{ page.hardware["Memory"]["Code storage"] }} |
+| XIP | {{ page.hardware["Memory"]["Execute in place (XIP)"] }} |
+| Display | {{ page.hardware["Display & input"]["Display"] }} |
+{% if page.stock_firmware %}| Stock firmware | {{ page.stock_firmware }} |
+{% endif %}
 ## Photos
 
 {% if page.photos %}{% for p in page.photos %}![{{ p.alt }}]({{ p.src | relative_url }})
@@ -41,23 +47,23 @@ Player page template. Everything comes from the page's front matter
 {%- endcapture -%}
 {{ bottom | markdownify }}
 {%- else -%}
-{%- assign runs = site.data.battery.groups | where: "port", id | size -%}
+{%- assign runs = page.battery | size -%}
 {%- capture bottom -%}
 ## Status
 
-{% include status-table.html port=id %}
+{% include status-table.html %}
 
 {% include legend.html %}
 
 ## Battery life
 
-{% if runs > 0 %}{% include battery-table.html port=id %}
+{% if runs > 0 %}{% include battery-table.html %}
 
 {% include todo.html text="How it was measured, in a sentence (same files, level-matched, played from full to empty)." %}{% elsif page.battery_note %}{{ page.battery_note }}{% else %}{% include todo.html text="Not measured yet. Fill in once there are stock and Rockbox runs." %}{% endif %}
 
 ## Hardware
 
-{% if page.hardware %}{{ page.hardware }}{% else %}{% include todo.html text="What's inside in plain words (the table above is the short version). Link to the Hardware comparison page." %}{% endif %}
+{% if page.hardware_notes %}{{ page.hardware_notes }}{% else %}{% include todo.html text="What's inside in plain words (the table above is the short version). Link to the Hardware comparison page." %}{% endif %}
 
 {% include player-modes.html %}
 ## Install notes

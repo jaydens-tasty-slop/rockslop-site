@@ -22,21 +22,20 @@ make help
 - **Prose**: all of it is filler. Every `{% include todo.html text="..." %}`
   renders a dashed "WRITE ME" box saying what belongs there; delete the
   include when you've written the real text.
-- **Players**: one file each in `players/<id>.md`, rendered by
-  `_layouts/player.html`. The file is only front matter (state, blurb, specs,
-  and optional `intro`, `hardware`, `install`, `problems`, `photos`); missing
-  prose becomes a "Write me" box. Status tables come from
-  `_data/status/<id>.yml`, battery runs from `_data/battery.yml` (both keyed
-  by the `player:` field). A new player is one new file, and it shows up in
-  the nav, the players table and the feature table (add its column in
-  `_data/features.yml`). States are defined in `_data/states.yml`.
-- **Comparison tables**: `_data/features.yml` and `_data/hardware.yml`.
-  Hardware columns marked `kind: failed` are the rejected players.
+- **Players**: one file each, `players/<id>.md`, and that file is the single
+  place for everything about the player: identity, prose, hardware values,
+  download mode and USB IDs, battery runs, feature states and the status
+  table. `_layouts/player.html` renders the page from it, and the comparison
+  tables read the same files. Missing prose becomes a "Write me" box. To add
+  a player, copy `players/yp3.md`. (Failed players live in
+  `players/failed/` with `failed: true`, a `chip` and a `why:` table; extra
+  prose goes in the body.)
+- **Comparison tables**: `_data/hardware.yml` and `_data/features.yml` hold
+  only the row names and their order. The values are in each player's file.
+  States are defined in `_data/states.yml`.
 - **Announcements**: blog posts in `_posts/` (`YYYY-MM-DD-title.md`, with a
   `title` and a one-line `description`). They list on `/announcements/`, the
   home page and the Atom feed at `/feed.xml`. The welcome post is filler.
-- **Failed Ports**: same template, in `players/failed/<id>.md` with
-  `failed: true`, a `chip`, and a `why:` table. Extra prose goes in the body.
 - **Photos**: each player page has a Photos placeholder; set `photos:` in its
   front matter with images from `assets/images/<id>/`.
 - **The call to action**: `releases_url` in `_config.yml`, used by every

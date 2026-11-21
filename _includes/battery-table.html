@@ -1,5 +1,4 @@
-{%- assign groups = site.data.battery.groups | where: "port", include.port -%}
 | Playback | Stock | Rockbox | Rockbox vs stock |
 | --- | --- | --- | --- |
-{% for g in groups %}{% assign s = g.runs | where: "fw", "stock" | first %}{% assign r = g.runs | where: "fw", "rockbox" | first %}| {{ g.title }} | {% if s.pending %}?{% else %}{{ s.hours }} h{% endif %} | {% if r.pending %}?{% else %}{{ r.hours }} h{% endif %} | {% if s.pending or r.pending %}?{% else %}{{ r.hours | times: 100.0 | divided_by: s.hours | round }}%{% endif %} |
+{% for g in page.battery %}| {{ g.title }} | {% if g.stock %}{{ g.stock }} h{% else %}?{% endif %} | {% if g.rockbox %}{{ g.rockbox }} h{% else %}?{% endif %} | {% if g.stock and g.rockbox %}{{ g.rockbox | times: 100.0 | divided_by: g.stock | round }}%{% else %}?{% endif %} |
 {% endfor %}

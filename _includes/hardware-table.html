@@ -1,8 +1,13 @@
-{%- assign cols = site.data.hardware.columns -%}
-|  |{% for c in cols %} [{{ c.name }}]({{ c.url | relative_url }}) |{% endfor %}
+{%- include players-cols.html -%}
+|  |{% for c in cols %} [{{ c.title }}]({{ c.url | relative_url }}) |{% endfor %}
 | --- |{% for c in cols %} --- |{% endfor %}
-{% for g in site.data.hardware.rows %}| **{{ g.group }}** |{% for c in cols %} |{% endfor %}
-{% for r in g.items %}| {{ r.name }} |{% for c in cols %} {{ r[c.id] }} |{% endfor %}
-{% endfor %}{% endfor %}| **Playback hours** |{% for c in cols %} |{% endfor %}
-{% assign combos = "wired|stock|Wired, stock,wired|rockbox|Wired, Rockbox,bt|stock|Bluetooth, stock,bt|rockbox|Bluetooth, Rockbox" | split: "," %}{% for combo in combos %}{% assign parts = combo | split: "|" %}| {{ parts[2] }} |{% for c in cols %}{% assign g = site.data.battery.groups | where: "port", c.id | where: "mode", parts[0] | first %}{% assign r = nil %}{% if g %}{% assign r = g.runs | where: "fw", parts[1] | first %}{% assign st = g.runs | where: "fw", "stock" | first %}{% endif %}{% if r and r.pending != true %} {{ r.hours }} h{% if parts[1] == "rockbox" and st.pending != true %} ({{ r.hours | times: 100.0 | divided_by: st.hours | round }}%){% endif %} |{% elsif c.kind == "failed" %} n/a |{% else %} ? |{% endif %}{% endfor %}
+{% for g in site.data.hardware %}| **{{ g.group }}** |{% for c in cols %} |{% endfor %}
+{% for row in g.rows %}| {{ row }} |{% for c in cols %}{% assign grp = c.hardware[g.group] %} {{ grp[row] | default: "?" }} |{% endfor %}
+{% endfor %}{% endfor %}| **Download mode & USB IDs** |{% for c in cols %} |{% endfor %}
+| Enter download mode |{% for c in cols %} {{ c.download.short | default: "?" }} |{% endfor %}
+| USB ID, stock |{% for c in cols %}{% assign u = c.download.usb.stock %} {% if u %}`{{ u.id }}`{% else %}?{% endif %} |{% endfor %}
+| USB ID, download mode |{% for c in cols %}{% assign u = c.download.usb.download %} {% if u %}`{{ u.id }}`{% else %}?{% endif %} |{% endfor %}
+| USB ID, Rockbox |{% for c in cols %}{% assign u = c.download.usb.rockbox %} {% if u %}`{{ u.id }}`{% elsif c.failed %}n/a{% else %}?{% endif %} |{% endfor %}
+| **Playback hours** |{% for c in cols %} |{% endfor %}
+{% assign combos = "wired|stock|Wired, stock;wired|rockbox|Wired, Rockbox;bt|stock|Bluetooth, stock;bt|rockbox|Bluetooth, Rockbox" | split: ";" %}{% for combo in combos %}{% assign parts = combo | split: "|" %}| {{ parts[2] }} |{% for c in cols %}{% assign g = c.battery | where: "mode", parts[0] | first %}{% if parts[1] == "stock" %}{% assign hours = g.stock %}{% else %}{% assign hours = g.rockbox %}{% endif %}{% if hours %} {{ hours }} h{% if parts[1] == "rockbox" and g.stock %} ({{ hours | times: 100.0 | divided_by: g.stock | round }}%){% endif %} |{% elsif c.failed %} n/a |{% else %} ? |{% endif %}{% endfor %}
 {% endfor %}

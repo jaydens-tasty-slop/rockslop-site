@@ -1,0 +1,5 @@
+{%- comment -%}Sets `cols`: every player page, ported ones first, then the failed ones.{%- endcomment -%}
+{%- assign all_players = site.pages | where: "layout", "player" | sort: "nav_order" -%}
+{%- assign ported_players = all_players | where_exp: "p", "p.failed != true" -%}
+{%- assign failed_players = all_players | where: "failed", true -%}
+{%- assign cols = ported_players | concat: failed_players -%}

@@ -1,6 +1,6 @@
-{%- assign ports = site.pages | where: "layout", "player" | where_exp: "p", "p.failed != true" | sort: "nav_order" -%}
-| Feature |{% for p in ports %} [{{ p.title }}]({{ p.url | relative_url }}) |{% endfor %}
-| --- |{% for p in ports %} --- |{% endfor %}
-{% for g in site.data.features %}| **{{ g.group }}** |{% for p in ports %} |{% endfor %}
-{% for f in g.items %}| {{ f.name }} |{% for p in ports %}{% assign st = f[p.player] %} {% include badge.html state=st %} |{% endfor %}
+{%- include players-cols.html -%}
+| Feature |{% for p in ported_players %} [{{ p.title }}]({{ p.url | relative_url }}) |{% endfor %}
+| --- |{% for p in ported_players %} --- |{% endfor %}
+{% for g in site.data.features %}| **{{ g.group }}** |{% for p in ported_players %} |{% endfor %}
+{% for name in g.items %}| {{ name }} |{% for p in ported_players %}{% assign st = p.features[name] | default: "unknown" %} {% include badge.html state=st %} |{% endfor %}
 {% endfor %}{% endfor %}

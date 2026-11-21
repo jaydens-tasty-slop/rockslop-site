@@ -1,25 +1,10 @@
-# Feature comparison, one state per port (keys of _data/states.yml).
-# Draft from the status tables; keep in step with _data/status/*.yml.
-- group: Playback
-  items:
-    - { name: Wired audio playback, yp3: working, ts17: working, ts28: working }
-    - { name: Bluetooth audio (A2DP), yp3: working, ts17: working, ts28: unknown }
-    - { name: Bluetooth gamepads and keyboards, yp3: working, ts17: planned, ts28: unknown }
-    - { name: Video playback, yp3: working, ts17: working, ts28: unknown }
-    - { name: Built-in speaker, yp3: working, ts17: na, ts28: unknown }
-- group: Radio & recording
-  items:
-    - { name: FM radio, yp3: working, ts17: working, ts28: working }
-    - { name: FM recording, yp3: working, ts17: unknown, ts28: unknown }
-    - { name: Microphone recording, yp3: working, ts17: partial, ts28: partial }
-- group: System
-  items:
-    - { name: Real power-off and wake, yp3: working, ts17: working, ts28: partial }
-    - { name: Touchscreen, yp3: na, ts17: na, ts28: partial }
-    - { name: Plugins and games, yp3: working, ts17: working, ts28: unknown }
-    - { name: Real-time clock and alarm, yp3: working, ts17: working, ts28: unknown }
-    - { name: Charge limit, yp3: working, ts17: partial, ts28: partial }
-- group: Install
-  items:
-    - { name: Flash with rockslop, yp3: working, ts17: working, ts28: planned }
-    - { name: Return to stock with rockslop, yp3: working, ts17: working, ts28: planned }
+# Feature comparison rows, in order. Each player's state is in its own file
+# (players/<id>.md, `features:`; keys of _data/states.yml).
+- group: "Playback"
+  items: ["Wired audio playback", "Bluetooth audio (A2DP)", "Bluetooth gamepads and keyboards", "Video playback", "Built-in speaker"]
+- group: "Radio & recording"
+  items: ["FM radio", "FM recording", "Microphone recording"]
+- group: "System"
+  items: ["Real power-off and wake", "Touchscreen", "Plugins and games", "Real-time clock and alarm", "Charge limit"]
+- group: "Install"
+  items: ["Flash with rockslop", "Return to stock with rockslop"]
