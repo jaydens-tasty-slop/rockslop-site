@@ -54,6 +54,12 @@ aux_links_new_tab: false
 
 # Sidebar link under the page list.
 nav_external_links:
+  - title: rockslop on GitHub
+    url: "https://github.com/jaydens-tasty-slop/rockslop"
+    opens_in_new_tab: true
+  - title: auto-rockbox on GitHub
+    url: "https://github.com/jaydens-tasty-slop/auto-rockbox"
+    opens_in_new_tab: true
   - title: Donate to Rockbox
     url: "https://www.paypal.com/donate/?hosted_button_id=BTE95P4QL87E4"
     opens_in_new_tab: true
@@ -61,6 +67,7 @@ nav_external_links:
 footer_content: >-
   rockslop is unofficial and experimental. Rockbox is GPL-licensed free
   software; this site is not affiliated with the Rockbox project.
+  <a href="https://github.com/jaydens-tasty-slop/rockslop-site">Site source</a>.
 
 callouts:
   note:
