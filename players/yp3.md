@@ -11,18 +11,30 @@ state: released          # a key of _data/states.yml
 blurb: "SmartLink SL6801. 128x160, D-pad, Bluetooth, FM."
 stock_firmware: "?"
 
-# --- Prose (Markdown). A section only appears once you fill it in; an empty intro gets a "Write me" box.
-# Use `|-` for multi-line text: blank lines then stay paragraph breaks (`>-` folds them away). ---
 intro: |-
-  Rockbox on a $9 MP3 player! Cheap, but usable, and working bluetooth. 
+  Rockbox on a $9 MP3 player! Cheap, but usable, and working bluetooth. 512 KiB SRAM means some features had to be cut.
 
-  Important: Up and Left on D-Pad are the home guesture!
-
-  Excellent battery life - around 20 hours screen off. You'll want a screen protector.
-
-  Only 5 buttons: makes some games hard to use.
+  **Important:** Up and Left on D-Pad are the home guesture!
   
-# hardware_notes: ""
+hardware_notes: |-
+  ### Pros
+  * Excellent battery life - around 20 hours screen off. You'll want a screen protector.
+  * Swanky 2 core 192mhz processor
+  * Build quality feels better than TS17 somehow
+
+  ### Cons
+  * Only 5 buttons: makes some games hard to use.
+  * Only English (for now)
+  * No speech
+  * **DSP:** No pitch/speed control, surround, crossfade
+  * Cuesheets, key lock, 
+  * album art
+  * Theme backdrop pictures
+  * No dircache, so folders are read straight from SD card
+    * Large folders are truncated by default at 256 (configurable from 32 to 512)
+  * Playlists are capped at 400
+  * Missing Codecs: WMA Pro, Musepack (MPC), RealAudio (Cook), and the chiptune formats 
+    SID, NSF, VGM, KSS, HES, SGC, ASAP. WavPack (16-bit), (24-bit/96 kHz)
 # install: ""
 # problems: ""
 # battery_note: ""
@@ -70,6 +82,15 @@ download:
 
     4. Screen will not turn on, if it turns on the player booted
 
+    ### Exiting Download Mode
+  
+    Press reset button to exit, or press and hold power button for 10+s. 
+
+    > *NOTE:* The player will sit in download mode indefinitely with the screen off, 
+    > make sure to turn it off.
+    
+    The YP3 is almost unbrickable, you can always enter download mode (baked into bootloader).
+
     ### Alternative (USB In)
 
     1. Hold down on the dpad
@@ -88,6 +109,30 @@ battery:   # omit a value if not measured yet
 
 # --- Features (states for the comparison table) ---
 features:
+  "MP3, AAC, WMA, FLAC, ALAC, WAV": { state: working, note: "Decoders load from the SD card or run from flash." }
+  Vorbis and Opus: { state: partial, note: "Only files with small Ogg pages." }
+  WavPack: { state: partial, note: "24/96 files are too slow to decode." }
+  "Musepack, WMA Pro, RealAudio": { state: missing, note: "Too big for the 512 KiB of RAM." }
+  "Chiptune formats (SID, NSF, VGM...)": { state: missing, note: "Too big for the RAM." }
+  Crossfade: { state: missing, note: "Needs far more RAM." }
+  Pitch and speed control: { state: missing, note: "Left out to save RAM." }
+  Surround: { state: missing, note: "Left out to save RAM." }
+  "EQ, compressor, tone, ReplayGain": working
+  Cuesheets: { state: missing, note: "Left out to save RAM." }
+  Skins and themes: working
+  Theme backdrop pictures: { state: missing, note: "Each is a 40 KiB frame; skins keep their colours and icons." }
+  Album art: { state: missing, note: "No RAM for cover bitmaps." }
+  Other UI languages: { state: missing, note: "English only. Translations are planned." }
+  Voice and spoken menus: { state: missing, note: "No voice files or talk support." }
+  Key lock: { state: missing, note: "No key-lock action on this keypad." }
+  Browse and play from folders: working
+  Large folders: { state: partial, note: "Up to 512 files per folder (default 256); more are cut off." }
+  Long playlists: { state: partial, note: "Up to 400 tracks (upstream: 32000)." }
+  Database (tag browser): { state: partial, note: "Read from the card: no first-letter menus or play statistics." }
+  Directory cache: { state: missing, note: "Folders are read from the card each time." }
+  Bookmarks: working
+  Plugins and games: { state: working, note: "Over 350 extra plugins, but several big ones don't fit." }
+  Plugins run while music plays: { state: missing, note: "One module at a time: music stops while a plugin runs." }
   Wired audio playback: working
   Bluetooth audio (A2DP): working
   Bluetooth gamepads and keyboards: working
@@ -98,7 +143,6 @@ features:
   Microphone recording: working
   Real power-off and wake: working
   Touchscreen: na
-  Plugins and games: working
   Real-time clock and alarm: working
   Charge limit: working
   Flash with rockslop: working

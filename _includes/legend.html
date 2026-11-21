@@ -1,1 +1,1 @@
-{%- assign keys = "working,partial,broken,planned,unknown" | split: "," -%}{% for k in keys %}{% include badge.html state=k %} {% endfor %}
+{%- assign keys = "working,partial,missing,broken,planned,unknown" | split: "," -%}{% for k in keys %}{% include badge.html state=k %} {% endfor %}

@@ -1,10 +1,20 @@
 # Feature comparison rows, in order. Each player's state is in its own file
 # (players/<id>.md, `features:`; keys of _data/states.yml).
+- group: "Rockbox: audio"
+  items: ["MP3, AAC, WMA, FLAC, ALAC, WAV", "Vorbis and Opus", "WavPack", "Musepack, WMA Pro, RealAudio", "Chiptune formats (SID, NSF, VGM...)", "Crossfade", "Pitch and speed control", "Surround", "EQ, compressor, tone, ReplayGain", "Cuesheets"]
+- group: "Rockbox: interface"
+  items: ["Skins and themes", "Theme backdrop pictures", "Album art", "Other UI languages", "Voice and spoken menus", "Key lock"]
+- group: "Rockbox: library and files"
+  items: ["Browse and play from folders", "Large folders", "Long playlists", "Database (tag browser)", "Directory cache", "Bookmarks"]
+- group: "Rockbox: plugins"
+  items: ["Plugins and games", "Plugins run while music plays"]
+# Rockbox's own features first: they show what the build gives up compared
+# with a normal Rockbox. The rest are about the hardware and rockslop.
 - group: "Playback"
   items: ["Wired audio playback", "Bluetooth audio (A2DP)", "Bluetooth gamepads and keyboards", "Video playback", "Built-in speaker"]
 - group: "Radio & recording"
   items: ["FM radio", "FM recording", "Microphone recording"]
 - group: "System"
-  items: ["Real power-off and wake", "Touchscreen", "Plugins and games", "Real-time clock and alarm", "Charge limit"]
+  items: ["Real power-off and wake", "Touchscreen", "Real-time clock and alarm", "Charge limit"]
 - group: "Install"
   items: ["Flash with rockslop", "Return to stock with rockslop"]

@@ -4,6 +4,7 @@ partial:  { label: Partial,  cls: label-yellow }
 broken:   { label: Broken,   cls: label-red }
 planned:  { label: Planned,  cls: label-blue }
 unknown:  { label: Untested, cls: label-blue }
+missing:  { label: Missing,  cls: label-red }
 na:       { label: N/A,      cls: "" }
 released: { label: Released, cls: label-green }
 dev:      { label: In development, cls: label-yellow }
