@@ -35,6 +35,19 @@ hardware_notes: |-
   * Playlists are capped at 400
   * Missing Codecs: WMA Pro, Musepack (MPC), RealAudio (Cook), and the chiptune formats 
     SID, NSF, VGM, KSS, HES, SGC, ASAP. WavPack (16-bit), (24-bit/96 kHz)
+
+  ## Identifying a YP3
+
+  There are lots of clones that look like each other. The YP3 specifically:
+
+  - Only has 5 buttons - dpad and center
+    * no power, volume
+    * symbols molded into buttons, not printed on them in white
+  - Has a reset pinhole on the _right_
+  - Speaker on *top* rear
+  - USB on bottom right, headphone jack on left
+  - SD card on the left
+  - I think they're all black
 # install: ""
 # problems: ""
 # battery_note: ""
