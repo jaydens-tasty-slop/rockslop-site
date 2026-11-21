@@ -4,14 +4,14 @@
 - name: RockGPT
   origin: original
   kind: App
-  what: A small language model that chats on the player.
-  credit: Written for this port; the engine follows llama2.c.
+  what: A tiny language model running on your MP3 player. Almost coherent, dismissive of humanity.
+  credit: Based off of llama2.c.
   links: [{ text: llama2.c, url: "https://github.com/karpathy/llama2.c" }]
 - name: RockTrack
   origin: original
   kind: App
   what: A tracker and module player/editor.
-  credit: Written for this port. Demo songs from The Mod Archive.
+  credit: Demo songs from The Mod Archive.
   links: [{ text: The Mod Archive, url: "https://modarchive.org" }]
 - name: EBT Tracker
   origin: port
@@ -112,6 +112,6 @@
 - name: Video Player
   origin: original
   kind: Viewer
-  what: Plays AVI, MKV and MP4 (MPEG-1/2 and MJPEG video). It replaces the old aviplayer.
+  what: Plays AVI, MKV and MP4 (MPEG-1/2 and MJPEG video), with subtitles!
   credit: Written for this port, in Rockbox's own tree.
   links: []
