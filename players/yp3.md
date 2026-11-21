@@ -9,6 +9,7 @@ permalink: /players/yp3/
 player: yp3
 state: released          # a key of _data/states.yml
 blurb: "SmartLink SL6801. 128x160, D-pad, Bluetooth, FM."
+# table_note: ""     # a short note for the Notes column of the Players table
 stock_firmware: "?"
 
 intro: |-
