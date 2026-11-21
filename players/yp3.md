@@ -11,8 +11,9 @@ state: released          # a key of _data/states.yml
 blurb: "SmartLink SL6801. 128x160, D-pad, Bluetooth, FM."
 stock_firmware: "?"
 
-# --- Prose (Markdown). A section only appears once you fill it in; an empty intro gets a "Write me" box. ---
-intro: >-
+# --- Prose (Markdown). A section only appears once you fill it in; an empty intro gets a "Write me" box.
+# Use `|-` for multi-line text: blank lines then stay paragraph breaks (`>-` folds them away). ---
+intro: |-
   Rockbox on a $9 MP3 player! Cheap, but usable, and working bluetooth. 
 
   Important: Up and Left on D-Pad are the home guesture!
@@ -24,6 +25,7 @@ intro: >-
 # hardware_notes: ""
 # install: ""
 # problems: ""
+# battery_note: ""
 
 # --- Also known as ---
 sold_as:

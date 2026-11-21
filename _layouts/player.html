@@ -53,13 +53,13 @@ Player page template. Everything comes from the page's front matter
 
 {% include legend.html %}{% else %}{% include todo.html text="The status table: what works, what doesn't, once there is something to test." %}{% endif %}
 
-## Battery life
+{% if runs > 0 or page.battery_note %}## Battery life
 
 {% if runs > 0 %}{% include battery-table.html %}
 
-{% include todo.html text="How it was measured, in a sentence (same files, level-matched, played from full to empty)." %}{% elsif page.battery_note %}{{ page.battery_note }}{% else %}{% include todo.html text="Not measured yet. Fill in once there are stock and Rockbox runs." %}{% endif %}
+{% endif %}{% if page.battery_note %}{{ page.battery_note }}
 
-{% if page.hardware_notes %}## Hardware
+{% endif %}{% endif %}{% if page.hardware_notes %}## Hardware
 
 {{ page.hardware_notes }}
 
