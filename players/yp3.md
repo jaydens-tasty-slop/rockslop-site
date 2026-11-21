@@ -11,7 +11,8 @@ specs:
   SoC: "SmartLink SL6801"
   CPU: "2x Cortex-M4, 64 MHz normal / 192 MHz max"
   RAM: "512 KiB SRAM"
-  Flash: "2 MiB SPI NOR, XIP (no cache)"
+  Flash: "2 MiB SPI NOR"
+  XIP: "Yes, uncached (hot code runs from SRAM)"
   Display: "128x160 GC9106"
   Stock firmware: "?"
 # Optional prose (Markdown); a missing one shows a "Write me" box:
