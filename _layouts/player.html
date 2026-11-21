@@ -7,13 +7,10 @@ Player page template. Everything comes from the page's front matter
 "Write me" box. Markdown in `content` is rendered between the two halves.
 {%- endcomment -%}
 {%- assign id = page.player -%}
-{%- assign photos_todo = "Photos go here: front powered off, front running Rockbox, back, and in hand for scale." -%}
+{{ "# " | append: page.title | markdownify }}
+{% include carousel.html %}
 {%- capture top -%}
-# {{ page.title }}
-
-{% if page.image %}![{{ page.title }}, marketing photo]({{ page.image | relative_url }}){: .player-photo }
-
-{% endif %}{% if page.intro %}{{ page.intro }}{% else %}{% include todo.html text="Two or three sentences: what this player is, where it's sold, roughly what it costs, who it suits. Add the sold-as names and brands people will search for." %}{% endif %}
+{% if page.intro %}{{ page.intro }}{% else %}{% include todo.html text="Two or three sentences: what this player is, where it's sold, roughly what it costs, who it suits. Add the sold-as names and brands people will search for." %}{% endif %}
 
 {% if page.state == "released" or page.state == "dev" %}[Download rockslop]({{ site.releases_url }}){: .btn .btn-primary }
 
@@ -33,11 +30,6 @@ Player page template. Everything comes from the page's front matter
 | Also known as | {% for n in sa.names %}{% if n.url %}[{{ n.name }}]({{ n.url }}){% else %}{{ n.name }}{% endif %}{% if n.note %} ({{ n.note }}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if sa.note %}{% if sa.names %}. {% endif %}{{ sa.note }}{% endif %}{% unless sa.names or sa.note %}?{% endunless %} |
 {% if sa.ids %}| Identifiers | {{ sa.ids | join: ", " }} |
 {% endif %}| Where to buy | {% for b in page.buy %}[{{ b.store }}]({{ b.url }}){% if b.price %}: {{ b.price }}{% endif %}{% if b.note %}. {{ b.note }}{% endif %}{% unless forloop.last %}<br>{% endunless %}{% else %}?{% endfor %} |
-
-## Photos
-
-{% if page.photos %}{% for p in page.photos %}![{{ p.alt }}]({{ p.src | relative_url }})
-{% endfor %}{% else %}{% include todo.html text=photos_todo %}{% endif %}
 {%- endcapture -%}
 {{ top | markdownify }}
 {%- if page.failed -%}
@@ -83,3 +75,13 @@ Player page template. Everything comes from the page's front matter
 {{ bottom | markdownify }}
 {{ content }}
 {%- endif -%}
+
+<script>
+document.querySelectorAll('[data-carousel]').forEach(function (c) {
+  var t = c.querySelector('.carousel-track');
+  function go(d) { t.scrollBy({ left: d * t.clientWidth, behavior: 'smooth' }); }
+  var p = c.querySelector('.carousel-prev'), n = c.querySelector('.carousel-next');
+  if (p) p.addEventListener('click', function () { go(-1); });
+  if (n) n.addEventListener('click', function () { go(1); });
+});
+</script>

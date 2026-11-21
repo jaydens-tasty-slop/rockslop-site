@@ -8,7 +8,6 @@ permalink: /players/yp3/
 # --- Identity ---
 player: yp3
 state: released          # a key of _data/states.yml
-image: /assets/images/yp3/marketing.jpg
 blurb: "SmartLink SL6801. 128x160, D-pad, Bluetooth, FM."
 stock_firmware: "?"
 
@@ -17,7 +16,6 @@ stock_firmware: "?"
 # hardware_notes: ""
 # install: ""
 # problems: ""
-# photos: [{ src: /assets/images/yp3/front.jpg, alt: "Front" }]
 
 # --- Also known as ---
 sold_as:

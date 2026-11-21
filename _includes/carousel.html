@@ -1,0 +1,34 @@
+{%- comment -%}
+Photo carousel for a player page. Looks for /assets/images/<player>/<name>.jpg
+and shows them in this order, labelled from the file name. Add a photo by
+dropping a file with one of these names in the folder.
+{%- endcomment -%}
+{%- assign order = "marketing,front_rockbox,front,back,left,right,top,bottom,packaging_front,packaging_back" | split: "," -%}
+{%- assign prefix = "/assets/images/" | append: page.player | append: "/" -%}
+{%- assign files = site.static_files | where_exp: "f", "f.path contains prefix" -%}
+{%- if files.size > 0 -%}
+<div class="carousel" data-carousel>
+  <div class="carousel-track">
+{%- for stem in order -%}
+{%- assign f = files | where: "basename", stem | first -%}
+{%- if f -%}
+{%- case stem -%}
+{%- when "marketing" -%}{%- assign label = "Marketing photo" -%}
+{%- when "front_rockbox" -%}{%- assign label = "Running Rockbox" -%}
+{%- when "packaging_front" -%}{%- assign label = "Packaging, front" -%}
+{%- when "packaging_back" -%}{%- assign label = "Packaging, back" -%}
+{%- else -%}{%- assign label = stem | capitalize -%}
+{%- endcase %}
+    <figure class="carousel-slide">
+      <img src="{{ f.path | relative_url }}" alt="{{ page.title }}: {{ label | downcase }}" loading="lazy" decoding="async">
+      <figcaption>{{ label }}</figcaption>
+    </figure>
+{%- endif -%}
+{%- endfor %}
+  </div>
+{%- if files.size > 1 %}
+  <button type="button" class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+  <button type="button" class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+{%- endif %}
+</div>
+{%- endif -%}

@@ -36,8 +36,11 @@ make help
 - **Announcements**: blog posts in `_posts/` (`YYYY-MM-DD-title.md`, with a
   `title` and a one-line `description`). They list on `/announcements/`, the
   home page and the Atom feed at `/feed.xml`. The welcome post is filler.
-- **Photos**: each player page has a Photos placeholder; set `photos:` in its
-  front matter with images from `assets/images/<id>/`.
+- **Photos**: the carousel at the top of each player page shows whatever is in
+  `assets/images/<id>/`, picked up by file name and shown in this order:
+  `marketing, front_rockbox, front, back, left, right, top, bottom,
+  packaging_front, packaging_back` (`.jpg`, about 1000 px on the long side).
+  Originals live in `pics/` (not committed).
 - **The call to action**: `releases_url` in `_config.yml`, used by every
   button.
 
