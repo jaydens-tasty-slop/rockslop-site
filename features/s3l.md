@@ -1,6 +1,6 @@
 ---
 title: small3dlib and tinyphysicsengine games
-parent: Features
+parent: Rockslop Features
 nav_order: 6
 permalink: /features/s3l/
 ---

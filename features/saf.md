@@ -1,6 +1,6 @@
 ---
 title: SAF games
-parent: Features
+parent: Rockslop Features
 nav_order: 5
 permalink: /features/saf/
 ---

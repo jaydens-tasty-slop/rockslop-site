@@ -1,6 +1,6 @@
 ---
 title: Flipper Zero games
-parent: Features
+parent: Rockslop Features
 nav_order: 3
 permalink: /features/flipper/
 ---

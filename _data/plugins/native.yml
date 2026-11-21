@@ -86,11 +86,11 @@
   credit: After tuupola's effects demos.
   links: [{ text: sdl2_effects, url: "https://github.com/tuupola/sdl2_effects" }, { text: esp_effects, url: "https://github.com/tuupola/esp_effects" }]
 - name: Raytracer
-  origin: original
+  origin: port
   kind: Demo
-  what: A real-time raytraced scene.
-  credit: ""
-  links: []
+  what: A progressive ray tracer. A Cornell-box scene with two spheres is traced in passes, coarse to fine.
+  credit: Ported from TheScienceElf's TI-84 CE Raytracing, MIT, with fixed-point maths redone for this CPU.
+  links: [{ text: TI-84-CE-Raytracing, url: "https://github.com/TheScienceElf/TI-84-CE-Raytracing" }]
 - name: Jet Island
   origin: port
   kind: Demo

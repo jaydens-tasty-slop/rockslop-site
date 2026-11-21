@@ -1,6 +1,6 @@
 ---
 title: Arduboy games
-parent: Features
+parent: Rockslop Features
 nav_order: 1
 permalink: /features/arduboy/
 ---

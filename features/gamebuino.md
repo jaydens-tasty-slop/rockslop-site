@@ -1,6 +1,6 @@
 ---
 title: Gamebuino META games
-parent: Features
+parent: Rockslop Features
 nav_order: 4
 permalink: /features/gamebuino/
 ---

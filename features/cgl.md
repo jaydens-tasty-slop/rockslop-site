@@ -1,6 +1,6 @@
 ---
 title: Crisp Game Lib games
-parent: Features
+parent: Rockslop Features
 nav_order: 7
 permalink: /features/cgl/
 ---

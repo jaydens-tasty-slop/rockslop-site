@@ -1,6 +1,6 @@
 ---
 title: Pokitto games
-parent: Features
+parent: Rockslop Features
 nav_order: 2
 permalink: /features/pokitto/
 ---
