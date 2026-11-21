@@ -16,11 +16,13 @@ Rockbox is open source custom firmware that turns your cheap MP3 player from som
 
 > **Note:** Rockbox is an old, mature project, but these ports are 100% vibecoded. I haven't looked at the code, but most targets have hundreds of hours of bench testing and work well.
 
-### rockslop features over Rockbox
+### [rockslop features over Rockbox]({{ '/features/' | relative_url }})
 
 * Bluetooth support! 
 * Over 300 new plugins! (mostly ports)
 * Run a language model on your MP3 player!
+
+[See more]({{ '/features/' | relative_url }})
 
 ### [Supported players]({{ '/players/' | relative_url }})
 
