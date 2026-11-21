@@ -19,16 +19,25 @@ permalink: /features/
 - **Low-memory database.** Browse your library by tags during playback, with a progress count while it builds.
 - **Playback in 512 KiB of RAM.** Decoders and plugins load on demand from the SD card; the common codecs (MP3, AAC, WMA, Vorbis, Opus) run straight from flash.
 
-## Apps, games and demos
+## Original plugins
 
-Written or ported one at a time.
+Written for this port.
 
-{% for p in site.data.plugins.native %}### {{ p.name }}
+{% for p in site.data.plugins.native %}{% if p.origin == "original" %}### {{ p.name }}
+
+{{ p.kind }}. {{ p.what }}{% if p.credit != "" %} {{ p.credit }}{% endif %}{% if p.links.size > 0 %} Credits: {% for l in p.links %}[{{ l.text }}]({{ l.url }}){% unless forloop.last %}, {% endunless %}{% endfor %}.{% endif %}
+
+{% endif %}{% endfor %}
+## Ports of single games and apps
+
+Someone else's project, brought to the player one at a time. Each links to where we got it.
+
+{% for p in site.data.plugins.native %}{% if p.origin == "port" %}### {{ p.name }}
 
 {{ p.kind }}. {{ p.what }}{% if p.credit != "" %} {{ p.credit }}{% endif %}{% if p.links.size > 0 %} Upstream: {% for l in p.links %}[{{ l.text }}]({{ l.url }}){% unless forloop.last %}, {% endunless %}{% endfor %}.{% endif %}
 
-{% endfor %}
-## Ports
+{% endif %}{% endfor %}
+## Port families
 
 Whole libraries of games from other handhelds, each run by a compatibility layer. Every game is its own plugin and keeps its upstream licence. The pages below list every one, with where we got it.
 

@@ -1,96 +1,116 @@
-# Plugins and apps written or ported one by one (not part of a family layer).
+# Plugins and apps done one at a time (not part of a family layer).
+# origin: original = written for this port; port = someone else's game or app.
 # `links` are the upstream projects and credits; leave out what has none.
 - name: RockGPT
+  origin: original
   kind: App
   what: A small language model that chats on the player.
   credit: Written for this port; the engine follows llama2.c.
   links: [{ text: llama2.c, url: "https://github.com/karpathy/llama2.c" }]
 - name: RockTrack
+  origin: original
   kind: App
   what: A tracker and module player/editor.
   credit: Written for this port. Demo songs from The Mod Archive.
   links: [{ text: The Mod Archive, url: "https://modarchive.org" }]
 - name: EBT Tracker
+  origin: port
   kind: App
   what: A chip-tune tracker.
   credit: ESPboy EBT.
   links: [{ text: ESPboy EBT Tracker, url: "https://github.com/ESPboy-edu/ESPboy_EBT_Tracker" }]
 - name: Anarch
+  origin: port
   kind: Game
   what: A raycasting shooter.
   credit: drummyfish, CC0.
   links: [{ text: Anarch, url: "https://codeberg.org/drummyfish/Anarch" }]
 - name: Celeste Classic
+  origin: port
   kind: Game
   what: The original PICO-8 platformer.
   credit: Maddy Thorson and Noel Berry.
   links: [{ text: Celeste, url: "https://github.com/NoelFB/Celeste" }]
 - name: Gotchi
+  origin: port
   kind: Game
   what: Tamagotchi P1 emulation. You need your own ROM.
   credit: ArduinoGotchi, built on tamalib.
   links: [{ text: ArduinoGotchi, url: "https://github.com/GaryZ88/ArduinoGotchi" }, { text: tamalib, url: "https://github.com/jcrona/tamalib" }]
 - name: MicroCity
+  origin: port
   kind: Game
   what: A city builder.
   credit: jhhoward.
   links: [{ text: MicroCity, url: "https://github.com/jhhoward/MicroCity" }]
 - name: Prizm Racing
+  origin: port
   kind: Game
   what: A racing game.
   credit: duarteapcoelho.
   links: [{ text: prizm_racing, url: "https://github.com/duarteapcoelho/prizm_racing" }]
 - name: Rockcraft
+  origin: port
   kind: Game
   what: A Minecraft-style block sandbox.
   credit: A port of the TI-84 CE Minecraft by The Science Elf, MIT.
   links: [{ text: Blocks-TI-84, url: "https://github.com/TheScienceElf/Blocks-TI-84" }]
 - name: Rumblo
+  origin: port
   kind: Game
   what: A platform fighter.
   credit: Techcrafter.
   links: [{ text: RUMBLO, url: "https://github.com/Techcrafter/RUMBLO" }]
 - name: Tanks
+  origin: port
   kind: Game
   what: A top-down tank shooter.
   credit: commandblockguy.
   links: [{ text: tanks-ce, url: "https://github.com/commandblockguy/tanks-ce" }]
 - name: Terrario
+  origin: port
   kind: Game
   what: A Terraria-like.
   credit: KBD2.
   links: [{ text: terrario, url: "https://github.com/KBD2/terrario" }]
 - name: Amiga Demo
+  origin: port
   kind: Demo
   what: An Amiga-style demo.
   credit: From the esp32-c6-geek-amiga-demo.
   links: [{ text: esp32-c6-geek-amiga-demo, url: "https://github.com/mcarey42/esp32-c6-geek-amiga-demo" }]
 - name: Demo Effects
+  origin: port
   kind: Demo
   what: Plasma and other effects.
   credit: After tuupola's effects demos.
   links: [{ text: sdl2_effects, url: "https://github.com/tuupola/sdl2_effects" }, { text: esp_effects, url: "https://github.com/tuupola/esp_effects" }]
 - name: Raytracer
+  origin: original
   kind: Demo
   what: A real-time raytraced scene.
   credit: ""
   links: []
 - name: Jet Island
+  origin: port
   kind: Demo
   what: A 3D island demo.
   credit: CubeCoders.
   links: [{ text: Jet, url: "https://github.com/CubeCoders/Jet" }]
 - name: Rock88
+  origin: port
   kind: Demo
   what: A film player demo.
   credit: From CubeCoders' JetExamples.
   links: [{ text: esp32-neon-film, url: "https://github.com/CubeCoders/JetExamples/tree/main/esp32-neon-film" }]
 - name: Frotz
+  origin: port
   kind: Viewer
   what: A Z-machine interactive fiction player.
   credit: David Griffith.
   links: [{ text: Frotz, url: "https://davidgriffith.gitlab.io/frotz/" }]
 - name: Video Player
+  origin: original
   kind: Viewer
   what: Plays AVI, MKV and MP4 (MPEG-1/2 and MJPEG video). It replaces the old aviplayer.
   credit: Written for this port, in Rockbox's own tree.
