@@ -1,0 +1,14 @@
+{%- comment -%}Download mode and XIP sections of a player page; both optional.{%- endcomment -%}
+{% if page.xip %}## Code execution (XIP)
+
+{{ page.xip }}
+
+{% endif %}{% if page.download %}## Getting to download mode
+
+{{ page.download.how }}
+
+| Mode | USB ID | Shows up as |
+| --- | --- | --- |
+{% for u in page.download.usb %}| {{ u.mode }} | `{{ u.id }}` | {{ u.name }} |
+{% endfor %}
+{% endif %}

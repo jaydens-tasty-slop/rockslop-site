@@ -31,6 +31,7 @@ Player page template. Everything comes from the page's front matter
 {%- if page.failed -%}
 {{ content }}
 {%- capture bottom -%}
+{% include player-modes.html %}
 ## Why it failed
 
 | Item | Detail |
@@ -58,6 +59,7 @@ Player page template. Everything comes from the page's front matter
 
 {% if page.hardware %}{{ page.hardware }}{% else %}{% include todo.html text="What's inside in plain words (the table above is the short version). Link to the Hardware comparison page." %}{% endif %}
 
+{% include player-modes.html %}
 ## Install notes
 
 {% if page.install %}{{ page.install }}{% else %}{% include todo.html text="Anything specific to this player: how to reach download mode, what to expect on first boot, known quirks." %}{% endif %}

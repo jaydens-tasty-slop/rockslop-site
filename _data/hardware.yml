@@ -12,11 +12,12 @@ rows:
   - group: Processor
     items:
       - { name: SoC, yp3: "SmartLink SL6801", ts17: "Actions Lark (0x2351)", ts28: "Actions Lark (0x2351)", us212d: "Actions ATJ2127 (0x10d6)", s5: "Actions ATJ2157 (0x3051)", m7: "SmartLink SL6806" }
-      - { name: CPU, yp3: "2x Cortex-M4, 64 / 192 MHz", ts17: "Cortex-M4F, 96 / 128 MHz", ts28: "Cortex-M4F, 96 MHz", us212d: "MIPS32 M4K, up to 186 MHz", s5: "Cortex-M4F", m7: "Cortex-M4" }
+      - { name: CPU, yp3: "2x Cortex-M4, 64 MHz normal / 192 MHz max", ts17: "Cortex-M4F, 96 MHz normal / 128 MHz max", ts28: "Cortex-M4F, 96 MHz (boost: ?)", us212d: "MIPS32 M4K, up to 186 MHz", s5: "Cortex-M4F (clock: ?)", m7: "Cortex-M4 (clock: ?)" }
   - group: Memory
     items:
       - { name: RAM, yp3: "512 KiB SRAM", ts17: "~505 KiB SRAM + 4 MiB PSRAM", ts28: "112 KiB SRAM + PSRAM (size unconfirmed)", us212d: "168 KiB SRAM", s5: "288 KiB SRAM", m7: "1 MiB SRAM" }
       - { name: Code storage, yp3: "2 MiB SPI NOR, execute in place", ts17: "4 MiB SPI NOR, execute in place", ts28: "4 MiB SPI NOR, execute in place", us212d: "NAND only", s5: "NAND only", m7: "2-4 MiB SPI NOR" }
+      - { name: Execute in place (XIP), yp3: "Yes, uncached: hot code copied to SRAM", ts17: "Yes, through a 32 KiB cache", ts28: "Yes, through a 32 KiB cache", us212d: "No (NAND)", s5: "No (NAND)", m7: "? (SPI NOR, unconfirmed)" }
       - { name: Music storage, yp3: "microSD", ts17: "microSD", ts28: "microSD", us212d: "None. Sold as 32 GB: 4 GiB NAND", s5: "32 GB NAND (genuine) + SD slot", m7: "?" }
   - group: Display & input
     items:
@@ -34,3 +35,9 @@ rows:
       - { name: USB, yp3: "USB-C", ts17: "USB-C", ts28: "USB-C", us212d: "USB-C", s5: "micro-USB", m7: "USB-C" }
       - { name: Battery, yp3: "?", ts17: "?", ts28: "?", us212d: "?", s5: "330 mAh", m7: "260 mAh" }
       - { name: Case, yp3: "?", ts17: "?", ts28: "Plastic", us212d: "Aluminium", s5: "Plastic, clip", m7: "Aluminium" }
+  - group: Download mode & USB IDs
+    items:
+      - { name: Enter download mode, yp3: "Hold Down + plug in USB (or Down + RESET)", ts17: "Hold Power + plug in USB; rescue stub: Down", ts28: "Hold Power + plug in USB; rescue stub: Vol+", us212d: "Power + ScreenSave (unconfirmed)", s5: "Power + USB", m7: "Power + Vol Down + USB" }
+      - { name: "USB ID, stock", yp3: "`301a:2801`", ts17: "`10d6:b00b`", ts28: "`10d6:b00b`", us212d: "`10d6:1101`", s5: "`10d6:1101`", m7: "`301a:2800`" }
+      - { name: "USB ID, download mode", yp3: "`301a:2800`", ts17: "`10d6:10d6`", ts28: "`10d6:10d6`", us212d: "`10d6:10d6`", s5: "`10d6:10d6`", m7: "`301a:2800`" }
+      - { name: "USB ID, Rockbox", yp3: "`1209:0001`", ts17: "`1209:0002`", ts28: "`1209:0003`", us212d: "n/a", s5: "n/a", m7: "n/a" }
