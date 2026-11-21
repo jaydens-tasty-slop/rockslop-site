@@ -1,7 +1,7 @@
 # Feature comparison rows, in order. Each player's state is in its own file
 # (players/<id>.md, `features:`; keys of _data/states.yml).
 - group: "Rockbox: audio"
-  items: ["MP3, AAC, WMA, FLAC, ALAC, WAV", "Vorbis and Opus", "WavPack", "Musepack, WMA Pro, RealAudio", "Chiptune formats (SID, NSF, VGM...)", "Crossfade", "Pitch and speed control", "Surround", "EQ, compressor, tone, ReplayGain", "Cuesheets"]
+  items: ["Audio formats", "DSP and effects", "Cuesheets"]
 - group: "Rockbox: interface"
   items: ["Skins and themes", "Theme backdrop pictures", "Album art", "Other UI languages", "Voice and spoken menus", "Key lock"]
 - group: "Rockbox: library and files"

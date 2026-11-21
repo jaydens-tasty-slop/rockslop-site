@@ -109,15 +109,8 @@ battery:   # omit a value if not measured yet
 
 # --- Features (states for the comparison table) ---
 features:
-  "MP3, AAC, WMA, FLAC, ALAC, WAV": { state: working, note: "Decoders load from the SD card or run from flash." }
-  Vorbis and Opus: { state: partial, note: "Only files with small Ogg pages." }
-  WavPack: { state: partial, note: "24/96 files are too slow to decode." }
-  "Musepack, WMA Pro, RealAudio": { state: missing, note: "Too big for the 512 KiB of RAM." }
-  "Chiptune formats (SID, NSF, VGM...)": { state: missing, note: "Too big for the RAM." }
-  Crossfade: { state: missing, note: "Needs far more RAM." }
-  Pitch and speed control: { state: missing, note: "Left out to save RAM." }
-  Surround: { state: missing, note: "Left out to save RAM." }
-  "EQ, compressor, tone, ReplayGain": working
+  Audio formats: { state: partial, note: "Plays MP3, AAC (incl. HE-AAC), WMA, FLAC, ALAC, Vorbis, Opus and WAV. Limited: WavPack (24/96 is too slow), Vorbis and Opus (small Ogg pages only). Missing: Musepack, WMA Pro, RealAudio and the chiptune formats (too big for the RAM)." }
+  DSP and effects: { state: partial, note: "Missing: crossfade, pitch and speed control, surround (left out to save RAM). EQ, compressor, tone and ReplayGain work." }
   Cuesheets: { state: missing, note: "Left out to save RAM." }
   Skins and themes: working
   Theme backdrop pictures: { state: missing, note: "Each is a 40 KiB frame; skins keep their colours and icons." }
