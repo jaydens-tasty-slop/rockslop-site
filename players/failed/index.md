@@ -11,6 +11,8 @@ permalink: /players/failed/
 
 {% include todo.html text="Intro: we buy cheap players, triage them, and most don't make it. This page is the honest record, and a warning if you're shopping. Say what triage involves (download mode, memory map, flash, RAM)." %}
 
+{% include player-grid.html failed=true %}
+
 {% include players-table.html failed=true %}
 
 ## What would change our mind

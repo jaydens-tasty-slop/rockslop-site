@@ -1,0 +1,14 @@
+{%- comment -%}Clickable photo grid of players. `failed=true` lists the failed ones.{%- endcomment -%}
+{%- include players-cols.html -%}
+{%- if include.failed -%}{%- assign list = failed_players -%}{%- else -%}{%- assign list = ported_players -%}{%- endif -%}
+<ul class="player-grid list-style-none">
+{%- for p in list %}
+  <li>
+    <a href="{{ p.url | relative_url }}">
+      <img src="{{ '/assets/images/' | append: p.player | append: '/marketing.jpg' | relative_url }}" alt="{{ p.title }}" loading="lazy">
+      <span class="player-grid-name">{{ p.title }}</span>
+      {% include badge.html state=p.state %}
+    </a>
+  </li>
+{%- endfor %}
+</ul>
