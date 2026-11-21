@@ -30,6 +30,8 @@ Rockbox is open source custom firmware that turns your cheap MP3 player from som
 
 {% include players-table.html %}
 
+**Is your player not supported? See [OPEN CHALLENGE: GIVE ME A PLAYER]({{ '/players/' | relative_url }}#open-challenge)**
+
 ### Latest announcements
 
 {% include post-list.html limit=3 %}

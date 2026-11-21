@@ -14,6 +14,7 @@ permalink: /players/
 Some players that I tried that couldn't run rockbox are under [Failed Ports]({{ '/players/failed/' | relative_url }}).
 
 ## OPEN CHALLENGE: Give me a player and I'll sic an LLM on it
+{: #open-challenge }
 
 If you give me a player that
 
