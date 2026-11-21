@@ -12,19 +12,12 @@ specs:
   CPU: "2x Cortex-M4, 64 MHz normal / 192 MHz max"
   RAM: "512 KiB SRAM"
   Flash: "2 MiB SPI NOR"
-  XIP: "Yes, uncached (hot code runs from SRAM)"
+  XIP: "Yes, uncached: hot code is copied to SRAM; codecs and plugins load from SD"
   Display: "128x160 GC9106"
   Stock firmware: "?"
 # Optional prose (Markdown); a missing one shows a "Write me" box:
 # intro, hardware, install, problems, battery_note
 # photos: [{ src: /assets/images/yp3/front.jpg, alt: "Front" }]
-xip: >-
-  The core runs **in place** from the 2 MiB SPI NOR flash (XIP), read in quad
-  mode at about 55 MHz. There is **no XIP cache**, so code in flash runs
-  roughly 75 times slower than from SRAM: the hot paths (the text path, the
-  PCM and tick handlers) are copied to SRAM, and codecs and plugins are not in
-  flash at all but load from the SD card into a shared arena. This is why the
-  YP3 gets by on 512 KiB of RAM.
 download:
   how: >-
     Switch the player off and unplug it. Hold **Down** while connecting USB, and
