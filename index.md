@@ -2,7 +2,7 @@
 title: Home
 nav_order: 1
 permalink: /
-description: rockslop installs Rockbox on cheap MP3 players, and puts them back to stock.
+description: e Rockbox ports to cheap MP3 players
 ---
 
 # Rockbox on the cheapest MP3 players you can buy

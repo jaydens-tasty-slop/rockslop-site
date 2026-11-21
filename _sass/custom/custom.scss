@@ -13,7 +13,7 @@ body::before {
 }
 .site-footer::before { content: ""; display: block; height: 4px; background: $checker; margin-bottom: 1rem; }
 
-.aux-nav .aux-nav-list-item a {
+.aux-nav .aux-nav-list-item:last-child a {
   background: #ffc21a;
   color: #0b0c0f;
   font-weight: 600;

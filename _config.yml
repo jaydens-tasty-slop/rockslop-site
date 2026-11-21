@@ -41,11 +41,22 @@ back_to_top: true
 back_to_top_text: Back to top
 favicon_ico: "/assets/images/favicon.svg"
 
-# Header link to the one call to action.
+# "Donate to Rockbox" (here and in the sidebar below) is Rockbox's own PayPal
+# donation button from rockbox.org. The money goes to the Rockbox project,
+# not to rockslop.
+# Header links: the donation link, then the one call to action.
 aux_links:
+  "Donate to Rockbox":
+    - "https://www.paypal.com/donate/?hosted_button_id=BTE95P4QL87E4"
   "Releases":
     - "https://github.com/jaydens-tasty-slop/rockslop/releases"
 aux_links_new_tab: false
+
+# Sidebar link under the page list.
+nav_external_links:
+  - title: Donate to Rockbox
+    url: "https://www.paypal.com/donate/?hosted_button_id=BTE95P4QL87E4"
+    opens_in_new_tab: true
 
 footer_content: >-
   rockslop is unofficial and experimental. Rockbox is GPL-licensed free
