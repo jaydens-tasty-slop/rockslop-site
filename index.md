@@ -22,7 +22,9 @@ Rockbox is open source custom firmware that turns your cheap MP3 player from som
 * Over 300 new plugins! (mostly ports)
 * Run a language model on your MP3 player!
 
-### Supported players
+### [Supported players]({{ '/players/' | relative_url }})
+
+{% include player-grid.html %}
 
 {% include players-table.html %}
 
