@@ -23,7 +23,7 @@ Some players that I tried that couldn't run rockbox are under [Failed Ports]({{ 
 
 ## Hardware comparison
 
-{% include todo.html text="One sentence on what the table is for. The last two columns are the players we rejected (see Failed Ports)." %}
+{% include todo.html text="One sentence on what the table is for." %}
 
 {% include hardware-table.html %}
 
