@@ -9,12 +9,8 @@ permalink: /players/failed/
 
 # Failed Ports
 
-{% include todo.html text="Intro: we buy cheap players, triage them, and most don't make it. This page is the honest record, and a warning if you're shopping. Say what triage involves (download mode, memory map, flash, RAM)." %}
+These were either fakes or didn't have enough RAM. Upstream rockbox runs on 2 MiB minimum, rockslop manages with 512 KiB (YP3), but these players have even less.
 
 {% include player-grid.html failed=true %}
 
 {% include players-table.html failed=true %}
-
-## What would change our mind
-
-{% include todo.html text="What would make a rejected player worth revisiting (a hidden PSRAM, a better loader, a donor board). Invite readers to send in players or findings." %}

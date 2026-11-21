@@ -11,15 +11,23 @@ state: released          # a key of _data/states.yml
 blurb: "SmartLink SL6801. 128x160, D-pad, Bluetooth, FM."
 stock_firmware: "?"
 
-# --- Prose (Markdown). Delete a line and a 'Write me' box takes its place. ---
-# intro: ""
+# --- Prose (Markdown). A section only appears once you fill it in; an empty intro gets a "Write me" box. ---
+intro: >-
+  Rockbox on a $9 MP3 player! Cheap, but usable, and working bluetooth. 
+
+  Important: Up and Left on D-Pad are the home guesture!
+
+  Excellent battery life - around 20 hours screen off. You'll want a screen protector.
+
+  Only 5 buttons: makes some games hard to use.
+  
 # hardware_notes: ""
 # install: ""
 # problems: ""
 
 # --- Also known as ---
 sold_as:
-  note: "Unknown: we don't yet know what this is sold as, or by whom."
+  note: "Wholesalers sell these cheap on Aliexpress and Alibaba, no consistent brand."
 
 buy:
   - { store: AliExpress, url: "https://www.aliexpress.us/item/3256807764385286.html", price: "paid $9.79" }
@@ -52,10 +60,20 @@ hardware:
 download:
   short: "Hold Down + plug in USB (or Down + RESET)"     # one line for the comparison table
   how: >-
-    Switch the player off and unplug it. Hold **Down** while connecting USB, and
-    let go once your computer sees the device. Or hold Down and tap **RESET**
-    with a pin. This is the chip's boot ROM, so it works whatever is on the
-    flash, even a broken Rockbox. A plain RESET (without Down) just restarts.
+    1. Turn player off, remove USB
+
+    2. Hold "Down" on the dpad
+
+    3. Plug in USB
+
+    4. Screen will not turn on, if it turns on the player booted
+
+    ### Alternative (USB In)
+
+    1. Hold down on the dpad
+    
+    2. Press the "Reset" button on the right
+
   usb:
     stock: { id: "301a:2801", name: "SMTLINK CARDREADER 1.00" }
     download: { id: "301a:2800", name: "SMTLINK DEVICE 2.00" }

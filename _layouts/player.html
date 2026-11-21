@@ -59,18 +59,19 @@ Player page template. Everything comes from the page's front matter
 
 {% include todo.html text="How it was measured, in a sentence (same files, level-matched, played from full to empty)." %}{% elsif page.battery_note %}{{ page.battery_note }}{% else %}{% include todo.html text="Not measured yet. Fill in once there are stock and Rockbox runs." %}{% endif %}
 
-## Hardware
+{% if page.hardware_notes %}## Hardware
 
-{% if page.hardware_notes %}{{ page.hardware_notes }}{% else %}{% include todo.html text="What's inside in plain words (the table above is the short version). Link to the Hardware comparison page." %}{% endif %}
+{{ page.hardware_notes }}
 
-{% include player-modes.html %}
-## Install notes
+{% endif %}{% include player-modes.html %}
+{% if page.install %}## Install notes
 
-{% if page.install %}{{ page.install }}{% else %}{% include todo.html text="Anything specific to this player: how to reach download mode, what to expect on first boot, known quirks." %}{% endif %}
+{{ page.install }}
 
-## Known problems
+{% endif %}{% if page.problems %}## Known problems
 
-{% if page.problems %}{{ page.problems }}{% else %}{% include todo.html text="Open issues for this player, honestly." %}{% endif %}
+{{ page.problems }}
+{% endif %}
 {%- endcapture -%}
 {{ bottom | markdownify }}
 {{ content }}
