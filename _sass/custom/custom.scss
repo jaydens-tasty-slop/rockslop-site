@@ -27,4 +27,6 @@ blockquote.todo { border-left: 3px dashed #ffc21a; }
 
 .main:has(table th:nth-child(6)) { max-width: none; }
 
+.player-photo { display: block; max-width: 320px; width: 100%; height: auto; border-radius: 4px; margin: 0 0 1.5rem; }
+
 .post-date { color: $grey-dk-000; margin: -.5rem 0 1.5rem; }

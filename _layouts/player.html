@@ -11,7 +11,9 @@ Player page template. Everything comes from the page's front matter
 {%- capture top -%}
 # {{ page.title }}
 
-{% if page.intro %}{{ page.intro }}{% else %}{% include todo.html text="Two or three sentences: what this player is, where it's sold, roughly what it costs, who it suits. Add the sold-as names and brands people will search for." %}{% endif %}
+{% if page.image %}![{{ page.title }}, marketing photo]({{ page.image | relative_url }}){: .player-photo }
+
+{% endif %}{% if page.intro %}{{ page.intro }}{% else %}{% include todo.html text="Two or three sentences: what this player is, where it's sold, roughly what it costs, who it suits. Add the sold-as names and brands people will search for." %}{% endif %}
 
 {% if page.state == "released" or page.state == "dev" %}[Download rockslop]({{ site.releases_url }}){: .btn .btn-primary }
 
@@ -34,7 +36,12 @@ Player page template. Everything comes from the page's front matter
 
 {% endif %}{% for n in s.names %}- {% if n.url %}[{{ n.name }}]({{ n.url }}){% else %}{{ n.name }}{% endif %}{% if n.note %}: {{ n.note }}{% endif %}
 {% endfor %}
-{% if s.note %}{{ s.note }}{% endif %}{% else %}{% include todo.html text="Brand names and listings this player is sold under, and a link to the manufacturer. Say if it's unknown." %}{% endif %}
+{% if s.note %}{{ s.note }}
+
+{% endif %}{% if page.buy %}**Where to buy:**
+
+{% for b in page.buy %}- [{{ b.store }}]({{ b.url }}){% if b.price %}: {{ b.price }}{% endif %}{% if b.note %}. {{ b.note }}{% endif %}
+{% endfor %}{% endif %}{% else %}{% include todo.html text="Brand names and listings this player is sold under, and a link to the manufacturer. Say if it's unknown." %}{% endif %}
 
 ## Photos
 

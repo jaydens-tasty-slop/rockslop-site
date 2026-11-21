@@ -8,6 +8,7 @@ permalink: /players/yp3/
 # --- Identity ---
 player: yp3
 state: released          # a key of _data/states.yml
+image: /assets/images/yp3/marketing.jpg
 blurb: "SmartLink SL6801. 128x160, D-pad, Bluetooth, FM."
 stock_firmware: "?"
 
@@ -21,6 +22,9 @@ stock_firmware: "?"
 # --- Also known as ---
 sold_as:
   note: "Unknown: we don't yet know what this is sold as, or by whom."
+
+buy:
+  - { store: AliExpress, url: "https://www.aliexpress.us/item/3256807764385286.html", price: "paid $9.79" }
 
 # --- Hardware (one value per row of _data/hardware.yml; "?" = unknown) ---
 hardware:
