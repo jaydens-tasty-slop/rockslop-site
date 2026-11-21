@@ -1,0 +1,4 @@
+| Game | By | Source | License |
+| --- | --- | --- | --- |
+{% for e in site.data.plugins[include.family] %}| {{ e.name }} | {{ e.by }} | {% if e.source %}[{{ e.source | remove: "https://" }}]({{ e.source }}){% endif %}{% if e.commit != "" %} @ `{{ e.commit }}`{% endif %} | {{ e.license }} |
+{% endfor %}

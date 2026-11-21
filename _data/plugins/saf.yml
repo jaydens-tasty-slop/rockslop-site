@@ -1,0 +1,18 @@
+- id: microtd
+  name: microTD
+  by: drummyfish (Miloslav Ciz)
+  source: https://codeberg.org/drummyfish/SAF
+  commit: 815ac0cc
+  license: CC0 1.0
+- id: minigames
+  name: SAF Minigames
+  by: drummyfish (Miloslav Ciz)
+  source: https://codeberg.org/drummyfish/SAF
+  commit: 815ac0cc
+  license: CC0 1.0
+- id: tangram
+  name: Tangram
+  by: drummyfish (Miloslav Ciz)
+  source: https://codeberg.org/drummyfish/SAF
+  commit: 815ac0cc
+  license: CC0 1.0

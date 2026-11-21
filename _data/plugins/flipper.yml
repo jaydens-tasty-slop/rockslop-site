@@ -1,0 +1,198 @@
+- id: applegrabber
+  name: Apple Grabber
+  by: Copyright (C) Julio Rodriguez (d7d8)
+  source: https://github.com/d7d8/apple-grabber
+  commit: ''
+  license: GPL v3
+- id: arkanoid
+  name: Arkanoid
+  by: By @gotnull and @xMasterX (Flipper plugin).
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: GPL v3 (the repository's
+- id: asteroids
+  name: Flipper Asteroids
+  by: Copyright (C) 2022-2023 Salvatore Sanfilippo (antirez).
+  source: https://github.com/antirez/flipper-asteroids
+  commit: ''
+  license: BSD 2-Clause
+- id: bomberduck
+  name: Bomber Duck
+  by: Copyright (c) 2023 leo-need-more-coffee (+ @xMasterX).
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: MIT
+- id: citybloxx
+  name: City Bloxx
+  by: Copyright (c) 2023 Milk-Cool.
+  source: https://github.com/Milk-Cool/fz-citybloxx
+  commit: ''
+  license: MIT
+- id: drifter
+  name: Drifter
+  by: Copyright (C) Jed Lejosne
+  source: https://github.com/jean-edouard/flipperzero-drifter
+  commit: ''
+  license: GPL v3
+- id: etch
+  name: Etch A Sketch
+  by: Copyright (C) @SimplyMinimal
+  source: https://github.com/SimplyMinimal/FlipperZero-Etch-A-Sketch
+  commit: ''
+  license: GPL v3
+- id: fighterjet
+  name: Fighter Jet
+  by: Copyright (c) 2025 Eero Prittinen
+  source: https://github.com/Erbonator3000/flipper-fighter-jet
+  commit: ''
+  license: MIT
+- id: flappybird
+  name: Flappy Bird
+  by: By @DroomOne and @xMasterX (Flipper plugin).
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: GPL v3 (the repository's
+- id: flightassault
+  name: Flight Assault
+  by: Copyright (C) @evillero
+  source: https://github.com/evillero/flight_assault
+  commit: ''
+  license: GPL v3
+- id: flipperhero
+  name: Flipper Hero
+  by: Copyright (c) 2024 Dmitriy Makarov (Mentoster).
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: MIT
+- id: fliprogue
+  name: FlipRogue
+  by: Copyright (C) Abzac.
+  source: https://github.com/Abzac/fliprogue
+  commit: ''
+  license: GPL v3
+- id: fourinrow
+  name: Four in Row
+  by: By leo-need-more-coffee (Flipper plugin).
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: GPL v3 (the repository's)
+- id: furiousbirds
+  name: Furious Birds
+  by: Copyright (c) 2023 Alexander Taran (bmstr-ru).
+  source: https://github.com/bmstr-ru/furious-birds
+  commit: ''
+  license: MIT
+- id: fzsudoku
+  name: Sudoku
+  by: Copyright (c) 2023 @profelis
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: MIT
+- id: hanoi
+  name: Hanoi Towers
+  by: Copyright (c) 2023 Alexander Taran
+  source: https://github.com/AlexTaran/flipperzero
+  commit: ''
+  license: MIT
+- id: ironwyrm
+  name: IRONWYRM
+  by: Copyright (c) 2026 Henry Gurney
+  source: https://github.com/Atompunk78/IRONWYRM
+  commit: ''
+  license: MIT
+- id: mystic
+  name: Mystic Balloon
+  by: 'Copyright 2016 TEAM a.r.g. (original Arduboy game). Flipper Zero port: apfxtech, 2025.'
+  source: https://github.com/apfxtech/FlipperMysticBalloon
+  commit: ''
+  license: MIT
+- id: nupogodi
+  name: Nu pogodi
+  by: Copyright (c) 2023 Vadim Balashov (sionyx).
+  source: https://github.com/sionyx/flipper_nupogodi
+  commit: ''
+  license: MIT
+- id: nwcrawl
+  name: NW Crawl
+  by: Copyright (c) 2026 rseufert.
+  source: https://github.com/rseufert/nw_crawl
+  commit: ''
+  license: MIT
+- id: oregontrail
+  name: Oregon Trail
+  by: Copyright (c) 2026 jlaughter.
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: MIT
+- id: paperplane
+  name: Paper Plane
+  by: Copyright (C) @Larry-the-Pig
+  source: https://github.com/Larry-the-Pig/flipper-plane
+  commit: ''
+  license: GPL v3
+- id: racegame
+  name: Race Game
+  by: Copyright (c) 2026 Mehmet Mirac ARIK.
+  source: https://github.com/mrc19056/flipper-race-game
+  commit: ''
+  license: MIT
+- id: reaction
+  name: Reaction Game
+  by: Copyright (c) 2023 Milk-Cool
+  source: https://github.com/Milk-Cool/fz-reaction-game
+  commit: ''
+  license: MIT
+- id: ringbounce
+  name: Bounce (Ring Bounce)
+  by: Copyright (c) 2026 Tom Varghese
+  source: https://github.com/tomxposed/flipper-bounce
+  commit: ''
+  license: MIT
+- id: rps
+  name: Pixel RPS
+  by: Copyright (c) 2026 Ugur
+  source: https://github.com/xantopren/rock-paper-scissors
+  commit: ''
+  license: MIT
+- id: scorchedtanks
+  name: Scorched Tanks
+  by: Copyright (C) @jasniec
+  source: https://github.com/jasniec/flipper-scorched-tanks-game
+  commit: ''
+  license: GPL v3
+- id: simonsays
+  name: Simon Says
+  by: By @SimplyMinimal and @ShehabAttia96.
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: GPL v3
+- id: stackattack
+  name: Stack Attack
+  by: Copyright (c) 2026 Evgeny Ugreninov.
+  source: https://github.com/Negenii/flipper-stack-attack
+  commit: ''
+  license: MIT
+- id: stackgame
+  name: 3D Stack
+  by: Copyright (c) 2026 bergrfpv (bergr22).
+  source: https://github.com/xMasterX/all-the-plugins
+  commit: ''
+  license: MIT
+- id: trexrunner
+  name: T-Rex Runner
+  by: Copyright (C) @Rrycbarm
+  source: https://github.com/Rrycbarm/t-rex-runner
+  commit: ''
+  license: GPL v3
+- id: wavegame
+  name: Wave
+  by: By sergo (Sladkisnovraper)
+  source: https://github.com/Sladkisnovraper/Wave-game-for-Flipper-Zero
+  commit: ''
+  license: GPL v3
+- id: wires
+  name: Connect Wires
+  by: Copyright (c) 2023 Alexander Taran
+  source: https://github.com/AlexTaran/flipperzero
+  commit: ''
+  license: MIT

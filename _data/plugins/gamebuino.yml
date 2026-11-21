@@ -1,0 +1,102 @@
+- id: apollo
+  name: Apollo
+  by: Game by Steph (Stephane Calderoni), inspired by Lunar Lander.
+  source: https://github.com/m1cr0lab-gamebuino/apollo
+  commit: ''
+  license: MIT (c) 2021 Stephane Calderoni
+- id: gbbangbang
+  name: Bang! Bang!
+  by: Gamebuino Classic artillery game by Thomas Pietrzak.
+  source: https://github.com/ArduboyCollection/gamebuino-bangbang
+  commit: ''
+  license: GPL-3.0
+- id: gbjezzball
+  name: JezzBall
+  by: Gamebuino Classic JezzBall by Thomas Pietrzak, a tribute to the TI-89 game.
+  source: https://github.com/ArduboyCollection/gamebuino-jezzball
+  commit: ''
+  license: GPL-3.0
+- id: gbminesweeper
+  name: Minesweeper
+  by: Game by Steph (Stephane Calderoni), gamebuino.m1cr0lab.com.
+  source: https://github.com/m1cr0lab-gamebuino/Minesweeper
+  commit: ''
+  license: MIT (c) 2025 Stephane Calderoni
+- id: gbpong
+  name: Pong
+  by: Game by Rodot (PongMETA), the Gamebuino META demo.
+  source: https://github.com/Rodot/PongMETA
+  commit: ''
+  license: LGPL-3.0
+- id: gbsokoban
+  name: Sokoban
+  by: Game by Jicehel; Gamebuino META tutorial version by Jean-Charles Lebeau.
+  source: https://github.com/jicehel/Sokoban
+  commit: ''
+  license: MIT (c) 2021 Jean-Charles Lebeau
+- id: gbsolitaire
+  name: Solitaire
+  by: Gamebuino Classic Solitaire by Andy O'Neill.
+  source: https://github.com/ArduboyCollection/gamebuino-solitaire
+  commit: ''
+  license: MIT
+- id: glitch
+  name: gLiTcH
+  by: Game by Pierre Jarriges.
+  source: https://github.com/Codnpix/Glitch_META
+  commit: ''
+  license: MIT (c) 2019 Pierre Jarriges
+- id: gruniozerca
+  name: Gruniozerca Meta
+  by: Dark Archon (code), Neko (art)
+  source: https://github.com/arhneu/gruniozerca-meta
+  commit: 17b3538
+  license: Unlicense (art CC BY-SA 3.0)
+- id: metarace
+  name: MetaRace
+  by: Game by Sorunome.
+  source: https://github.com/Sorunome/MetaRace
+  commit: ''
+  license: LGPL-3.0
+- id: metawarfare
+  name: Meta Warfare
+  by: Game by sentinel87.
+  source: https://github.com/sentinel87/MetaWarfare
+  commit: ''
+  license: MIT (c) 2019 sentinel87
+- id: octopus
+  name: Octopus
+  by: Game by Jean-Charles Lebeau, after the Arduboy Octopus by Roby (rferrari81) and Game & Watch Octopus.
+  source: https://github.com/jicehel/Octopus-for-META
+  commit: ''
+  license: MIT (c) 2019 Stephane Calderoni
+- id: parachute
+  name: Parachute
+  by: Game by Jicehel, after Nintendo's Game & Watch Parachute.
+  source: https://github.com/jicehel/Parachute_Meta
+  commit: ''
+  license: MIT (c) 2019 Stephane Calderoni
+- id: supercrate
+  name: Super Crate Box
+  by: Game by Aurelien Rodot, after Super Crate Box by Vlambeer.
+  source: https://github.com/Rodot/SuperCrateMETA
+  commit: ''
+  license: LGPL-3.0
+- id: sweetvalentine
+  name: Sweet Valentine
+  by: Game by Stephane Calderoni (Steph).
+  source: https://github.com/m1cr0lab-gamebuino/gb-sweet-valentine
+  commit: ''
+  license: MIT (c) 2019 Stephane Calderoni
+- id: uforace
+  name: UFO Race
+  by: Game by Rodot.
+  source: https://github.com/Rodot/UFO-Race-META
+  commit: ''
+  license: LGPL-3.0
+- id: waternet
+  name: Waternet
+  by: Game and music by Willems Davy (joyrider3774), after Net and Netslide by Simon Tatham.
+  source: https://github.com/joyrider3774/waternet_gamebuino_meta
+  commit: ''
+  license: MIT (c) 2022 Willems Davy

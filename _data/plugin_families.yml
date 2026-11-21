@@ -1,0 +1,32 @@
+# Ports of other platforms' games, one compatibility layer each. The games
+# themselves are in _data/plugins/<id>.yml.
+- id: arduboy
+  title: Arduboy
+  blurb: Games for the Arduboy, a credit-card handheld with a 128x64 black-and-white screen. A compatibility layer runs the original Arduino C++ sketches as ordinary Rockbox plugins, one per game.
+  upstream: { text: Arduboy, url: "https://arduboy.com" }
+  library: { text: Arduboy2 library, url: "https://github.com/MLXXXp/Arduboy2" }
+- id: pokitto
+  title: Pokitto
+  blurb: Games for the Pokitto, a small colour handheld. A layer written against PokittoLib runs the games unchanged.
+  upstream: { text: PokittoLib, url: "https://github.com/pokitto/PokittoLib" }
+- id: flipper
+  title: Flipper Zero
+  blurb: Games from the Flipper Zero multitool. A source-compatible layer provides the Flipper SDK's drawing, input and storage calls.
+  upstream: { text: Flipper Zero firmware, url: "https://github.com/flipperdevices/flipperzero-firmware" }
+- id: gamebuino
+  title: Gamebuino META
+  blurb: Games for the Gamebuino META and the older Classic. The layer is our own implementation of the public Gamebuino API.
+  upstream: { text: Gamebuino-Meta, url: "https://github.com/Gamebuino/Gamebuino-Meta" }
+- id: saf
+  title: SAF
+  blurb: Games for SAF, drummyfish's tiny public-domain game framework.
+  upstream: { text: SAF, url: "https://codeberg.org/drummyfish/SAF" }
+- id: s3l
+  title: small3dlib and tinyphysicsengine
+  blurb: 3D and physics demos built on drummyfish's two public-domain libraries.
+  upstream: { text: small3dlib, url: "https://gitlab.com/drummyfish/small3dlib" }
+  library: { text: tinyphysicsengine, url: "https://gitlab.com/drummyfish/tinyphysicsengine" }
+- id: cgl
+  title: Crisp Game Lib
+  blurb: The 16 mini-games from Crisp Game Lib, with a launcher.
+  upstream: { text: crisp-game-lib-portable, url: "https://github.com/abagames/crisp-game-lib-portable" }

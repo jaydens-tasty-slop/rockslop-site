@@ -53,3 +53,6 @@ blockquote.todo { border-left: 3px dashed #ffc21a; }
 .has-note { cursor: help; outline: none; }
 .note-pop { display: none; position: fixed; z-index: 1000; max-width: min(280px, calc(100vw - 16px)); padding: .6rem .8rem; background: #1c1e25; color: #d6d3c8; border: 1px solid #ffc21a; border-radius: 4px; font-size: .8rem; line-height: 1.4; box-shadow: 0 4px 14px rgba(0, 0, 0, .5); pointer-events: none; }
 .has-note::after { content: "i"; display: inline-block; width: 1rem; height: 1rem; margin-left: .4rem; border: 1px solid $grey-dk-000; border-radius: 50%; font-size: .65rem; font-style: italic; line-height: .9rem; text-align: center; color: $grey-dk-000; vertical-align: middle; }
+
+// Long repository URLs in the plugin lists wrap instead of widening the table.
+.main td a { overflow-wrap: anywhere; }

@@ -1,0 +1,30 @@
+- id: s3l_city
+  name: City (small3dlib demo)
+  by: drummyfish (Miloslav Ciz)
+  source: https://gitlab.com/drummyfish/small3dlib
+  commit: c986e9b0
+  license: CC0 1.0
+- id: s3l_level
+  name: Level (small3dlib demo)
+  by: drummyfish (Miloslav Ciz)
+  source: https://gitlab.com/drummyfish/small3dlib
+  commit: c986e9b0
+  license: CC0 1.0
+- id: s3l_viewer
+  name: Model viewer (small3dlib)
+  by: drummyfish (Miloslav Ciz)
+  source: https://gitlab.com/drummyfish/small3dlib
+  commit: c986e9b0
+  license: CC0 1.0
+- id: tpe_car
+  name: Car (tinyphysicsengine)
+  by: drummyfish (Miloslav Ciz)
+  source: https://gitlab.com/drummyfish/tinyphysicsengine
+  commit: 995316e5
+  license: CC0 1.0
+- id: tpe_cubes
+  name: Cubes (tinyphysicsengine)
+  by: drummyfish (Miloslav Ciz)
+  source: https://gitlab.com/drummyfish/tinyphysicsengine
+  commit: 995316e5
+  license: CC0 1.0

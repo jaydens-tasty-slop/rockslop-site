@@ -1,0 +1,96 @@
+- id: cgl_balltour
+  name: Ball Tour
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_castn
+  name: Cast N
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_colorroll
+  name: Color Roll
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_fracave
+  name: Fracave
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_froooog
+  name: Froooog
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_grapplingh
+  name: Grappling H
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_hexmin
+  name: Hexmin
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_intow
+  name: In Tow
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_ladderdrop
+  name: Ladder Drop
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_pakupaku
+  name: Paku Paku
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_pinclimb
+  name: Pin Climb
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_rwheel
+  name: R Wheel
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_reflector
+  name: Reflector
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_survivor
+  name: Survivor
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_thunder
+  name: Thunder
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT
+- id: cgl_timbertest
+  name: Timber Test
+  by: ABA Games
+  source: https://github.com/abagames/crisp-game-lib-portable
+  commit: 7c318dc8
+  license: MIT

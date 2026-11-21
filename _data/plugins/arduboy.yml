@@ -1,0 +1,1440 @@
+- id: amazeab
+  name: A-Maze
+  by: Alojz Jakob; Arduboy port by Keyboard_Camper.
+  source: https://github.com/alojzjakob/A-Maze
+  commit: 37e2305
+  license: GPL 3
+- id: anykindcar
+  name: Any Kind of Car and Any Kind of Truck
+  by: Tommy Marshall (rocktronica), 2024.
+  source: https://github.com/rocktronica/any-kind-of-car-and-any-kind-of-truck
+  commit: 911c662
+  license: MIT
+- id: apara
+  name: APara
+  by: Leonhard Vogt (2016).
+  source: https://github.com/ArduboyCollection/APara
+  commit: b1e1042
+  license: GPL 3
+- id: ardecipher
+  name: ARDecipher
+  by: databhor (2018).
+  source: https://github.com/databhor/ARDecipher
+  commit: 2b2255a
+  license: MIT
+- id: ardrivin
+  name: Ard-Drivin
+  by: (c) 2018 Remi Veilleux (code) and Louis-Philippe Guilbert (graphics).
+  source: https://github.com/rveilleux/ard-drivin
+  commit: ''
+  license: MIT
+- id: ardubloxx
+  name: ArduBloxx
+  by: Popov Ilia (NoobGeek), 2023; a remake of City Bloxx.
+  source: https://github.com/NoobGeek-Ilia/ARDUBLOXX
+  commit: eec69d9
+  license: Apache 2.0
+- id: arduboy1010
+  name: 1010 for Arduboy
+  by: joshua stein (jcs), 2018.
+  source: https://github.com/jcs/arduboy-1010
+  commit: 2519bab
+  license: ISC (permissive)
+- id: arduboydash
+  name: Ardu Dash
+  by: Sergei Petrov (SuperSolik), 2023.
+  source: https://github.com/SuperSolik/arduboy-games
+  commit: 523b23a
+  license: MIT
+- id: ardubuggy
+  name: Ardu Buggy
+  by: Ardu Buggy, a Moon Patrol style game (see README upstream).
+  source: https://github.com/ArduboyCollection/ArduBuggy
+  commit: 65ddafa
+  license: Unlicense (public domain)
+- id: ardubullets
+  name: ARDUBULLETs
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: arduel
+  name: Arduel
+  by: curlyc (2017).
+  source: https://github.com/curlyc/arduel
+  commit: 1f770d4
+  license: MIT
+- id: ardugo
+  name: ArduGo
+  by: Modus Create, 2018 (Don Anderson).
+  source: https://github.com/ModusCreateOrg/ardugo
+  commit: 2343b90
+  license: MIT
+- id: ardugolf
+  name: ArduGolf
+  by: 'Original game by Tiberius Brown. Flipper Zero port: apfxtech,'
+  source: https://github.com/apfxtech/FlipperGolf
+  commit: ''
+  license: MPL-2.0
+- id: ardulem
+  name: Ardulem
+  by: (c) 2017 Alban Nanty.
+  source: https://github.com/Lswbanban/Ardulem
+  commit: ''
+  license: MIT
+- id: ardulo
+  name: ArduLO
+  by: Jon Thysell (2020-2021).
+  source: https://github.com/jonthysell/ArduLO
+  commit: 34d3b87
+  license: MIT
+- id: arduman
+  name: Ardu-man
+  by: Seth A. Robinson (2016).
+  source: https://github.com/SethRobinson/arduman_arduboylib11
+  commit: ''
+  license: MIT
+- id: ardunback
+  name: Ardu N-Back
+  by: Ruben Berenguel Montoro (2023).
+  source: https://github.com/rberenguel/ardu-n-back
+  commit: 029f518
+  license: MIT
+- id: arduroad
+  name: ARDUROAD
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/ARDUROAD
+  commit: ''
+  license: BSD-3-Clause
+- id: arduskiing
+  name: ArduSkiing
+  by: Frank van de Ven (2026).
+  source: https://github.com/FrankVanDeVen/ArduSkiing
+  commit: 1ee2239
+  license: MIT
+- id: ardusnake
+  name: ArduSnake
+  by: Alec Tutin (chootin).
+  source: https://github.com/chootin/ardusnake
+  commit: cb74b97
+  license: GPL 3
+- id: ardusweeper
+  name: Ardusweeper
+  by: jbellue (2018).
+  source: https://github.com/ArduboyCollection/minesweeper
+  commit: c228957
+  license: GPL 3
+- id: ardutan
+  name: Ardutan
+  by: yamasakihiromi (2017).
+  source: https://github.com/yamasakihiromi/ardutan
+  commit: e475f36
+  license: MIT
+- id: arduwars
+  name: Arduwars
+  by: Botond Kis (2018).
+  source: https://github.com/yinkou/Arduwars
+  commit: 9cd6ce8
+  license: 'BSD 3-Clause (SimpleArduinoUtilities: Apache 2.0)'
+- id: arduwhack
+  name: Ardu-Whack
+  by: Code, graphics and sound by zeduckmaster (framagit.org/zeduckmaster/ardu-whack).
+  source: https://framagit.org/zeduckmaster/ardu-whack
+  commit: d01b9c9
+  license: GPL 3
+- id: arenafight
+  name: Arena Fight
+  by: FreezingSnail (2018).
+  source: https://github.com/FreezingSnail/fight
+  commit: 9f3a5a2
+  license: MIT
+- id: armageddon
+  name: Armageddon
+  by: wuuff (repository author); a Gamebuino game inspired by Missile Command.
+  source: https://github.com/ArduboyCollection/armageddon
+  commit: c9c471d
+  license: GPL 3
+- id: asteroidsx
+  name: Asteroids (CDR_Xavier)
+  by: CDR_Xavier (2018).
+  source: https://github.com/CDRXavier/ASTEROID
+  commit: 68dedff
+  license: GPL 2 or later
+- id: athleticboy
+  name: Athletic Boy
+  by: Frank van de Ven, 2024. Based on Athletic Land (MSX).
+  source: https://github.com/frankvandeven/AthleticBoy
+  commit: 7025f04
+  license: MIT
+- id: backtojungle
+  name: Back to the Jungle
+  by: Innovation Garage.
+  source: https://github.com/ArduboyCollection/ArduboyBackToTheJungle
+  commit: ''
+  license: BSD-3-Clause
+- id: bananonsense
+  name: Bananonsense
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: bangbang
+  name: Bang! Bang!
+  by: Thomas Pietrzak, Gamebuino implementation of Bang! Bang!.
+  source: https://github.com/ArduboyCollection/gamebuino-bangbang
+  commit: cfef988
+  license: GPL 3
+- id: bangi
+  name: Bangi
+  by: Ignacio Vina (igvina)
+  source: https://github.com/igvina/Bangi
+  commit: ''
+  license: Apache-2.0
+- id: batgame
+  name: BAT-GAME
+  by: Quickdrawkid (2020).
+  source: https://github.com/Quickdrawkid/BAT-GAME
+  commit: 19789af
+  license: MIT
+- id: beamemup
+  name: Beam 'Em Up
+  by: Ben Combee (2020); physics adapted from Pharap's PhysixArduboy.
+  source: https://github.com/unwiredben/arduboy-beamemup
+  commit: 95a7fb6
+  license: Apache 2.0
+- id: begemmed
+  name: Begemmed
+  by: 'TEAM a.r.g.: JO3RI (2015).'
+  source: https://github.com/Team-ARG-Museum/ID-30-BEGEMMED
+  commit: ''
+  license: MIT
+- id: bibleblaster
+  name: Billy Graham's Bible Blaster
+  by: jaychugstein
+  source: https://github.com/jaychugstein/Billy-Grahams-Bible-Blaster
+  commit: ''
+  license: MIT
+- id: bladerunner
+  name: Blade Runner
+  by: Popov Ilia (NoobGeek), 2022.
+  source: https://github.com/NoobGeek-Ilia/BladeRunner
+  commit: cf6db4e
+  license: Apache 2.0
+- id: blobattack
+  name: Blob Attack
+  by: TEAM a.r.g. (2016).
+  source: https://github.com/Team-ARG-Museum/ID-28-Blob-Attack
+  commit: ''
+  license: MIT
+- id: blockspush
+  name: Blocks
+  by: William Woody (2016).
+  source: https://github.com/ArduboyCollection/blocks
+  commit: 26b650e
+  license: GPL 3 or later
+- id: blockstacker
+  name: Block Stacker
+  by: David Martinez (DMG), 2015.
+  source: https://github.com/ArduboyCollection/BlockStacker
+  commit: ''
+  license: LGPL-2.1 or later (game code)
+- id: boneshakers
+  name: Bone Shakers
+  by: James Howard (jhhoward), 2018.
+  source: https://github.com/jhhoward/BoneShakers
+  commit: ab61ef8
+  license: GPL 3
+- id: boris
+  name: Boris Goes Skiing
+  by: A clone of Horace goes skiing (ZX Spectrum); licence by TEAM a.r.g. (2017).
+  source: https://github.com/ArduboyCollection/boris-goes-skiing
+  commit: 75d7a11
+  license: MIT
+- id: bounceab
+  name: The Bounce
+  by: Joshimuz (repository owner; the licence text leaves the copyright holder blank).
+  source: https://github.com/ArduboyCollection/TheBounceArduboy
+  commit: 2fcc65f
+  license: MIT
+- id: breakouthiro
+  name: Breakout (Hiroshi)
+  by: Hiroshi Tamura (2018).
+  source: https://github.com/HiroshiTamura/arduboy_breakout_game
+  commit: 5c1ebe8
+  license: MIT
+- id: breakouttv
+  name: Breakout (Vlad)
+  by: Vlad Tomoiaga (2020).
+  source: https://github.com/tvlad1234/breakout
+  commit: a5c1e49
+  license: GPL 3
+- id: bubblepop
+  name: Bubble PoP
+  by: 'TEAM a.r.g.: Gaveno, JO3RI (2018).'
+  source: https://github.com/Team-ARG-Museum/ID-14-Bubble-PoP
+  commit: ''
+  license: MIT
+- id: buttonstrail
+  name: Buttons Trail
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/ButtonsTrail
+  commit: ''
+  license: BSD-3-Clause
+- id: calculate
+  name: Calculate
+  by: Frank van de Ven (2025); idea after B Math by ABA Games.
+  source: https://github.com/FrankVanDeVen/Calculate
+  commit: cda5dc7
+  license: MIT
+- id: calldungeon
+  name: Call of Dungeon
+  by: tako2 (2016).
+  source: https://github.com/tako2/dungeon
+  commit: 473dce3
+  license: MIT
+- id: candlelight
+  name: Candlelight
+  by: Matthew Bryan (2024).
+  source: https://github.com/TropicAnthropic/Candlelight
+  commit: 9a48b56
+  license: GPL 3
+- id: cannonfather
+  name: Cannon Father
+  by: jaychugstein
+  source: https://github.com/jaychugstein/Cannon-Father
+  commit: ''
+  license: MIT
+- id: castleboy
+  name: CastleBoy
+  by: dir3kt (2016).
+  source: https://github.com/dir3kt/CastleBoy
+  commit: ''
+  license: MIT
+- id: catacombs
+  name: Catacombs of the Damned
+  by: Original game by James Howard (jhhoward), Arduboy3D.
+  source: https://github.com/jhhoward/Arduboy3D
+  commit: ''
+  license: MIT
+- id: chickenx
+  name: Chicken Cross
+  by: David Martinez (2015); Arduboy2 port by Scott Allen (2016).
+  source: https://github.com/dragula96/ChickenX
+  commit: ''
+  license: LGPL 2.1 or later per the source header (GPL 2 file in the repository)
+- id: chiemagari
+  name: Chie Magari Ita
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: choplifter
+  name: Choplifter
+  by: Filmote (2018).
+  source: https://github.com/Press-Play-On-Tape/Choplifter
+  commit: ''
+  license: BSD-3-Clause (code and graphics as published in that repository)
+- id: chribocchi
+  name: Chri-Bocchi Cat
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: citylife
+  name: City Life
+  by: ArdFlamingo (2022); Font4x6 by Filmote.
+  source: https://github.com/filmote/Arduboy-City-Life
+  commit: 5620fef
+  license: MIT
+- id: coinrush
+  name: Coin Rush
+  by: ArdFlamingo (2022).
+  source: https://github.com/Pharap/ArdFlamingo-Arduboy-Games
+  commit: 5de05a7
+  license: MIT
+- id: cooties
+  name: Cooties Attack
+  by: The Programming Raccoon (2021); Font3x5 by Filmote.
+  source: https://github.com/Pharap/Cooties-Attack
+  commit: 2978d2f
+  license: MIT
+- id: cosmicpods
+  name: CosmicPods
+  by: cubic9com (2017).
+  source: https://github.com/ArduboyCollection/CosmicPods
+  commit: 0923919
+  license: BSD 3-Clause
+- id: crateconfusion
+  name: Crate Confusion
+  by: phoboslab (
+  source: https://github.com/phoboslab/arduboy-games
+  commit: ''
+  license: MIT (the LICENSE file names OBONO as copyright holder)
+- id: crates3d
+  name: Crates 3D
+  by: Ion version by Badja; Arduboy port by Brian Smith (fuopy), 2016.
+  source: https://github.com/ArduboyCollection/Crates3D
+  commit: '7573547'
+  license: MIT
+- id: creapawn
+  name: Creapawn
+  by: Revlis
+  source: https://github.com/Revlis64/Creapawn
+  commit: ''
+  license: Apache-2.0
+- id: cribbage
+  name: Cribbage
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/Cribbage
+  commit: ''
+  license: BSD-3-Clause
+- id: cursedmansion
+  name: Cursed Mansion 1300
+  by: ImMrShrike (Cursed Mansion 1300), a recreation of Haunted House.
+  source: https://github.com/ImMrShrike/Cursed-Mansion-1300
+  commit: '9089962'
+  license: AGPL 3
+- id: cyberhack
+  name: Cyberhack
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/Cyberhack
+  commit: ''
+  license: BSD-3-Clause
+- id: darkunder
+  name: Dark & Under
+  by: Simon Holmes (Filmote) and contributors (2017).
+  source: https://github.com/Press-Play-On-Tape/Dark-And-Under
+  commit: ''
+  license: BSD-3-Clause (code and graphics as published in that repository)
+- id: ddrboy
+  name: DDRBOY
+  by: Tyler Nijmeh (tytydraco), 2022.
+  source: https://github.com/tytydraco/DDRBOY
+  commit: 1b0b98e
+  license: BSD 2-Clause
+- id: defenduino
+  name: Defenduino
+  by: Alex McChessers.
+  source: https://bitbucket.org/alexmcchessers/defenduino
+  commit: ''
+  license: BSD-3-Clause
+- id: diamonds
+  name: Diamonds
+  by: Redbug / kyuranGames, graphics by Doug Cannon.
+  source: https://github.com/ArduboyCollection/diamonds
+  commit: ''
+  license: MIT
+- id: dicefate
+  name: DICE of FATE
+  by: 'TEAM a.r.g.: CastPixel, JO3RI (2016).'
+  source: https://github.com/Team-ARG-Museum/ID-37-DICE-of-FATE
+  commit: ''
+  license: MIT
+- id: dominoes
+  name: Dominoes
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/Dominoes
+  commit: ''
+  license: BSD-3-Clause
+- id: dungeons2
+  name: Dungeons 2
+  by: 'TEAM a.r.g. (2016): Gaveno, Jo3ri, Castpixel.'
+  source: https://github.com/TEAMarg/Dungeons2
+  commit: d79ab43
+  license: MIT
+- id: easterpanic
+  name: Easter Panic
+  by: Pharap (2017), Arduboy game jam 2.
+  source: https://github.com/Pharap/EasterPanic
+  commit: 4a7b724
+  license: Apache 2.0
+- id: ecomd
+  name: Epic Crates of Mass Destruction
+  by: 'TEAM a.r.g.: DRAGULA96, JO3RI, Justin Cyr (2015).'
+  source: https://github.com/Team-ARG-Museum/ID-33-ECOMD
+  commit: c2dac94
+  license: MIT
+- id: eggmaster
+  name: Egg Master Pro 2020
+  by: Bert van't Veer, 2019. Entry for Arduboy Game Jam 4.
+  source: https://github.com/BertVeer/EggMasterPro2020
+  commit: 4e6dccc
+  license: MIT
+- id: escapefromearth
+  name: Escape From Earth
+  by: jaychugstein
+  source: https://github.com/jaychugstein/Escape-From-Earth
+  commit: ''
+  license: MIT
+- id: evade
+  name: Evade
+  by: Modus Create (2016).
+  source: https://github.com/ModusCreateOrg/evade-arduboy-game
+  commit: ''
+  license: MIT
+- id: evasion
+  name: Evasion
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: fantasyrampage
+  name: Fantasy Rampage
+  by: 'TEAM a.r.g.: Trodoss, JO3RI (2017).'
+  source: https://github.com/Team-ARG-Museum/ID-48-Fantasy-Rampage
+  commit: ''
+  license: MIT
+- id: farkle
+  name: Farkle
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/Farkle
+  commit: ''
+  license: Apache-2.0
+- id: fidgetspinner
+  name: Fidget Spinner
+  by: ''
+  source: https://github.com/ArduboyCollection/FidgetSpinner-Arduboy
+  commit: ''
+  license: MIT
+- id: firebox
+  name: Firebox
+  by: Jonathan Howard
+  source: https://github.com/jhhoward/Firebox
+  commit: ''
+  license: MIT
+- id: firepanic
+  name: Fire Panic
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/FirePanic
+  commit: ''
+  license: BSD-3-Clause
+- id: flappyball
+  name: FlappyBall
+  by: Chris Martinez (2014); Scott Allen (2016).
+  source: https://github.com/ArduboyCollection/FlappyBall
+  commit: 22253a6
+  license: BSD 3-Clause
+- id: flappyhalloween
+  name: Flappy Halloween
+  by: Andrew Low, 2015 (concept and art by his 10-year-old).
+  source: https://github.com/andrewlow/flappyhalloween
+  commit: 94f926c
+  license: Eclipse Public License 1.0
+- id: floodfill
+  name: Flood Fill
+  by: Gary Franz (2018).
+  source: https://github.com/garyfranz/arduboy_floodfill
+  commit: 471503d
+  license: MIT
+- id: frogger
+  name: Frogger
+  by: Simon Holmes
+  source: https://github.com/filmote/Frogger
+  commit: ''
+  license: BSD 3-Clause
+- id: galaxion
+  name: Galaxion
+  by: tako2 (2017).
+  source: https://github.com/tako2/galaxion
+  commit: ''
+  license: MIT
+- id: germanwhist
+  name: German Whist
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/GermanWhist
+  commit: ''
+  license: BSD-3-Clause
+- id: glove
+  name: Glove
+  by: fuopy (2016).
+  source: https://github.com/ArduboyCollection/glove
+  commit: 81e9988
+  license: MIT
+- id: gohome
+  name: Go Home
+  by: Frank van de Ven (2026); idea after Hakosan by ABAgames.
+  source: https://github.com/FrankVanDeVen/GoHome
+  commit: 4fda4c8
+  license: MIT
+- id: gosencho
+  name: I want 5 quadrillion yen!
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: guessdots
+  name: Guess Dots
+  by: Sergei Petrov (SuperSolik), 2023. Idea from the iOS game Dot by OuzzGame.
+  source: https://github.com/SuperSolik/arduboy-games
+  commit: 523b23a
+  license: MIT
+- id: hangman
+  name: Hangman
+  by: serisman (2018); word list from
+  source: https://github.com/Xethron/Hangman
+  commit: da1825f
+  license: MIT
+- id: harambe
+  name: Harambe's Revenge
+  by: Molly Carpenter and Danielle Lapis, for the first Arduboy Game Jam.
+  source: https://github.com/ArduboyCollection/Harambe-s-Revenge
+  commit: ''
+  license: zlib
+- id: helii
+  name: Helii
+  by: Stephen Eisenhauer (2016).
+  source: https://github.com/ArduboyCollection/Helii-Arduboy
+  commit: f6f9a8f
+  license: MIT
+- id: hellocmd
+  name: Hello, Commander
+  by: Felipe Manga (2017).
+  source: https://github.com/felipemanga/HelloCommander
+  commit: ''
+  license: MIT
+- id: helmetshordes
+  name: Helmets and Hordes
+  by: TEAM a.r.g. (2017 - 2018).
+  source: https://github.com/Team-ARG-Museum/ID-47-Helmets-Hordes
+  commit: ''
+  license: MIT
+- id: hippodrome
+  name: Hippodrome
+  by: Miguel Riaza Valverde.
+  source: https://github.com/MiguelRiazaValverde/Hippodrome
+  commit: 10db095
+  license: GPL 3
+- id: hollow
+  name: Hollow Seeker
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: hopper
+  name: Hopper
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: humanityrevenge
+  name: Humanity Revenge DC
+  by: giangregorio (2017).
+  source: https://github.com/ArduboyCollection/Humanity_Revenge_DC
+  commit: 9730bf5
+  license: MIT
+- id: hunt
+  name: HUNT!
+  by: Volodymyr Kadzhaia (ladroid) (2021).
+  source: https://github.com/ladroid/HUNT
+  commit: 03b27f8
+  license: BSD 3-Clause
+- id: jezzball
+  name: JezzBall
+  by: Thomas Pietrzak, Gamebuino tribute to JezzBall.
+  source: https://github.com/ArduboyCollection/gamebuino-jezzball
+  commit: d51e949
+  license: GPL 3
+- id: joustish
+  name: Joustish
+  by: wuuff (2017).
+  source: https://github.com/wuuff/joustish
+  commit: 18d3988
+  license: GPL 3
+- id: jumpboy
+  name: JumpBoy
+  by: takaiwa / t-iwasaki (2016, 2020).
+  source: https://github.com/t-iwasaki/arduboy-JumpBoy
+  commit: 1b2dcc9
+  license: MIT
+- id: jumpboy2
+  name: JumpBoy 2
+  by: takaiwa / t-iwasaki (2016, 2020).
+  source: https://github.com/t-iwasaki/arduboy-JumpBoy2
+  commit: 09a10fc
+  license: MIT
+- id: jumpingjack
+  name: Jumping Jack
+  by: marggines (2023).
+  source: https://github.com/marggines/JumpingJack
+  commit: d9ba382
+  license: MIT
+- id: junofirst
+  name: Juno First
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/JunoFirst
+  commit: ''
+  license: BSD-3-Clause
+- id: keykatit
+  name: KeyKat IT
+  by: Robert Lowe (pngwen), 2017.
+  source: https://github.com/ArduboyCollection/keykat-it
+  commit: 2ddac6f
+  license: GPL 3 or later
+- id: knightmove
+  name: Knight Move
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: kong
+  name: Kong
+  by: Press Play On Tape, Filmote and contributors (2019).
+  source: https://github.com/Press-Play-On-Tape/Kong
+  commit: ''
+  license: BSD-3-Clause (code and graphics as published in that repository)
+- id: kong2
+  name: Kong II
+  by: Press Play On Tape, Filmote and contributors (2019).
+  source: https://github.com/Press-Play-On-Tape/Kong-II
+  commit: ''
+  license: BSD-3-Clause (code and graphics as published in that repository)
+- id: kube
+  name: KUBE
+  by: Onebit Productions (Matthew Bryan)
+  source: https://github.com/TropicAnthropic/KUBE
+  commit: ''
+  license: GPL-3.0
+- id: kungfuescape
+  name: Kung Fu Escape
+  by: MrSazazel.
+  source: https://github.com/MrSazazel/Kung_Fu_Escape
+  commit: ''
+  license: MIT
+- id: lasermaze
+  name: Laser Maze
+  by: Frank van de Ven (2026), after the board game Laser Maze.
+  source: https://github.com/FrankVanDeVen/LaserMaze
+  commit: 46615d2
+  license: MIT
+- id: lasers
+  name: Lasers
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: late
+  name: LATE
+  by: Vladimir Borisov (core1024), 2018.
+  source: https://github.com/core1024/LATE
+  commit: 643440b
+  license: MIT
+- id: layingpipe
+  name: Laying Pipe
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/LayingPipe
+  commit: ''
+  license: BSD-3-Clause
+- id: leword
+  name: LeWord
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/LeWord
+  commit: ''
+  license: BSD-3-Clause
+- id: lion
+  name: Lion
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/Lion
+  commit: ''
+  license: BSD-3-Clause
+- id: liteout
+  name: Lite Out
+  by: Lite Out for the Arduboy (see the forum post upstream).
+  source: https://github.com/ArduboyCollection/ArduboyLiteOut
+  commit: 75a4e63
+  license: Unlicense (public domain)
+- id: littlebeluga
+  name: Little Beluga
+  by: Lincoln Hach Yellick (2020).
+  source: https://github.com/lyellick/LittleBeluga
+  commit: 5bbaa08
+  license: MIT
+- id: logix
+  name: Logix
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/Logix
+  commit: ''
+  license: BSD-3-Clause
+- id: loverush
+  name: LoveRush
+  by: Stephane Cote (vampirics), 2018.
+  source: https://github.com/vampirics/LoveRush
+  commit: 993a2db
+  license: MIT
+- id: magic8ball
+  name: Magic 8 Ball
+  by: HugoQuadrado (2019).
+  source: https://github.com/HugoQuadrado82/Arduboy8ball
+  commit: 0ac1459
+  license: MIT
+- id: mastermind
+  name: Mastermind
+  by: Frank Van De Ven
+  source: https://github.com/FrankVanDeVen/Mastermind
+  commit: ''
+  license: MIT
+- id: microcityab
+  name: MicroCity
+  by: James Howard (jhhoward).
+  source: https://github.com/jhhoward/MicroCity
+  commit: ae265f1
+  license: GPL 3
+- id: microflight
+  name: MicroFlight
+  by: James Howard (jhhoward), 2019.
+  source: https://github.com/jhhoward/MicroFlight
+  commit: '7061957'
+  license: MIT
+- id: microtank
+  name: MicroTank
+  by: Thomas Hartmann (2019).
+  source: https://github.com/hartmann1301/MicroTank
+  commit: 1baad6c
+  license: Apache 2.0
+- id: microtdab
+  name: MicroTD
+  by: Miloslav Ciz (drummyfish), 2018.
+  source: https://gitlab.com/drummyfish/Arduboy_TD
+  commit: 0c8958f
+  license: CC0 (public domain)
+- id: militaryaviator
+  name: Military Aviator
+  by: curlyc (2017).
+  source: https://github.com/curlyc/militaryaviator
+  commit: 303b417
+  license: MIT
+- id: minigolf
+  name: Mini Golf
+  by: BennettB123
+  source: https://github.com/BennettB123/Arduboy-2DMiniGolf
+  commit: ''
+  license: MIT
+- id: minirogue
+  name: Mini Rogue
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/MiniRogue
+  commit: ''
+  license: BSD-3-Clause
+- id: minotaur
+  name: Minotaur
+  by: Maxime Hanicotte (2025).
+  source: https://github.com/ideometre/Minotaur
+  commit: 28a5715
+  license: Unlicense (public domain)
+- id: montana
+  name: Montana
+  by: Frank van de Ven (2026).
+  source: https://github.com/FrankVanDeVen/Montana
+  commit: 35810a1
+  license: MIT
+- id: morse
+  name: Morse Code Trainer
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: mouseescape
+  name: Mouse Escape
+  by: 'Zachariah Falgout (RetrobitCoder), 2018. Removed: the title banner and lose screen by LENZ (no licence); text replaces them.'
+  source: https://github.com/RetrobitCoder/MouseEscape
+  commit: 058e19c
+  license: MIT
+- id: mysticballoon
+  name: Mystic Balloon
+  by: 'TEAM a.r.g.: Gaveno, CastPixel, JO3RI, Martian220 (2016 - 2018).'
+  source: https://github.com/Team-ARG-Museum/ID-34-Mystic-Balloon
+  commit: ''
+  license: MIT
+- id: n43
+  name: Nineteen43
+  by: Simon Holmes (Filmote), 2017.
+  source: https://github.com/filmote/Nineteen43
+  commit: ''
+  license: MIT
+- id: n44
+  name: Nineteen44
+  by: Simon Holmes (Filmote), 2017.
+  source: https://github.com/filmote/Nineteen44
+  commit: ''
+  license: MIT
+- id: newblocks
+  name: New Blocks on the Kid
+  by: bateske (2020), Arduboy Game Jam 5.
+  source: https://github.com/bateske/NewBlocksOnTheKid
+  commit: 133fb6a
+  license: GPL 3
+- id: nielk
+  name: Nielk
+  by: Greyson Potter (gkpotter), 2020.
+  source: https://github.com/gkpotter/Nielk
+  commit: d577698
+  license: MIT
+- id: nightraid
+  name: Night Raid
+  by: Evan Barger (2016-2018).
+  source: https://github.com/epbarger/night-raid
+  commit: ''
+  license: MIT
+- id: obreversi
+  name: Reversi (OBONO)
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: ohmummy
+  name: Oh Mummy
+  by: Matthew Vicaradge (2019).
+  source: https://github.com/Mattvic79/OhMummy
+  commit: ''
+  license: BSD-3-Clause
+- id: oilpanic
+  name: Oil Panic
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/OilPanic
+  commit: ''
+  license: BSD-3-Clause
+- id: omegachase
+  name: Omega Chase
+  by: Karl P. Williams (2023).
+  source: https://github.com/Karl-Williams/OmegaChase
+  commit: 64bc7d3
+  license: MIT
+- id: othelloab
+  name: Pocket Othello
+  by: Wang Renxin, 2017.
+  source: https://github.com/ArduboyCollection/pocket_othello
+  commit: 5a03e05
+  license: CC BY-SA 4.0 (as stated by the author)
+- id: outpostdefense
+  name: Outpost Defense
+  by: 'TEAM a.r.g.: Trodoss (2017).'
+  source: https://github.com/Team-ARG-Museum/ID-49-Outpost-Defense
+  commit: ''
+  license: MIT
+- id: particles
+  name: Particles' Segregation
+  by: Entry for a 64 hour game jam by MariEss (the licence text names no holder), 2019.
+  source: https://github.com/MariEss/GJM_Particles-_Segregation
+  commit: 8c9e0b8
+  license: MIT
+- id: pegsolitaire
+  name: Peg Solitaire
+  by: Frank Van De Ven
+  source: https://github.com/FrankVanDeVen/PegSolitaire
+  commit: ''
+  license: MIT
+- id: pi24k
+  name: Pi 24k
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: picoracers
+  name: Pico Racers
+  by: emuty, PixelArtM, JO3RI (TEAM a.r.g., 2016).
+  source: https://github.com/Team-ARG-Museum/ID-43-Pico-Racers
+  commit: ff088cd
+  license: MIT
+- id: pinball
+  name: Pinball
+  by: 'TEAM a.r.g.: Grapple Bug, Gaveno, JO3RI, Trodoss (2017).'
+  source: https://github.com/Team-ARG-Museum/ID-44-Pinball
+  commit: ''
+  license: MIT
+- id: pocketrocket
+  name: Pocket Rocket
+  by: jaychugstein
+  source: https://github.com/jaychugstein/Pocket-Rocket
+  commit: ''
+  license: MIT
+- id: poitto
+  name: POITTO
+  by: '@ina_ani (inajob), 2016.'
+  source: https://github.com/ArduboyCollection/poitto
+  commit: 8e0f8b9
+  license: MIT
+- id: pongab
+  name: Pong (Arduboy)
+  by: Taylor Hansen (2017).
+  source: https://github.com/ArduboyCollection/Pong-Arduboy
+  commit: 840b42a
+  license: MIT
+- id: ponghauki
+  name: PongHauKi
+  by: databhor (2018).
+  source: https://github.com/databhor/PongHauKi
+  commit: bcbc762
+  license: MIT
+- id: poopanic
+  name: Poop Panic!
+  by: inajob (2018).
+  source: https://github.com/ArduboyCollection/poop-panic
+  commit: c0c44a8
+  license: MIT
+- id: ppblackjack
+  name: Blackjack (PPOT)
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/Blackjack
+  commit: ''
+  license: Apache-2.0
+- id: pppicross
+  name: PiCross
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/PiCross
+  commit: ''
+  license: BSD-3-Clause
+- id: psicolo
+  name: Psi Colo
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: pyoro
+  name: Pyoro
+  by: A clone of the Pyoro game, by Thesola10.
+  source: https://github.com/Thesola10/Pyoro
+  commit: ''
+  license: GPL-3.0
+- id: quadfall
+  name: Quadfall
+  by: stonedev-app (2026).
+  source: https://github.com/stonedev-app/Quadfall
+  commit: 1f81cb7
+  license: MIT
+- id: quadrastic
+  name: Quadrastic
+  by: David Martinez (code), DarKaoz (graphics), 2015-2017.
+  source: https://github.com/ArduboyCollection/Quadrastic
+  commit: 9d36cc5
+  license: LGPL 2.1 or later (header), GPL 3 text in the repository
+- id: quarth
+  name: Space Quarth
+  by: Schuemi, 2017.
+  source: https://github.com/ArduboyCollection/SpaceQuarth
+  commit: e76e561
+  license: MIT
+- id: quarto
+  name: Quarto!
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: questtruth
+  name: The Quest for Truth
+  by: Guillaume Elias.
+  source: https://github.com/GuillaumeElias/TheQuestForTruth
+  commit: 961a215
+  license: LGPL 3
+- id: randocity
+  name: Randocity
+  by: Paul Wasson (pmwasson), 2019.
+  source: https://github.com/pmwasson/Randocity
+  commit: 42e9b7e
+  license: MIT
+- id: ravine
+  name: Ravine Despoiler
+  by: Ben Combee (2020-2021); physics adapted from Pharap's PhysixArduboy.
+  source: https://github.com/unwiredben/arduboy-ravine-despoiler
+  commit: c48915c
+  license: Apache 2.0
+- id: rhombus
+  name: Rhombus
+  by: Onebit Productions (Matthew Bryan)
+  source: https://github.com/TropicAnthropic/RhombusArduboyGame
+  commit: ''
+  license: GPL-3.0
+- id: ringpuzzle
+  name: Ring Puzzle
+  by: Skuratovich Sergey.
+  source: https://github.com/ArduboyCollection/ring_puzzle_game
+  commit: ''
+  license: MIT
+- id: rmh
+  name: Reverse Mermaid Hockey
+  by: 'TEAM a.r.g.: Dragula96, art JO3RI and Unclesporky (2015).'
+  source: https://github.com/Team-ARG-Museum/ID-31-RMH
+  commit: ''
+  license: MIT
+- id: roadtrip
+  name: Road Trip
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/RoadTrip
+  commit: ''
+  license: BSD-3-Clause
+- id: rooftop
+  name: Rooftop Rescue
+  by: Bert van't Veer (2019).
+  source: https://github.com/BertVeer/Rooftop
+  commit: ''
+  license: MIT
+- id: roshambo
+  name: Roshambo
+  by: CDRXavier.
+  source: https://github.com/CDRXavier/Roshambo
+  commit: ''
+  license: GPL-2.0
+- id: rowfarm
+  name: Row Farm
+  by: Glitsch3n (2024).
+  source: https://github.com/Glitsch3n/arduboy-game-collection
+  commit: b1ffab7
+  license: MIT
+- id: rundhalloween
+  name: RUND.INO Halloween
+  by: Flaki (arduboy-rund-ino).
+  source: https://github.com/ArduboyCollection/arduboy-rund-ino
+  commit: ff8615f
+  license: ISC (declared in the author's package.json)
+- id: rundino
+  name: RUND.INO
+  by: Flaki (arduboy-rund-ino).
+  source: https://github.com/ArduboyCollection/arduboy-rund-ino
+  commit: ff8615f
+  license: ISC (declared in the author's package.json)
+- id: rysk
+  name: RYSK
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: samegame
+  name: SameGame
+  by: OBONO (2016-2026), OBN-Y11.
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: sfcave
+  name: SFCave
+  by: Stephanie Maks (Arduino), Rodney Norton (Arduboy); inspired by Sunflat SFCave for Palm.
+  source: https://github.com/ArduboyCollection/SFCave
+  commit: 3cbb554
+  license: GPL 3
+- id: shadowrunner
+  name: Shadow Runner
+  by: TEAM a.r.g. (2016).
+  source: https://github.com/Team-ARG-Museum/ID-15-Shadow-Runner
+  commit: ''
+  license: MIT
+- id: shatteredlands
+  name: 'Shattered Lands: Towers of Perdition'
+  by: Justin (tuxinator2009) Davis, 2019-2020.
+  source: https://github.com/tuxinator2009/ShatteredLands
+  commit: ''
+  license: GPL-3.0 or later (code and art)
+- id: shatteredlands2
+  name: 'Shattered Lands 2: Sea of Despair'
+  by: Justin (tuxinator2009) Davis, 2019-2020.
+  source: https://github.com/tuxinator2009/ShatteredLands
+  commit: ''
+  license: GPL-3.0 or later (code and art)
+- id: shooter
+  name: Shooter
+  by: Sandor Kovacs (2021).
+  source: https://github.com/shantheone/shooter
+  commit: cb40c26
+  license: MIT
+- id: shroom
+  name: Shroom Knight
+  by: Onebit Productions & Filmote, Matthew Bryan (2024).
+  source: https://github.com/TropicAnthropic/Shroom-Knight
+  commit: ''
+  license: GPL-3.0 (code and graphics as published in that repository)
+- id: sirene
+  name: Sirene
+  by: 'TEAM a.r.g.: JO3RI, Justin Cyr (2016).'
+  source: https://github.com/Team-ARG-Museum/ID-42-Sirene
+  commit: ''
+  license: MIT
+- id: slidexl
+  name: Slide-XL
+  by: Frank van de Ven (2026).
+  source: https://github.com/FrankVanDeVen/Slide-XL
+  commit: 0b0b160
+  license: MIT
+- id: snack
+  name: Snack
+  by: Shane Powell (2017).
+  source: https://github.com/shane-powell/ArduboyGames
+  commit: 23ad3fe
+  license: MIT (no holder named in the licence file)
+- id: snakecdr
+  name: Snake (CDR_Xavier)
+  by: CDR_Xavier (2018).
+  source: https://github.com/CDRXavier/SNAKE
+  commit: 501d6a4
+  license: GPL 2 or later
+- id: socialdist
+  name: The Social Distance Game
+  by: Marcus Sanatan (msanatan), 2020.
+  source: https://github.com/msanatan/TheSocialDistanceGame
+  commit: 025e866
+  license: MIT
+- id: solitairegb
+  name: Solitaire (Gamebuino)
+  by: Andy O'Neill, 2017. Gamebuino Klondike solitaire.
+  source: https://github.com/ArduboyCollection/gamebuino-solitaire
+  commit: 80f3f76
+  license: MIT
+- id: spacecab
+  name: Space Cab
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/SpaceCab
+  commit: ''
+  license: BSD-3-Clause
+- id: spacefighter
+  name: Space Fighter
+  by: Maicon Hieronymus, 2015.
+  source: https://github.com/ArduboyCollection/SpaceFighter
+  commit: ''
+  license: GPL-3.0 or later
+- id: spaceshooter
+  name: Space Shooter
+  by: Shane Powell (2017).
+  source: https://github.com/shane-powell/ArduboyGames
+  commit: 23ad3fe
+  license: MIT (no holder named in the licence file)
+- id: spacewads
+  name: Space Wads
+  by: Cuddles04 (2023).
+  source: https://github.com/Cuddles04/Space-Wads
+  commit: d4b12a2
+  license: Apache 2.0
+- id: starflight
+  name: Star Flight
+  by: 'TEAM a.r.g.: JO3RI, Piquesel (2016).'
+  source: https://github.com/Team-ARG-Museum/ID-26-Star-Flight
+  commit: ''
+  license: MIT
+- id: starhonor
+  name: Star Honor
+  by: Wenceslao Villanueva Jr, 2016.
+  source: https://github.com/wvillanueva/StarHonor
+  commit: ''
+  license: MIT
+- id: stellarimpact
+  name: Stellar Impact
+  by: Athene Allen (2018).
+  source: https://github.com/ArduboyCollection/Stellar_Impact
+  commit: e56419c
+  license: MIT
+- id: streetracer
+  name: Street Racer
+  by: marggines (2023).
+  source: https://github.com/marggines/Street-Racer
+  commit: 84e86e6
+  license: MIT
+- id: submarine
+  name: i4arduboy (Submarine shmup)
+  by: Planet Marimo, 2015. Arduboy port of the shmup i-20000.
+  source: https://github.com/ArduboyCollection/i4arduboy
+  commit: 60e156f
+  license: MIT
+- id: sunfire
+  name: Sunfire
+  by: 'TEAM a.r.g.: Trodoss (2017).'
+  source: https://github.com/Team-ARG-Museum/ID-50-Sunfire
+  commit: ''
+  license: MIT
+- id: supercratebuino
+  name: Super Crate Buino
+  by: Aurelien Rodot, 2014 (Gamebuino original). Arduboy port by Dan O'Shea.
+  source: https://github.com/uXeBoy/Super-Crate-Buino
+  commit: '6441161'
+  license: LGPL 3 or later
+- id: tamaguino
+  name: Tamaguino
+  by: Alojz Jakob; Arduboy port by Keyboard_Camper.
+  source: https://github.com/KeyboardCamper/Tamaguino-AB
+  commit: bd4b513
+  license: GPL 3
+- id: technomonkey
+  name: TechnoMonkey
+  by: Zachariah Falgout (RetrobitCoder), 2018.
+  source: https://github.com/RetrobitCoder/TechnoMonkey
+  commit: 266686b
+  license: MIT
+- id: teenytank
+  name: TeenyTank
+  by: Jez Swanson (2020).
+  source: https://github.com/Jezzamonn/TeenyTank
+  commit: ''
+  license: MIT
+- id: thefall
+  name: The Fall
+  by: Onebit Productions (Matthew Bryan)
+  source: https://github.com/TropicAnthropic/The-Fall
+  commit: ''
+  license: GPL-3.0
+- id: tilesfv
+  name: Tiles
+  by: Frank van de Ven (2026).
+  source: https://github.com/FrankVanDeVen/Tiles
+  commit: 7dfa3c4
+  license: MIT
+- id: tiny2048
+  name: Tiny 2048
+  by: akkera102 (2017).
+  source: https://github.com/akkera102/03_tiny_2048
+  commit: 4ea9c6b
+  license: GPL 2 (the repository carries the GPL text)
+- id: tinyasteroids
+  name: Tiny Asteroids
+  by: akkera102 (2017).
+  source: https://github.com/akkera102/06_tiny_asteroids
+  commit: b8baea4
+  license: GPL 2 (the repository carries the GPL text)
+- id: tinydash
+  name: Tiny Dash
+  by: Frank van de Ven (2023).
+  source: https://github.com/FrankVanDeVen/Tiny-Dash
+  commit: 30131ce
+  license: MIT
+- id: tinydepth
+  name: Tiny Depth
+  by: akkera102 (2017).
+  source: https://github.com/akkera102/02_tiny_depth
+  commit: 7cc8c8e
+  license: GPL 2 (the repository carries the GPL text)
+- id: tinydungeon
+  name: Tiny Dungeon
+  by: Sven B (Lorandil), 2021-2026. Inspired by TinyJoypad (Daniel C).
+  source: https://github.com/Lorandil/TinyDungeon
+  commit: 1f0f60e
+  license: MIT
+- id: tinyinvader
+  name: Tiny Digital Invader
+  by: akkera102 (2020).
+  source: https://github.com/akkera102/10_tiny_invader
+  commit: 1abefdb
+  license: GPL 2 (the repository carries the GPL text)
+- id: tinynstower
+  name: Tiny NS-Tower
+  by: akkera102 (2017).
+  source: https://github.com/akkera102/04_tiny_ns_tower
+  commit: 0ee5827
+  license: GPL 2 (the repository carries the GPL text)
+- id: tiretester
+  name: Tire Tester
+  by: jaychugstein
+  source: https://github.com/jaychugstein/Tire-Tester
+  commit: ''
+  license: MIT
+- id: towerofpain
+  name: Tower Of Pain
+  by: Fran J. Alvarez (2021).
+  source: https://github.com/franalvarez21/TowerOfPain
+  commit: ''
+  license: BSD-3-Clause
+- id: toyokumono
+  name: Toyokumono
+  by: OBONO (2016-2026).
+  source: https://github.com/obono/ArduboyWorks
+  commit: ''
+  license: MIT
+- id: trenchrun
+  name: Trench Run
+  by: Lucas Salton Cardinali (2019).
+  source: https://github.com/lscardinali/TrenchRun-Arduboy
+  commit: 2012f98
+  license: MIT
+- id: tres
+  name: Tres
+  by: Casey Gold (cajogold), 2017.
+  source: https://github.com/ArduboyCollection/tres
+  commit: 8befbc9
+  license: MIT
+- id: trialsofastarok
+  name: Trials of Astarok
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/TrialsOfAstarok
+  commit: ''
+  license: BSD-3-Clause
+- id: trianglewave
+  name: Triangle Wave
+  by: SergioFLS, 2020 (first Arduboy game).
+  source: https://github.com/SergioFLS/TriangleWave
+  commit: 11f4ac1
+  license: MIT
+- id: trollyfish
+  name: Trolly Fish
+  by: 'TEAM a.r.g.: Gaveno, JO3RI, Justin Cry (2016).'
+  source: https://github.com/Team-ARG-Museum/ID-36-Trolly-Fish
+  commit: ''
+  license: MIT
+- id: tronduboy
+  name: Tronduboy
+  by: Simon Prickett (2016).
+  source: https://github.com/simonprickett/tronduboy
+  commit: 66312d8
+  license: MIT
+- id: tunnelfighter
+  name: Tunnel Fighter
+  by: Matthew Bryan (2024).
+  source: https://github.com/TropicAnthropic/tunnelFighter
+  commit: eec0991
+  license: GPL 3
+- id: tunnelterror
+  name: Tunnel Terror
+  by: Tom and Jamie Millichamp (2020).
+  source: https://github.com/Tomsk666/arduboy-terror-tunnels
+  commit: 01d5bb9
+  license: GPL 3
+- id: turtlebridge
+  name: Turtle Bridge
+  by: Press Play On Tape.
+  source: https://github.com/Press-Play-On-Tape/TurtleBridge
+  commit: ''
+  license: BSD-3-Clause
+- id: ultrahop
+  name: Ultra Hop
+  by: rolohaun, 2026.
+  source: https://github.com/rolohaun/ultra-hop
+  commit: 19c4801
+  license: MIT
+- id: undertower
+  name: Under the Tower
+  by: wuuff, ported from the Gamebuino original.
+  source: https://github.com/wuuff/under-the-tower-arduboy
+  commit: ''
+  license: GPL-3.0
+- id: unicorndash
+  name: Unicorn Dash
+  by: Kirill Korolkov (2018).
+  source: https://github.com/KirillKorolkov/unicorn-dash
+  commit: c134b4c
+  license: MIT
+- id: virus
+  name: Virus LQP-79
+  by: 'TEAM a.r.g.: Fuopy, JO3RI, STG, CastPixel, Justin Cyr (2016).'
+  source: https://github.com/Team-ARG-Museum/ID-40-VIRUS-LQP-79
+  commit: ''
+  license: MIT
+- id: waternetab
+  name: Waternet (Arduboy)
+  by: Willems Davy (joyrider3774).
+  source: https://github.com/joyrider3774/waternet_arduboy
+  commit: ''
+  license: MIT
+- id: wontsurvive
+  name: You Won't Survive
+  by: Andre Hellwig, 2016.
+  source: https://github.com/ArduboyCollection/YouWontSurvive
+  commit: c6f489e
+  license: MIT (named in the source header)
+- id: xmasgame
+  name: Santa's Happy Little Packer
+  by: Erwin Ried.
+  source: https://github.com/ArduboyCollection/ArduboyXmasGame
+  commit: ''
+  license: BSD-3-Clause
+- id: zuthsrah
+  name: Battle for Zuthsrah
+  by: Mre64 (2020).
+  source: https://github.com/Mre64/BattleForZuthsrah
+  commit: 4433a4e
+  license: MIT (template text
+- id: ardurogue
+  name: ArduRogue
+  by: Tiberius Brown
+  source: https://github.com/tiberiusbrown/ardurogue
+  commit: 35b13869
+  license: MPL-2.0

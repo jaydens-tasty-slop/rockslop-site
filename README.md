@@ -33,6 +33,14 @@ make help
 - **Comparison tables**: `_data/hardware.yml` and `_data/features.yml` hold
   only the row names and their order. The values are in each player's file.
   States are defined in `_data/states.yml`.
+- **Features and ports**: `features/index.md` lists what we added. The apps and
+  demos are in `_data/plugins/native.yml`; each port family (Arduboy, Pokitto,
+  Flipper Zero, ...) is described in `_data/plugin_families.yml`, with every
+  game in `_data/plugins/<family>.yml` (name, author, source URL, commit,
+  licence) and one page per family in `features/`. The game lists were
+  generated from the credits in the rockbox tree's plugin sources
+  (`apps/plugins/<family>/`), so re-check them against the source when the
+  tree changes.
 - **Announcements**: blog posts in `_posts/` (`YYYY-MM-DD-title.md`, with a
   `title` and a one-line `description`). They list on `/announcements/`, the
   home page and the Atom feed at `/feed.xml`. The welcome post is filler.

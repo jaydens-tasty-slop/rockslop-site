@@ -1,0 +1,138 @@
+- id: obs
+  name: OBS - One Button Shooter
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/OBS_Pokitto
+  commit: 7807ee08
+  license: BSD-3
+- id: fireworks
+  name: FireWorks
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/FireWorks_Pokitto
+  commit: a935761e
+  license: BSD-3
+- id: darkritual
+  name: Dark Ritual
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/DarkRitual_Pokitto
+  commit: 3eb86e5e
+  license: BSD-3
+- id: spacecab
+  name: Space Cab
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/SpaceCab_Pokitto
+  commit: 53380f9b
+  license: GPL-3.0
+- id: pzero
+  name: Pokitto Grand Prix
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/SpaceCab_Pokitto
+  commit: 53380f9b
+  license: code Apache-2.0, graphics CC BY-NC-SA / CC0
+- id: abbaye
+  name: L'Abbaye des Morts
+  by: HomineLudens
+  source: https://gitlab.com/HomineLudens/abbaye-des-morts-pokitto
+  commit: 06f6e1c5
+  license: code GPL-3.0, media CC BY 3.0
+- id: nvader
+  name: 1nvader
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/1nvader_Pokitto
+  commit: 15be430
+  license: BSD-3
+- id: minirogue
+  name: Mini Rogue
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/MiniRogue_Pokitto
+  commit: 63cb1da
+  license: BSD-3
+- id: astarok
+  name: Trials of Astarok
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/TrialsOfAstarok_Pokitto
+  commit: 1a7ecb0
+  license: BSD-3
+- id: minesweeper
+  name: MineSweeper
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/MineSweeper_Pokitto
+  commit: c7fbcea
+  license: BSD-3
+- id: lightsout
+  name: Lights Out
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/LightsOut_Pokitto
+  commit: 948042e
+  license: BSD-3
+- id: buttonstrail
+  name: Dark Trails
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/ButtonsTrail_Pokitto
+  commit: 84b6210
+  license: BSD-3
+- id: ballbust
+  name: Ball Bust
+  by: Gitonym
+  source: https://github.com/Gitonym/Ball-Bust
+  commit: c2e3a38
+  license: Unlicense
+- id: galaxyfighter
+  name: GalaxyFighter
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/GalaxyFighter_Pokitto
+  commit: ce135d5
+  license: BSD-3
+- id: linez
+  name: Linez (falling blocks)
+  by: sbmrgd
+  source: https://github.com/sbmrgd/linez
+  commit: aad9679
+  license: BSD-3
+- id: leword
+  name: LeWord (Wordle-style)
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/LeWord_Pokitto
+  commit: 99e3f8e
+  license: BSD-3
+- id: scrambler
+  name: Scrambler
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/Scrambler_Pokitto
+  commit: bf21d07
+  license: BSD-3
+- id: roadtrip
+  name: RoadTrip
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/RoadTrip_Pokitto
+  commit: a84e983
+  license: BSD-3
+- id: picross
+  name: PiCross (nonograms)
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/PiCross_Pokitto
+  commit: 8a08ac6
+  license: BSD-3
+- id: scopa
+  name: Scopa (Italian card game)
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/Scopa_V1_Pokitto
+  commit: 9ffaf7f
+  license: BSD-3
+- id: rogue
+  name: Rogue (ASCII roguelike)
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/Rogue_Pokitto
+  commit: 22d8424
+  license: BSD-3
+- id: stackshift
+  name: StackShift (falling-block puzzle)
+  by: Press-Play-On-Tape
+  source: https://github.com/Press-Play-On-Tape/StackShift_Pokitto
+  commit: fe472f4
+  license: GPL-3
+- id: noughts
+  name: Noughts and Crosses
+  by: Pharap
+  source: https://github.com/Pharap/SimpleNoughtsAndCrosses
+  commit: 817ca36
+  license: Apache-2.0
