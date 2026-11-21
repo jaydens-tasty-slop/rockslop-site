@@ -13,6 +13,7 @@ permalink: /development/
 | Repository | What it is |
 | --- | --- |
 | [rockslop](https://github.com/jaydens-tasty-slop/rockslop) | The flasher and the Rockbox ports for each player. Releases are published here. |
+| [rockbox](https://github.com/jaydens-tasty-slop/rockbox) | Our fork of the Rockbox source, with the player ports. |
 | [auto-rockbox](https://github.com/jaydens-tasty-slop/auto-rockbox) | The tooling for bringing up and testing new players (`arb`). |
 | [rockslop-site](https://github.com/jaydens-tasty-slop/rockslop-site) | This website. |
 

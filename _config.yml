@@ -57,6 +57,9 @@ nav_external_links:
   - title: rockslop on GitHub
     url: "https://github.com/jaydens-tasty-slop/rockslop"
     opens_in_new_tab: true
+  - title: rockbox (our fork) on GitHub
+    url: "https://github.com/jaydens-tasty-slop/rockbox"
+    opens_in_new_tab: true
   - title: auto-rockbox on GitHub
     url: "https://github.com/jaydens-tasty-slop/auto-rockbox"
     opens_in_new_tab: true
