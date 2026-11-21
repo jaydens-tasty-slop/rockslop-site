@@ -86,7 +86,7 @@ hardware:
 # --- Getting to download mode ---
 download:
   short: "Hold Down + plug in USB (or Down + RESET)"     # one line for the comparison table
-  how: >-
+  how: |-
     1. Turn player off, remove USB
 
     2. Hold "Down" on the dpad
