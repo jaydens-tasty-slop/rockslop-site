@@ -13,9 +13,9 @@ Player page template. Everything comes from the page's front matter
 
 {% if page.intro %}{{ page.intro }}{% else %}{% include todo.html text="Two or three sentences: what this player is, where it's sold, roughly what it costs, who it suits. Add the sold-as names and brands people will search for." %}{% endif %}
 
-{% unless page.failed %}[Download rockslop]({{ site.releases_url }}){: .btn .btn-primary }
+{% if page.state == "released" or page.state == "dev" %}[Download rockslop]({{ site.releases_url }}){: .btn .btn-primary }
 
-{% endunless %}## At a glance
+{% endif %}## At a glance
 
 | Spec | Detail |
 | --- | --- |
@@ -28,6 +28,14 @@ Player page template. Everything comes from the page's front matter
 | Display | {{ page.hardware["Display & input"]["Display"] }} |
 {% if page.stock_firmware %}| Stock firmware | {{ page.stock_firmware }} |
 {% endif %}
+## Also known as
+
+{% if page.sold_as %}{% assign s = page.sold_as %}{% if s.maker %}**Manufacturer:** [{{ s.maker.name }}]({{ s.maker.url }})
+
+{% endif %}{% for n in s.names %}- {% if n.url %}[{{ n.name }}]({{ n.url }}){% else %}{{ n.name }}{% endif %}{% if n.note %}: {{ n.note }}{% endif %}
+{% endfor %}
+{% if s.note %}{{ s.note }}{% endif %}{% else %}{% include todo.html text="Brand names and listings this player is sold under, and a link to the manufacturer. Say if it's unknown." %}{% endif %}
+
 ## Photos
 
 {% if page.photos %}{% for p in page.photos %}![{{ p.alt }}]({{ p.src | relative_url }})
@@ -51,9 +59,9 @@ Player page template. Everything comes from the page's front matter
 {%- capture bottom -%}
 ## Status
 
-{% include status-table.html %}
+{% if page.status %}{% include status-table.html %}
 
-{% include legend.html %}
+{% include legend.html %}{% else %}{% include todo.html text="The status table: what works, what doesn't, once there is something to test." %}{% endif %}
 
 ## Battery life
 

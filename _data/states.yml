@@ -9,3 +9,4 @@ released: { label: Released, cls: label-green }
 dev:      { label: In development, cls: label-yellow }
 rejected: { label: Rejected, cls: label-red }
 parked:   { label: Parked,   cls: label-blue }
+triage:   { label: Triage,   cls: label-blue }

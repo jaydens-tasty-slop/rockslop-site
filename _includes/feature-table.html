@@ -1,4 +1,5 @@
 {%- include players-cols.html -%}
+{%- assign ported_players = ported_players | where_exp: "p", "p.features" -%}
 | Feature |{% for p in ported_players %} [{{ p.title }}]({{ p.url | relative_url }}) |{% endfor %}
 | --- |{% for p in ported_players %} --- |{% endfor %}
 {% for g in site.data.features %}| **{{ g.group }}** |{% for p in ported_players %} |{% endfor %}

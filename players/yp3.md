@@ -18,6 +18,10 @@ stock_firmware: "?"
 # problems: ""
 # photos: [{ src: /assets/images/yp3/front.jpg, alt: "Front" }]
 
+# --- Also known as ---
+sold_as:
+  note: "Unknown: we don't yet know what this is sold as, or by whom."
+
 # --- Hardware (one value per row of _data/hardware.yml; "?" = unknown) ---
 hardware:
   Processor:
